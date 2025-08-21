@@ -1,6 +1,11 @@
 # awesome-foundation-models-for-robotics
 Curated database of foundation models for robotics
 
+**Rules:** 
+- I just try to add my notes here. I can make mistake. Please don't be offended if your work is not here, just open an issue or PR.
+- Included models: fundamental works, open weight/source works, works I saw on X, YouTube, LinkedIn, 
+- Actions means chunked, single, end effector, joint actions. Unfortunately, I cannot keep track of all of them for each work. Also most of the models can be adapted to different modalities. 
+
 | name | website | notes | implementations | input | output | ref |
 |---|---|---|---|---|---|---|
 | Large Behavior Model | [Link](https://toyotaresearchinstitute.github.io/lbm1/) | - DiT with Image and Text Encoder<br>- Demonstrated for bimanual manipulation tasks <br>- It is also implemented on Boston Dynamics humanoid<br>  | https://github.com/lucidrains/TRI-LBM | image, proprioception, language | actions | Barreiros, Jose, et al. "A careful examination of large behavior models for multitask dexterous manipulation." arXiv preprint arXiv:2507.05331 (2025).
