@@ -3,7 +3,7 @@ Curated database of foundation models for robotics
 
 **Rules:** 
 - I just try to add my notes here. I can make mistake. Please don't be offended if your work is not here, just open an issue or PR.
-- Included models: fundamental works, open weight/source works, works I saw on X, YouTube, LinkedIn, 
+- Included models: fundamental works, open weight/source works, works I saw on X, YouTube, LinkedIn.
 - Actions means chunked, single, end effector, joint actions. Unfortunately, I cannot keep track of all of them for each work. Also most of the models can be adapted to different modalities. 
 
 | name | website | notes | implementations | input | output | ref |
