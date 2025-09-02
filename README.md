@@ -22,3 +22,11 @@ Curated database of foundation models for robotics
 |---|---|---|
 |Wilcox, Albert, et al. "Adapt3R: Adaptive 3D Scene Representation for Domain Transfer in Imitation Learning." arXiv preprint arXiv:2503.04877 (2025).|- RGBD based viewpoint invariant learning.<br>- Nicely presented the limitations.| [Official](https://github.com/pairlab/Adapt3R)
     
+
+## Epic blog posts, presentations, videos:
+| ref | notes | 
+|---|---|
+|[Vision-Language-Action Models and the Search for a Generalist Robot Policy](https://substack.com/@cpaxton/p-166350114)|-By Chris Paxton <br> -General overview of VLAs in the real world. Especially failures part is so good. <br> -Full of nice insights and references.|
+| [Where's RobotGPT?](https://www.youtube.com/watch?v=OAZrBYCLnaA) | -By Dieter Fox <br>- There are many instances in video forms. So, I would suggest selecting the most recent one. <br>- Basically, focusing on where we are and what is needed to get LLM level robot models.| 
+
+    
