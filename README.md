@@ -7,26 +7,121 @@ Curated database of foundation models for robotics
 - Actions means chunked, single, end effector, joint actions. Unfortunately, I cannot keep track of all of them for each work. Also most of the models can be adapted to different modalities. 
 
 ## Main list
-| name | website | notes | code | input | output | ref |
-|---|---|---|---|---|---|---|
-| Large Behavior Model | [Link](https://toyotaresearchinstitute.github.io/lbm1/) | - DiT with Image and Text Encoder<br>- Demonstrated for bimanual manipulation tasks <br>- It is also implemented on Boston Dynamics humanoid<br>  | [lucidrains/TRI-LBM](https://github.com/lucidrains/TRI-LBM) | image, proprioception, language | actions | Barreiros, Jose, et al. "A careful examination of large behavior models for multitask dexterous manipulation." arXiv preprint arXiv:2507.05331 (2025). |
-| OpenVLA |[Link](https://openvla.github.io/)|- One of the fundamental works <br>- llama is the main transformer<br>- siglip + dino for vision| - [Official](https://github.com/openvla/openvla) <br>- [Weights](https://huggingface.co/openvla/openvla-7b) <br>- there is no shortage of OpenVLA implementations |image, language|actions|Kim, Moo Jin, et al. "Openvla: An open-source vision-language-action model." arXiv preprint arXiv:2406.09246 (2024).|
-|pi0|[Link](https://www.physicalintelligence.company/blog/pi0)|-Incredible bimanual, mobile robot demos<br>- Pretrained VLM + Action expert<br>- Pretrained VLM is Paligemma|- [openpi](https://github.com/Physical-Intelligence/openpi) <br>- [lerobot](https://huggingface.co/lerobot/pi0) |image, proprioception, language|actions|Black, Kevin, et al. "π0: A vision-language-action flow model for general robot control. CoRR, abs/2410.24164, 2024. doi: 10.48550." arXiv preprint ARXIV.2410.24164.|
-|Nvidia Isaac Gr00t N1.5|[Link](https://developer.nvidia.com/isaac/gr00t)|- VLM + DiT <br>- Very nice codebase<br>- Compatible with lerobot with small editions<br>- Utilities for inference server, clients<br>- Finetuning is super easy|[Official](https://github.com/NVIDIA/Isaac-GR00T)|image, proprioception, language|actions|Bjorck, Johan, et al. "Gr00t n1: An open foundation model for generalist humanoid robots." arXiv preprint arXiv:2503.14734 (2025).|
-|MolmoAct|[Link](https://allenai.org/blog/molmoact)|-Very interesting model<br> - It first estimates depth tokens, then plan in image space independent from embodiment and then the actions<br>- Very big.<br>- It is basically thinking in a different manner.<br>- As the image trace can be changed by user, the trace conditioned actions are also steerable. (I saw something like that last year in RT-Trajectory. <br>- (idea) Depth perception tokens and Adapt3r would be a very interesting duo)|[Weights](https://huggingface.co/allenai/MolmoAct-7B-D-0812)|-RGB images|-Depth tokens<br>- Plan in image space<br>- actions|Lee, Jason, et al. "MolmoAct: Action Reasoning Models that can Reason in Space." arXiv preprint arXiv:2508.07917 (2025).|
-|GR-3|[Link](https://arxiv.org/pdf/2507.15493)|-They have 3 different data types. (internet scale vision language, human hand tracking, robot trajectories) <br>- Architecture is basically the same as others like vlm + DiT <br>- They employ compliance control on the robot for teleop which makes a lot of sense for contact rich tasks <br> -Also, they optimize trajectories with a trajectory optimization algo.<br> -They showed that with only 10 human trajectory data, GR-3 can learn new tasks. It seems like human trajectories will be the way to go for vast data in robotics.|None||image, proprioception, language|actions|
-|V-JEPA 2/V-JEPA 2-AC|[Link](https://ai.meta.com/vjepa/)|-Spatially capable vision encoder <br>-AC version is post trained to generate robot actions. They call it a probe.<br>- capable of next state prediction. We can call it a world model in that sense.<br>-Completely self-supervised training |[Code](https://github.com/facebookresearch/vjepa2)|image/video|embeddings, actions(for -AC)|Assran, Mido, et al. "V-jepa 2: Self-supervised video models enable understanding, prediction and planning." arXiv preprint arXiv:2506.09985 (2025).|
 
-## Also not directly Foundation models, but epic recent Robotics papers:
-| ref | notes | implementations | 
-|---|---|---|
-|Wilcox, Albert, et al. "Adapt3R: Adaptive 3D Scene Representation for Domain Transfer in Imitation Learning." arXiv preprint arXiv:2503.04877 (2025).|- RGBD based viewpoint invariant learning.<br>- Nicely presented the limitations.| [Official](https://github.com/pairlab/Adapt3R)
-    
+### **Large Behavior Model (LBM)**
+*I, P, L → A (Image, Proprioception, Language → Actions)*
 
-## Epic blog posts, presentations, videos:
-| ref | notes | 
-|---|---|
-|[Vision-Language-Action Models and the Search for a Generalist Robot Policy](https://substack.com/@cpaxton/p-166350114)|-By Chris Paxton <br> -General overview of VLAs in the real world. Especially failures part is so good. <br> -Full of nice insights and references.|
-| [Where's RobotGPT?](https://www.youtube.com/watch?v=OAZrBYCLnaA) | -By Dieter Fox <br>- There are many instances in video forms. So, I would suggest selecting the most recent one. <br>- Basically, focusing on where we are and what is needed to get LLM level robot models.| 
+* **Website**: [toyotaresearchinstitute.github.io/lbm1/](https://toyotaresearchinstitute.github.io/lbm1/)
+* **Paper**: [A careful examination of large behavior models...](https://arxiv.org/abs/2507.05331)
+* **Code**: [lucidrains/TRI-LBM](https://github.com/lucidrains/TRI-LBM)
+* **Notes**:
+    * Uses a Diffusion Transformer (DiT) with Image and Text Encoders.
+    * Demonstrated for complex bimanual manipulation tasks.
+    * Has been implemented on a Boston Dynamics humanoid robot.
 
-    
+---
+
+### **OpenVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [openvla.github.io](https://openvla.github.io/)
+* **Paper**: [OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246)
+* **Code**: [Official Repo](https://github.com/openvla/openvla)
+* **Weights**: [Hugging Face](https://huggingface.co/openvla/openvla-7b)
+* **Notes**:
+    * Considered a fundamental work in open-source Vision-Language-Action models.
+    * Built with a Llama transformer backbone.
+    * Uses SigLIP + DINO for its vision component.
+
+---
+
+### **π0 (pi0)**
+*I, P, L → A (Image, Proprioception, Language → Actions)*
+
+* **Website**: [physicalintelligence.company/blog/pi0](https://www.physicalintelligence.company/blog/pi0)
+* **Paper**: [π0: A vision-language-action flow model for general robot control](https://arxiv.org/abs/2410.24164)
+* **Code**: [openpi on GitHub](https://github.com/Physical-Intelligence/openpi)
+* **Weights**: [lerobot on Hugging Face](https://huggingface.co/lerobot/pi0)
+* **Notes**:
+    * Showcased in incredible bimanual and mobile robot demonstrations.
+    * Architecture consists of a pretrained Vision-Language Model (VLM) combined with an action expert.
+    * The pretrained VLM used is Paligemma.
+
+---
+
+### **Nvidia Isaac GR00T N1.5**
+*I, P, L → A (Image, Proprioception, Language → Actions)*
+
+* **Website**: [developer.nvidia.com/isaac/gr00t](https://developer.nvidia.com/isaac/gr00t)
+* **Paper**: [GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](https://arxiv.org/abs/2503.14734)
+* **Code**: [Official NVIDIA Repo](https://github.com/NVIDIA/Isaac-GR00T)
+* **Notes**:
+    * Combines a Vision-Language Model (VLM) with a Diffusion Transformer (DiT).
+    * Features a very nice codebase that is compatible with `lerobot` with minor edits.
+    * Includes utilities for inference servers and clients, making fine-tuning straightforward.
+
+---
+
+### **MolmoAct**
+*Image → Depth Tokens, Image-Space Plan, Actions*
+
+* **Website**: [allenai.org/blog/molmoact](https://allenai.org/blog/molmoact)
+* **Paper**: [MolmoAct: Action Reasoning Models that can Reason in Space](https://arxiv.org/abs/2508.07917)
+* **Weights**: [Hugging Face](https://huggingface.co/allenai/MolmoAct-7B-D-0812)
+* **Notes**:
+    * A very interesting and large model with a unique reasoning process.
+    * It first estimates depth tokens, then plans a trajectory in the image space (independent of the robot's body), and finally generates the actions.
+    * Because the image trace can be modified by a user, the resulting actions are steerable.
+
+---
+
+### **GR-3**
+*I, P, L → A (Image, Proprioception, Language → Actions)*
+
+* **Paper**: [GR-3: Foundation Models for Generalist Robots](https://arxiv.org/abs/2507.15493)
+* **Code**: None available.
+* **Notes**:
+    * Trained on three diverse data types: internet-scale vision-language data, human hand tracking data, and robot trajectories.
+    * The architecture is a VLM + DiT, similar to other leading models.
+    * Employs compliance control during teleoperation, which is beneficial for contact-rich tasks.
+    * Showed that it can learn new tasks from only 10 human trajectory demonstrations.
+
+---
+
+### **V-JEPA 2 & V-JEPA 2-AC**
+*Video → Embeddings (V-JEPA 2) / Actions (V-JEPA 2-AC)*
+
+* **Website**: [ai.meta.com/vjepa/](https://ai.meta.com/vjepa/)
+* **Paper**: [V-JEPA 2: Self-supervised video models enable understanding...](https://arxiv.org/abs/2506.09985)
+* **Code**: [Official facebookresearch Repo](https://github.com/facebookresearch/vjepa2)
+* **Notes**:
+    * A spatially capable vision encoder trained entirely with self-supervision.
+    * Capable of next-state prediction, functioning as a world model.
+    * The V-JEPA 2-AC version is post-trained with an "action-conditioned probe" to generate robot actions.
+
+***
+
+## 🤖 Noteworthy Papers
+
+### **Adapt3R: Adaptive 3D Scene Representation for Domain Transfer**
+* **Paper**: [Wilcox, Albert, et al.](https://arxiv.org/abs/2503.04877)
+* **Code**: [Official pairlab Repo](https://github.com/pairlab/Adapt3R)
+* **Notes**:
+    * Focuses on RGB-D based, viewpoint-invariant learning for imitation.
+    * Provides a well-presented analysis of the limitations of current methods.
+
+***
+
+## 📚 Influential Posts & Videos
+
+### **Vision-Language-Action Models and the Search for a Generalist Robot Policy**
+* **Link**: [Substack Post by Chris Paxton](https://substack.com/@cpaxton/p-166350114)
+* **Notes**:
+    * A general overview of VLAs in the real world, with an excellent section on common failures.
+    * Full of great insights and references.
+
+### **Where's RobotGPT?**
+* **Link**: [YouTube Video by Dieter Fox](https://www.youtube.com/watch?v=OAZrBYCLnaA)
+* **Notes**:
+    * This talk exists in many video forms; it's best to find the most recent version.
+    * Focuses on the current state of robotics models and what is needed to achieve LLM-level general intelligence in robots.
