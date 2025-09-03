@@ -6,7 +6,7 @@ Curated database of foundation models for robotics
 - Included models: fundamental works, open weight/source works, works I saw on X, YouTube, LinkedIn, works I trained, works I tried to train but couldn't
 - Actions means chunked, single, end effector, joint actions. Unfortunately, I cannot keep track of all of them for each work. Also most of the models can be adapted to different modalities. 
 
-## Main list
+## Main list 👇
 
 ### **Large Behavior Model (LBM)**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
