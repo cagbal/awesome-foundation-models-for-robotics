@@ -101,6 +101,17 @@ Curated database of foundation models for robotics
 
 ***
 
+### **RoboCat (2023)**
+*I, P, G → A (Image, Proprioception, Goal Image → Actions)*
+
+- **Website**: [Google DeepMind Blog Post](https://deepmind.google/discover/blog/robocat-a-self-improving-robotic-agent/)
+- **Paper**: [RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation](https://arxiv.org/abs/2306.11706)r
+- **Notes**:
+  - A multi-task, multi-embodiment generalist agent based on a decision transformer architecture (Gato).
+  - Demonstrates a self-improvement loop: a trained model is fine-tuned for a new task, generates more data for that task, and this new data is used to train the next, more capable version of the generalist agent.
+  - Can adapt to new tasks, objects, and even entirely new robot embodiments (e.g., KUKA arm) with only 100-1000 demonstration examples.
+  - Tasks are specified using a visual goal image, not language.
+
 ## 🤖 Noteworthy Papers
 
 ### **Adapt3R: Adaptive 3D Scene Representation for Domain Transfer**
