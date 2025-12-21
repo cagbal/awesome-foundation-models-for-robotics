@@ -99,6 +99,44 @@ Curated database of foundation models for robotics
     * Capable of next-state prediction, functioning as a world model.
     * The V-JEPA 2-AC version is post-trained with an "action-conditioned probe" to generate robot actions.
 
+---
+
+### **Nvidia Cosmos**
+*Video, Text, Control → Video, Text (Reasoning)*
+
+* **Website**: [nvidia.com/en-us/ai/cosmos](https://www.nvidia.com/en-us/ai/cosmos/)
+* **Paper**: [Cosmos World Foundation Model Platform for Physical AI](https://arxiv.org/abs/2501.03575)
+* **Code**: [Official Repo](https://github.com/nvidia-cosmos)
+* **Notes**:
+    * A comprehensive world foundation model platform for Physical AI.
+    * Includes `cosmos-predict` (video generation), `cosmos-transfer` (control-to-video), and `cosmos-reason` (reasoning VLM).
+    * Models are open-weight and designed for robotics and autonomous vehicle simulation.
+
+---
+
+### **LiReN**
+*I, G → A (Image, Goal → Actions)*
+
+* **Website**: [kylestach.github.io/lifelong-nav-rl](https://kylestach.github.io/lifelong-nav-rl/)
+* **Paper**: [Lifelong Autonomous Improvement of Navigation Foundation Models in the Wild](https://proceedings.mlr.press/v270/stachowicz25a.html)
+* **Code**: [Official Repo](https://github.com/kylestach/lifelong-nav-rl)
+* **Weights**: [Hugging Face](https://huggingface.co/rail-berkeley/liren-base)
+* **Notes**:
+    * The first navigation foundation model capable of autonomous fine-tuning in the wild.
+    * Combines offline RL pretraining with online RL for continuous improvement.
+    * Robust to new environments and embodiments.
+
+---
+
+### **LAC-WM**
+*I, A → I' (Image, Actions → Predicted Image)*
+
+* **Paper**: [Latent Action Robot Foundation World Models for Cross-Embodiment Adaptation](https://openreview.net/forum?id=vEZgPr1deb)
+* **Notes**:
+    * Learns a unified latent action space to handle diverse robot embodiments.
+    * Achieves significant performance improvements (up to 46.7%) over models with explicit motion labels.
+    * Enables efficient cross-embodiment learning and generalization.
+
 ***
 
 ### **RoboCat (2023)**
