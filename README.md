@@ -31,6 +31,19 @@ Curated database of foundation models for robotics
 
 ---
 
+### **DeepFleet**
+*P, G → A (Proprioception, Goal → Actions)*
+
+* **Website**: [amazon.science/blog/amazon-builds-first-foundation-model-for-multirobot-coordination](https://www.amazon.science/blog/amazon-builds-first-foundation-model-for-multirobot-coordination)
+* **Paper**: [DeepFleet: Multi-Agent Foundation Models for Mobile Robots](https://arxiv.org/abs/2508.08574)
+* **Notes**:
+    *   A suite of foundation models for coordinating large-scale mobile robot fleets.
+    *   Trained on fleet movement data from hundreds of thousands of robots in Amazon warehouses.
+    *   Explores four architectures, with Robot-Centric (RC) and Graph-Floor (GF) showing the most promise for scaling.
+    *   Enables proactive planning to avoid congestion and deadlocks in complex multi-agent environments.
+
+---
+
 ### **Genie 3**
 *Text/Image → Interactive World Video*
 
@@ -73,6 +86,45 @@ Curated database of foundation models for robotics
     * Uses a Diffusion Transformer (DiT) with Image and Text Encoders.
     * Demonstrated for complex bimanual manipulation tasks.
     * Has been implemented on a Boston Dynamics humanoid robot.
+
+---
+
+### **SAM2Act & SAM2Act+**
+*I, P → A (Image, Proprioception → Actions)*
+
+* **Website**: [sam2act.github.io](https://sam2act.github.io)
+* **Paper**: [SAM2Act: Integrating Visual Foundation Model with A Memory Architecture...](https://arxiv.org/abs/2501.18564)
+* **Code**: [sam2act/sam2act](https://github.com/sam2act/sam2act)
+* **Notes**:
+    *   Integrates the SAM2 visual foundation model with a memory architecture for robotic manipulation.
+    *   SAM2Act+ incorporates a memory bank and encoder for episodic recall, enabling spatial memory-dependent tasks.
+    *   Achieves state-of-the-art performance on RLBench (86.8%) and robust generalization on The Colosseum.
+
+---
+
+### **Waymo Motion FM**
+*S, Map → Trajectory*
+
+* **Website**: [waymo.com/research/scaling-laws-of-motion-forecasting-and-planning](https://waymo.com/research/scaling-laws-of-motion-forecasting-and-planning/)
+* **Paper**: [Scaling Laws of Motion Forecasting and Planning](https://arxiv.org/abs/2506.08228)
+* **Notes**:
+    *   Demonstrates that motion forecasting and planning models follow scaling laws similar to LLMs.
+    *   Trained on a massive dataset of 500,000 hours of driving data.
+    *   Uses an encoder-decoder autoregressive transformer architecture.
+    *   Shows that increasing compute and data predictably improves both open-loop and closed-loop performance.
+
+---
+
+### **3DLLM-Mem**
+*I, L, M → A (Image, Language, Memory → Actions)*
+
+* **Website**: [3dllm-mem.github.io](https://3dllm-mem.github.io/)
+* **Paper**: [3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D LLM](https://arxiv.org/abs/2505.22657)
+* **Notes**:
+    *   Introduces a dynamic memory management system for Embodied 3D Large Language Models.
+    *   Uses working memory tokens to selectively attend to episodic memory, enabling long-term spatial-temporal reasoning.
+    *   Outperforms strong baselines by 16.5% on challenging in-the-wild embodied tasks (3DMem-Bench).
+    *   NeurIPS 2025.
 
 ---
 
