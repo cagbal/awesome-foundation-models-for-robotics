@@ -8,6 +8,60 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **π0.6 (pi0.6)**
+*I, P, L → A (Image, Proprioception, Language → Actions)*
+
+* **Website**: [physicalintelligence.company/blog/pistar06](https://www.physicalintelligence.company/blog/pistar06)
+* **Notes**:
+    *   Introduces Reinforcement Learning (RL) to the VLA training pipeline.
+    *   Allows the model to learn from experience, significantly improving success rates and throughput on real-world tasks.
+
+---
+
+### **Gemini Robotics 1.5 & ER 1.5**
+*I, V, L → A, R (Image, Video, Language → Actions, Reasoning)*
+
+* **Website**: [deepmind.google/models/gemini-robotics/](https://deepmind.google/models/gemini-robotics/)
+* **Paper**: [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots...](https://arxiv.org/abs/2510.03342)
+* **Notes**:
+    *   A dual-model system: VLA for low-level control and Embodied Reasoning (ER) for high-level planning.
+    *   Interleaves actions with a natural language "thinking" process to decompose complex tasks.
+    *   Demonstrates motion transfer, allowing policies to adapt across different robot embodiments (e.g., Aloha to Apollo).
+
+---
+
+### **Genie 3**
+*Text/Image → Interactive World Video*
+
+* **Website**: [deepmind.google/blog/genie-3-a-new-frontier-for-world-models/](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/)
+* **Notes**:
+    *   A general-purpose world model capable of generating interactive environments at 24fps.
+    *   Used to train embodied agents (like SIMA) in rich, simulated worlds.
+    *   Maintains environmental consistency over long horizons (minutes) and allows promptable world events.
+
+---
+
+### **Digit's Motor Cortex**
+*O, P → A (Objectives, Proprioception → Actions)*
+
+* **Website**: [agilityrobotics.com/content/training-a-whole-body-control-foundation-model](https://www.agilityrobotics.com/content/training-a-whole-body-control-foundation-model)
+* **Notes**:
+    *   A whole-body control foundation model trained purely in simulation (Isaac Sim).
+    *   Uses a small LSTM (<1M params) to handle balance, locomotion, and disturbance recovery.
+    *   Functions as a "motor cortex," taking end-effector objectives and handling the low-level dynamics.
+
+---
+
+### **π0.5 (pi0.5)**
+*I, P, L → A (Image, Proprioception, Language → Actions)*
+
+* **Website**: [physicalintelligence.company/blog/pi05](https://www.physicalintelligence.company/blog/pi05)
+* **Notes**:
+    *   An evolution of π0 focused on open-world generalization.
+    *   Capable of controlling mobile manipulators to perform tasks in entirely unseen environments like kitchens and bedrooms.
+
+---
+
 ### **Large Behavior Model (LBM)**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
