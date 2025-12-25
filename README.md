@@ -168,18 +168,6 @@ Curated database of foundation models for robotics
 
 ---
 
-### **π0-FAST (pi0-FAST)**
-*I, P, L → A (Image, Proprioception, Language → Actions)*
-
-* **Website**: [physicalintelligence.company/research/fast](https://www.physicalintelligence.company/research/fast)
-* **Paper**: [FAST: Efficient Action Tokenization for Vision-Language-Action Models](https://arxiv.org/abs/2501.09747)
-* **Code**: [openpi on GitHub](https://github.com/Physical-Intelligence/openpi)
-* **Notes**:
-    *   An autoregressive variant of π0 using the FAST action tokenizer.
-    *   Training is up to 5x faster than diffusion-based counterparts.
-    *   Released open-source alongside π0.
-
----
 
 ### **SmolVLA**
 *I, V, L → A (Image, Video, Language → Actions)*
