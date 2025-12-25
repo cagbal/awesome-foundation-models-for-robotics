@@ -128,6 +128,18 @@ Curated database of foundation models for robotics
 
 ---
 
+### **Agentic Robot**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [agentic-robot.github.io](https://agentic-robot.github.io/)
+* **Paper**: [Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models...](https://arxiv.org/abs/2505.23450)
+* **Notes**:
+    *   A brain-inspired framework that uses a Large Reasoning Model (LRM) to decompose tasks into subgoals (Standardized Action Procedure).
+    *   Features a VLA executor for low-level control and a temporal verifier for error recovery.
+    *   Achieves state-of-the-art performance on the LIBERO benchmark.
+
+---
+
 ### **OpenVLA**
 *I, L → A (Image, Language → Actions)*
 
@@ -153,6 +165,31 @@ Curated database of foundation models for robotics
     * Showcased in incredible bimanual and mobile robot demonstrations.
     * Architecture consists of a pretrained Vision-Language Model (VLM) combined with an action expert.
     * The pretrained VLM used is Paligemma.
+
+---
+
+### **π0-FAST (pi0-FAST)**
+*I, P, L → A (Image, Proprioception, Language → Actions)*
+
+* **Website**: [physicalintelligence.company/research/fast](https://www.physicalintelligence.company/research/fast)
+* **Paper**: [FAST: Efficient Action Tokenization for Vision-Language-Action Models](https://arxiv.org/abs/2501.09747)
+* **Code**: [openpi on GitHub](https://github.com/Physical-Intelligence/openpi)
+* **Notes**:
+    *   An autoregressive variant of π0 using the FAST action tokenizer.
+    *   Training is up to 5x faster than diffusion-based counterparts.
+    *   Released open-source alongside π0.
+
+---
+
+### **SmolVLA**
+*I, V, L → A (Image, Video, Language → Actions)*
+
+* **Website**: [smolvla.net](https://smolvla.net/index_en.html)
+* **Blog**: [huggingface.co/blog/smolvla](https://huggingface.co/blog/smolvla)
+* **Notes**:
+    *   A compact (~450M parameter) Vision-Language-Action model designed for efficiency.
+    *   Optimized for running on consumer-grade GPUs and edge devices.
+    *   Trained on the LeRobot community datasets.
 
 ---
 
