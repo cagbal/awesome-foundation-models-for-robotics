@@ -60,6 +60,7 @@ Curated database of foundation models for robotics
 
 * **Website**: [agilityrobotics.com/content/training-a-whole-body-control-foundation-model](https://www.agilityrobotics.com/content/training-a-whole-body-control-foundation-model)
 * **Notes**:
+    *   Released August 2025.
     *   A whole-body control foundation model trained purely in simulation (Isaac Sim).
     *   Uses a small LSTM (<1M params) to handle balance, locomotion, and disturbance recovery.
     *   Functions as a "motor cortex," taking end-effector objectives and handling the low-level dynamics.
@@ -233,6 +234,18 @@ Curated database of foundation models for robotics
 
 ---
 
+### **Feel the Force (FTF)**
+*I, Tactile → A (Image, Tactile → Actions)*
+
+* **Website**: [feel-the-force-ftf.github.io](https://feel-the-force-ftf.github.io)
+* **Paper**: [Feel the Force: Contact-Driven Learning from Humans](https://arxiv.org/abs/2506.01944)
+* **Notes**:
+    *   A robot learning system that models human tactile behavior to learn force-sensitive manipulation.
+    *   Uses a tactile glove to collect human demonstrations with precise contact forces.
+    *   Achieves robust force-aware control by continuously predicting the forces needed for manipulation.
+
+---
+
 ### **Nvidia Cosmos**
 *Video, Text, Control → Video, Text (Reasoning)*
 
@@ -290,6 +303,14 @@ Curated database of foundation models for robotics
 * **Notes**:
     * Focuses on RGB-D based, viewpoint-invariant learning for imitation.
     * Provides a well-presented analysis of the limitations of current methods.
+
+---
+
+### **Towards Safe Robot Foundation Models**
+* **Paper**: [Towards Safe Robot Foundation Models](https://arxiv.org/abs/2503.07404)
+* **Notes**:
+    *   Introduces a safety layer to constrain the action space of any generalist policy.
+    *   Ensures safe state transitions without requiring specific safety fine-tuning.
 
 ***
 
