@@ -19,6 +19,18 @@ Curated database of foundation models for robotics
 
 ---
 
+### **ManualVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [ManualVLA: A Unified VLA Model for Chain-of-Thought Manual Generation and Robotic Manipulation](https://arxiv.org/abs/2512.02013)
+* **Notes**:
+    *   Unified VLA framework with Mixture-of-Transformers (MoT).
+    *   Generates intermediate "manuals" (images, position prompts, textual instructions) via a planning expert.
+    *   Uses a Manual Chain-of-Thought (ManualCoT) reasoning process.
+    *   Achieves 32% higher success rate on long-horizon tasks like LEGO assembly.
+
+---
+
 ### **Gemini Robotics 1.5 & ER 1.5**
 *I, V, L → A, R (Image, Video, Language → Actions, Reasoning)*
 
@@ -28,6 +40,43 @@ Curated database of foundation models for robotics
     *   A dual-model system: VLA for low-level control and Embodied Reasoning (ER) for high-level planning.
     *   Interleaves actions with a natural language "thinking" process to decompose complex tasks.
     *   Demonstrates motion transfer, allowing policies to adapt across different robot embodiments (e.g., Aloha to Apollo).
+
+---
+
+### **NavFoM**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [pku-epic.github.io/NavFoM-Web](https://pku-epic.github.io/NavFoM-Web/)
+* **Paper**: [Embodied Navigation Foundation Model](https://arxiv.org/abs/2509.12129)
+* **Notes**:
+    *   Cross-embodiment and cross-task navigation foundation model.
+    *   Trained on 8 million navigation samples (quadrupeds, drones, wheeled robots, vehicles).
+    *   Unified architecture handling diverse camera setups and temporal horizons.
+
+---
+
+### **MLA**
+*I, P, T, L → A (Image, Proprioception, Tactile, Language → Actions)*
+
+* **Website**: [sites.google.com/view/open-mla](https://sites.google.com/view/open-mla)
+* **Paper**: [MLA: A Multisensory Language-Action Model for Multimodal Understanding and Forecasting in Robotic Manipulation](https://arxiv.org/abs/2509.26642)
+* **Notes**:
+    *   Integrates 2D visual, 3D geometric, and tactile cues.
+    *   Repurposes the LLM itself as a perception module (encoder-free alignment).
+    *   Predicts future multisensory objectives to facilitate physical world modeling.
+
+---
+
+### **Embodied-R1**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [embodied-r1.github.io](https://embodied-r1.github.io/)
+* **Paper**: [Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation](https://arxiv.org/abs/2508.13998)
+* **Code**: [pickxiguapi/Embodied-R1](https://github.com/pickxiguapi/Embodied-R1)
+* **Notes**:
+    *   3B Vision-Language Model designed for embodied reasoning and "pointing".
+    *   Uses "pointing" as a unified intermediate representation.
+    *   Trained with Reinforced Fine-tuning (RFT).
 
 ---
 
@@ -102,6 +151,19 @@ Curated database of foundation models for robotics
 
 ---
 
+### **UniAct**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [2toinf.github.io/UniAct](https://2toinf.github.io/UniAct/)
+* **Paper**: [Universal Actions for Enhanced Embodied Foundation Models](https://arxiv.org/abs/2501.10105)
+* **Code**: [2toinf/UniAct](https://github.com/2toinf/UniAct)
+* **Notes**:
+    *   Operates in a Universal Action Space to handle diverse robot embodiments.
+    *   Learns universal actions capturing generic atomic behaviors.
+    *   0.5B model outperforms significantly larger models.
+
+---
+
 ### **Waymo Motion FM**
 *S, Map → Trajectory*
 
@@ -112,6 +174,40 @@ Curated database of foundation models for robotics
     *   Trained on a massive dataset of 500,000 hours of driving data.
     *   Uses an encoder-decoder autoregressive transformer architecture.
     *   Shows that increasing compute and data predictably improves both open-loop and closed-loop performance.
+
+---
+
+### **Fast-in-Slow (FiS)**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Fast-in-Slow: A Dual-System Foundation Model Unifying Fast Manipulation within Slow Reasoning](https://arxiv.org/abs/2506.01953)
+* **Notes**:
+    *   Dual-system VLA embedding a fast execution module (System 1) within a slow reasoning VLM (System 2).
+    *   System 1 shares parameters with System 2 but operates at higher frequency.
+    *   Addresses the trade-off between reasoning capability and execution speed.
+
+---
+
+### **Lift3D Policy**
+*I, P → A (Image, Proprioception → Actions)*
+
+* **Paper**: [Lift3D Policy: Lifting 2D Foundation Models for Robust 3D Robotic Manipulation](https://openaccess.thecvf.com/content/CVPR2025/papers/Jia_Lift3D_Policy_Lifting_2D_Foundation_Models_for_Robust_3D_Robotic_CVPR_2025_paper.pdf)
+* **Code**: [PKU-HMI-Lab/LIFT3D](https://github.com/PKU-HMI-Lab/LIFT3D)
+* **Notes**:
+    *   Lifts 2D foundation models to construct robust 3D manipulation policies.
+    *   Uses a task-aware masked autoencoder to enhance implicit 3D representations.
+    *   Establishes positional mapping between 3D points and 2D model embeddings.
+
+---
+
+### **RobotxR1**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [RobotxR1: Enabling Embodied Robotic Intelligence on Large Language Models through Closed-Loop Reinforcement Learning](https://arxiv.org/abs/2505.03238)
+* **Notes**:
+    *   Extends R1-Zero approach to robotics via closed-loop Reinforcement Learning.
+    *   Enables small-scale LLMs (e.g., Qwen2.5-3B) to achieve effective reasoning and control.
+    *   Demonstrated on autonomous driving tasks.
 
 ---
 
@@ -191,6 +287,18 @@ Curated database of foundation models for robotics
     * Combines a Vision-Language Model (VLM) with a Diffusion Transformer (DiT).
     * Features a very nice codebase that is compatible with `lerobot` with minor edits.
     * Includes utilities for inference servers and clients, making fine-tuning straightforward.
+
+---
+
+### **ELLMER**
+*I, L, Force → A (Image, Language, Force → Actions)*
+
+* **Paper**: [Embodied large language models enable robots to complete complex tasks in unpredictable environments](https://www.nature.com/articles/s42256-025-01000-0)
+* **Code**: [ruaridhmon/ELLMER](https://github.com/ruaridhmon/ELLMER)
+* **Notes**:
+    *   Embodied Large-Language-Model-Enabled Robot framework.
+    *   Uses GPT-4 and Retrieval-Augmented Generation (RAG).
+    *   Incorporates real-time force and visual feedback for long-horizon tasks.
 
 ---
 
