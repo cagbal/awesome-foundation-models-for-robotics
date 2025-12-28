@@ -75,8 +75,9 @@ Curated database of foundation models for robotics
 * **Code**: [pickxiguapi/Embodied-R1](https://github.com/pickxiguapi/Embodied-R1)
 * **Notes**:
     *   3B Vision-Language Model designed for embodied reasoning and "pointing".
-    *   Uses "pointing" as a unified intermediate representation.
-    *   Trained with Reinforced Fine-tuning (RFT).
+    *   Uses "pointing" as a unified intermediate representation (similar concept to Molmo).
+    *   Trained with Reinforced Fine-tuning (RFT) with multi-task reward design.
+    *   Demonstrates robust zero-shot generalization (e.g., 56.2% success in SIMPLEREnv).
 
 ---
 
@@ -158,9 +159,10 @@ Curated database of foundation models for robotics
 * **Paper**: [Universal Actions for Enhanced Embodied Foundation Models](https://arxiv.org/abs/2501.10105)
 * **Code**: [2toinf/UniAct](https://github.com/2toinf/UniAct)
 * **Notes**:
-    *   Operates in a Universal Action Space to handle diverse robot embodiments.
-    *   Learns universal actions capturing generic atomic behaviors.
-    *   0.5B model outperforms significantly larger models.
+    *   Operates in a Universal Action Space constructed as a vector-quantized (VQ) codebook.
+    *   Learns universal actions capturing generic atomic behaviors shared across robots.
+    *   Uses streamlined heterogeneous decoders to translate universal actions into embodiment-specific commands.
+    *   0.5B model outperforms significantly larger models (14x larger).
 
 ---
 
@@ -184,6 +186,7 @@ Curated database of foundation models for robotics
 * **Notes**:
     *   Dual-system VLA embedding a fast execution module (System 1) within a slow reasoning VLM (System 2).
     *   System 1 shares parameters with System 2 but operates at higher frequency.
+    *   Uses a dual-aware co-training strategy to jointly fine-tune both systems.
     *   Addresses the trade-off between reasoning capability and execution speed.
 
 ---
@@ -297,8 +300,9 @@ Curated database of foundation models for robotics
 * **Code**: [ruaridhmon/ELLMER](https://github.com/ruaridhmon/ELLMER)
 * **Notes**:
     *   Embodied Large-Language-Model-Enabled Robot framework.
-    *   Uses GPT-4 and Retrieval-Augmented Generation (RAG).
-    *   Incorporates real-time force and visual feedback for long-horizon tasks.
+    *   Uses GPT-4 and Retrieval-Augmented Generation (RAG) to extract relevant code examples from a knowledge base.
+    *   Generates action plans that incorporate real-time force and visual feedback to adapt to unpredictable environments.
+    *   Enables robots to complete long-horizon tasks like coffee making.
 
 ---
 
