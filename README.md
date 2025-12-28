@@ -310,7 +310,9 @@ Curated database of foundation models for robotics
 * **Paper**: [Towards Safe Robot Foundation Models](https://arxiv.org/abs/2503.07404)
 * **Notes**:
     *   Introduces a safety layer to constrain the action space of any generalist policy.
-    *   Ensures safe state transitions without requiring specific safety fine-tuning.
+    *   Uses **ATACOM**, a safe reinforcement learning algorithm, to create a safe action space and ensure safe state transitions.
+    *   Facilitates deployment in safety-critical scenarios without requiring specific safety fine-tuning.
+    *   Demonstrated effectiveness in avoiding collisions in dynamic environments (e.g., air hockey).
 
 ***
 
