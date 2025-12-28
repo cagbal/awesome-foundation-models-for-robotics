@@ -31,6 +31,29 @@ Curated database of foundation models for robotics
 
 ---
 
+### **GR-RL**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [seed.bytedance.com/gr_rl](https://seed.bytedance.com/gr_rl)
+* **Paper**: [GR-RL: Going Dexterous and Precise for Long-Horizon Robotic Manipulation](https://arxiv.org/abs/2512.01801)
+* **Notes**:
+    *   Turns a generalist VLA policy into a specialist for long-horizon dexterous manipulation.
+    *   Uses a multi-stage training pipeline (filtering, augmentation, online RL).
+    *   Can autonomously lace up a shoe (83.3% success rate), requiring millimeter-level precision.
+
+---
+
+### **ManiAgent**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [ManiAgent: An Agentic Framework for General Robotic Manipulation](https://arxiv.org/abs/2510.11660)
+* **Notes**:
+    *   Agentic architecture for general manipulation tasks.
+    *   Uses multi-agent communication for perception, sub-task decomposition, and action generation.
+    *   Achieves 95.8% success rate on real-world pick-and-place tasks.
+
+---
+
 ### **Gemini Robotics 1.5 & ER 1.5**
 *I, V, L → A, R (Image, Video, Language → Actions, Reasoning)*
 
@@ -64,6 +87,29 @@ Curated database of foundation models for robotics
     *   Integrates 2D visual, 3D geometric, and tactile cues.
     *   Repurposes the LLM itself as a perception module (encoder-free alignment).
     *   Predicts future multisensory objectives to facilitate physical world modeling.
+
+---
+
+### **Behavior Foundation Model (BFM)**
+*P, G → A (Proprioception, Goal → Actions)*
+
+* **Paper**: [Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2509.13780)
+* **Notes**:
+    *   Generative model pretrained on large-scale behavioral datasets for humanoid robots.
+    *   Captures broad, reusable behavioral knowledge.
+    *   Integrates masked online distillation with CVAE.
+    *   Generalizes robustly across diverse whole-body control tasks.
+
+---
+
+### **DYNA-1**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [dyna.co](https://www.dyna.co/)
+* **Notes**:
+    *   Production-ready foundation model built for autonomy at scale.
+    *   Achieved >99% success rate in 24-hour non-stop operation.
+    *   Deployed in commercial settings like hotels and gyms.
 
 ---
 
@@ -294,6 +340,19 @@ Curated database of foundation models for robotics
 
 ---
 
+### **Magma**
+*I, V, L → A (Image, Video, Language → Actions)*
+
+* **Website**: [microsoft.github.io/Magma](https://microsoft.github.io/Magma/)
+* **Paper**: [Magma: A Foundation Model for Multimodal AI Agents](https://arxiv.org/abs/2502.13130)
+* **Code**: [microsoft/Magma](https://github.com/microsoft/Magma)
+* **Notes**:
+    *   Multimodal foundation model for agentic tasks in digital and physical worlds.
+    *   Uses Set-of-Mark (SoM) for action grounding and Trace-of-Mark (ToM) for action planning.
+    *   State-of-the-art on UI navigation and robotic manipulation.
+
+---
+
 ### **ELLMER**
 *I, L, Force → A (Image, Language, Force → Actions)*
 
@@ -415,6 +474,15 @@ Curated database of foundation models for robotics
 * **Notes**:
     * Focuses on RGB-D based, viewpoint-invariant learning for imitation.
     * Provides a well-presented analysis of the limitations of current methods.
+
+---
+
+### **Risk-Guided Diffusion**
+* **Paper**: [Risk-Guided Diffusion: Toward Deploying Robot Foundation Models In Space](https://arxiv.org/abs/2506.17601)
+* **Notes**:
+    *   Proposes a risk-guided diffusion framework fusing a fast "System-1" with a slow, physics-based "System-2".
+    *   Addresses safety for deploying foundation models in space exploration.
+    *   Reduces failure rates by up to 4x while matching goal-reaching performance.
 
 ---
 
