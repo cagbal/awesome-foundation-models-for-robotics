@@ -31,6 +31,19 @@ Curated database of foundation models for robotics
 
 ---
 
+### **EveryDayVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [everydayvla.github.io](https://everydayvla.github.io/)
+* **Paper**: [EveryDayVLA: A Vision-Language-Action Model for Affordable Robotic Manipulation](https://arxiv.org/abs/2511.05397)
+* **Notes**:
+    *   Aims to democratize robotic manipulation with affordable hardware ($300 6-DOF arm).
+    *   Unified model jointly outputting discrete and continuous actions.
+    *   Features an adaptive-horizon ensemble to monitor motion uncertainty and trigger on-the-fly re-planning.
+    *   Matches SOTA on LIBERO benchmark.
+
+---
+
 ### **Gemini Robotics 1.5 & ER 1.5**
 *I, V, L → A, R (Image, Video, Language → Actions, Reasoning)*
 
@@ -64,6 +77,20 @@ Curated database of foundation models for robotics
     *   Integrates 2D visual, 3D geometric, and tactile cues.
     *   Repurposes the LLM itself as a perception module (encoder-free alignment).
     *   Predicts future multisensory objectives to facilitate physical world modeling.
+
+---
+
+### **RDT-2**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [rdt-robotics.github.io/rdt2/](https://rdt-robotics.github.io/rdt2/)
+* **Code**: [thu-ml/RDT2](https://github.com/thu-ml/RDT2)
+* **Weights**: [Hugging Face](https://huggingface.co/collections/robotics-diffusion-transformer/rdt-2)
+* **Notes**:
+    *   The sequel to RDT-1B, designed for zero-shot cross-embodiment generalization.
+    *   **RDT2-VQ**: A 7B VLA adapted from Qwen2.5-VL-7B, using Residual VQ for action tokenization.
+    *   **RDT2-FM**: Uses a Flow-Matching action expert for lower latency control.
+    *   Trained on 10,000+ hours of human manipulation videos across 100+ scenes (UMI data).
 
 ---
 
@@ -415,6 +442,16 @@ Curated database of foundation models for robotics
 * **Notes**:
     * Focuses on RGB-D based, viewpoint-invariant learning for imitation.
     * Provides a well-presented analysis of the limitations of current methods.
+
+---
+
+### **SafeDec: Constrained Decoding for Robotics Foundation Models**
+* **Website**: [constrained-robot-fms.github.io](https://constrained-robot-fms.github.io)
+* **Paper**: [Constrained Decoding for Robotics Foundation Models](https://arxiv.org/abs/2509.01728)
+* **Notes**:
+    *   A constrained decoding framework for autoregressive robot foundation models.
+    *   Enforces task-specific safety rules (Signal Temporal Logic) at inference time without retraining.
+    *   Compatible with state-of-the-art policies like SPOC and PoliFormer.
 
 ---
 
