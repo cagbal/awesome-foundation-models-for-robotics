@@ -39,6 +39,7 @@ Curated database of foundation models for robotics
 * **Notes**:
     *   Turns a generalist VLA policy into a specialist for long-horizon dexterous manipulation.
     *   Uses a multi-stage training pipeline (filtering, augmentation, online RL).
+    *   The online RL component learns a latent space noise predictor to align the policy with deployment behaviors.
     *   Can autonomously lace up a shoe (83.3% success rate), requiring millimeter-level precision.
 
 ---
