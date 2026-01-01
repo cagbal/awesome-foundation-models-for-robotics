@@ -19,6 +19,18 @@ Curated database of foundation models for robotics
 
 ---
 
+### **Dream-VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models...](https://arxiv.org/abs/2512.22615)
+* **Notes**:
+    *   Diffusion LLM-based VLA (dVLA) developed through continuous pre-training on open robotic datasets.
+    *   Natively bidirectional diffusion backbone is inherently suited for action chunking and parallel generation.
+    *   Demonstrates superior performance on VLA tasks compared to autoregressive baselines.
+
+
+---
+
 ### **FASTerVLA**
 *I, L → A (Image, Language → Actions)*
 
@@ -177,6 +189,18 @@ Curated database of foundation models for robotics
     *   Integrates 2D visual, 3D geometric, and tactile cues.
     *   Repurposes the LLM itself as a perception module (encoder-free alignment).
     *   Predicts future multisensory objectives to facilitate physical world modeling.
+
+---
+
+### **Discrete Diffusion VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding...](https://arxiv.org/abs/2508.20072)
+* **Code**: [Liang-ZX/DiscreteDiffusionVLA](https://github.com/Liang-ZX/DiscreteDiffusionVLA)
+* **Notes**:
+    *   Discretizes continuous action spaces and uses discrete diffusion for action decoding.
+    *   Unified transformer framework compatible with standard VLM token interfaces.
+    *   Achieves 96.3% success rate on LIBERO and outperforms continuous diffusion baselines.
 
 ---
 
@@ -474,6 +498,19 @@ Curated database of foundation models for robotics
     * Combines a Vision-Language Model (VLM) with a Diffusion Transformer (DiT).
     * Features a very nice codebase that is compatible with `lerobot` with minor edits.
     * Includes utilities for inference servers and clients, making fine-tuning straightforward.
+
+---
+
+### **HybridVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [hybrid-vla.github.io](https://hybrid-vla.github.io/)
+* **Paper**: [HybridVLA: Collaborative Diffusion and Autoregression...](https://arxiv.org/abs/2503.10631)
+* **Code**: [PKU-HMI-Lab/Hybrid-VLA](https://github.com/PKU-HMI-Lab/Hybrid-VLA)
+* **Notes**:
+    *   Unified framework integrating autoregressive reasoning and diffusion-based action prediction.
+    *   Uses a collaborative action ensemble mechanism to fuse predictions from both paradigms.
+    *   Outperforms previous SOTA VLA methods by 14% in simulation and 19% in real-world tasks.
 
 ---
 
