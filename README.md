@@ -28,6 +28,18 @@ Curated database of foundation models for robotics
     *   Natively bidirectional diffusion backbone is inherently suited for action chunking and parallel generation.
     *   Demonstrates superior performance on VLA tasks compared to autoregressive baselines.
 
+
+---
+
+### **FASTerVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [FASTer: Toward Efficient Autoregressive Vision Language Action Modeling...](https://arxiv.org/abs/2512.04952)
+* **Notes**:
+    *   Builds on the FAST tokenizer with block-wise autoregressive decoding and a lightweight action expert.
+    *   Uses a learnable action tokenizer (FASTerVQ) that encodes action chunks as single-channel images.
+    *   Achieves faster inference and higher task performance compared to diffusion VLAs.
+
 ---
 
 ### **ManualVLA**
@@ -42,6 +54,65 @@ Curated database of foundation models for robotics
 
 ---
 
+### **GR-RL**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [seed.bytedance.com/gr_rl](https://seed.bytedance.com/gr_rl)
+* **Paper**: [GR-RL: Going Dexterous and Precise for Long-Horizon Robotic Manipulation](https://arxiv.org/abs/2512.01801)
+* **Notes**:
+    *   Turns a generalist VLA policy into a specialist for long-horizon dexterous manipulation.
+    *   Uses a multi-stage training pipeline (filtering, augmentation, online RL).
+    *   The online RL component learns a latent space noise predictor to align the policy with deployment behaviors.
+    *   Can autonomously lace up a shoe (83.3% success rate), requiring millimeter-level precision.
+
+---
+
+### **ManiAgent**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [ManiAgent: An Agentic Framework for General Robotic Manipulation](https://arxiv.org/abs/2510.11660)
+* **Notes**:
+    *   Agentic architecture for general manipulation tasks.
+    *   Uses multi-agent communication for perception, sub-task decomposition, and action generation.
+    *   Achieves 95.8% success rate on real-world pick-and-place tasks.
+
+---
+
+### **EveryDayVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [everydayvla.github.io](https://everydayvla.github.io/)
+* **Paper**: [EveryDayVLA: A Vision-Language-Action Model for Affordable Robotic Manipulation](https://arxiv.org/abs/2511.05397)
+* **Notes**:
+    *   Aims to democratize robotic manipulation with affordable hardware ($300 6-DOF arm).
+    *   Unified model jointly outputting discrete and continuous actions.
+    *   Features an adaptive-horizon ensemble to monitor motion uncertainty and trigger on-the-fly re-planning.
+    *   Matches SOTA on LIBERO benchmark.
+
+---
+
+### **XR-1**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations](https://arxiv.org/abs/2511.02776)
+* **Notes**:
+    *   Introduces Unified Vision-Motion Codes (UVMC), a discrete latent representation for visual dynamics and robotic motion.
+    *   Uses a dual-branch VQ-VAE to jointly encode vision and motion.
+    *   Demonstrates strong cross-task and cross-embodiment generalization in real-world experiments.
+
+---
+
+### **Unified Diffusion VLA**
+*I, L → A, I' (Image, Language → Actions, Future Images)*
+
+* **Paper**: [Unified Diffusion VLA: Vision-Language-Action Model via Joint Discrete Denoising Diffusion Process](https://arxiv.org/abs/2511.01718)
+* **Notes**:
+    *   Jointly understands, generates future images, and acts using a synchronous denoising process.
+    *   Integrates multiple modalities into a single denoising trajectory (JD3P).
+    *   Achieves 4x faster inference than autoregressive methods on benchmarks like CALVIN and LIBERO.
+
+---
+
 ### **Gemini Robotics 1.5 & ER 1.5**
 *I, V, L → A, R (Image, Video, Language → Actions, Reasoning)*
 
@@ -51,6 +122,49 @@ Curated database of foundation models for robotics
     *   A dual-model system: VLA for low-level control and Embodied Reasoning (ER) for high-level planning.
     *   Interleaves actions with a natural language "thinking" process to decompose complex tasks.
     *   Demonstrates motion transfer, allowing policies to adapt across different robot embodiments (e.g., Aloha to Apollo).
+
+---
+
+### **X-VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [X-VLA: Soft-Prompted Transformer as Scalable Cross-Embodiment Vision-Language-Action Model](https://arxiv.org/abs/2510.10274)
+* **Notes**:
+    *   Uses "soft prompts" (learnable embeddings) to adapt to different robot embodiments and datasets.
+    *   Treats each hardware setup as a distinct "task" guided by these prompts.
+    *   Built on a flow-matching-based VLA architecture.
+
+---
+
+### **IntentionVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [IntentionVLA: Generalizable and Efficient Embodied Intention Reasoning for Human-Robot Interaction](https://arxiv.org/abs/2510.07778)
+* **Notes**:
+    *   Focuses on implicit human intention reasoning for complex interactions.
+    *   Uses a curriculum training paradigm combining intention inference, spatial grounding, and embodied reasoning.
+    *   Significantly outperforms baselines on out-of-distribution intention tasks.
+
+---
+
+### **CLAP**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [CLAP: A Closed-Loop Diffusion Transformer Action Foundation Model for Robotic Manipulation](https://ieeexplore.ieee.org/document/11246478)
+* **Notes**:
+    *   A closed-loop diffusion transformer model presented at IROS 2025 (October).
+    *   Designed for robust robotic manipulation by continuously refining actions based on feedback.
+
+---
+
+### **Behavior Foundation Model (BFM)**
+*O, P → A (Objectives, Proprioception → Actions)*
+
+* **Paper**: [Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2509.13780)
+* **Notes**:
+    *   Generative model pretrained on large-scale behavioral datasets for humanoid robots.
+    *   Models the distribution of full-body behavioral trajectories conditioned on goals and proprioception.
+    *   Enables flexible operation across diverse control modes (velocity, motion tracking, teleop).
 
 ---
 
@@ -87,6 +201,43 @@ Curated database of foundation models for robotics
     *   Discretizes continuous action spaces and uses discrete diffusion for action decoding.
     *   Unified transformer framework compatible with standard VLM token interfaces.
     *   Achieves 96.3% success rate on LIBERO and outperforms continuous diffusion baselines.
+
+---
+
+### **Behavior Foundation Model (BFM)**
+*P, G → A (Proprioception, Goal → Actions)*
+
+* **Paper**: [Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2509.13780)
+* **Notes**:
+    *   Generative model pretrained on large-scale behavioral datasets for humanoid robots.
+    *   Captures broad, reusable behavioral knowledge.
+    *   Integrates masked online distillation with CVAE.
+    *   Generalizes robustly across diverse whole-body control tasks.
+
+---
+
+### **DYNA-1**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [dyna.co](https://www.dyna.co/)
+* **Notes**:
+    *   Production-ready foundation model built for autonomy at scale.
+    *   Achieved >99% success rate in 24-hour non-stop operation.
+    *   Deployed in commercial settings like hotels and gyms.
+
+---
+
+### **RDT-2**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [rdt-robotics.github.io/rdt2/](https://rdt-robotics.github.io/rdt2/)
+* **Code**: [thu-ml/RDT2](https://github.com/thu-ml/RDT2)
+* **Weights**: [Hugging Face](https://huggingface.co/collections/robotics-diffusion-transformer/rdt-2)
+* **Notes**:
+    *   The sequel to RDT-1B, designed for zero-shot cross-embodiment generalization.
+    *   **RDT2-VQ**: A 7B VLA adapted from Qwen2.5-VL-7B, using Residual VQ for action tokenization.
+    *   **RDT2-FM**: Uses a Flow-Matching action expert for lower latency control.
+    *   Trained on 10,000+ hours of human manipulation videos across 100+ scenes (UMI data).
 
 ---
 
@@ -140,6 +291,17 @@ Curated database of foundation models for robotics
 
 ---
 
+### **InstructVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [InstructVLA: Vision-Language-Action Instruction Tuning from Understanding to Manipulation](https://arxiv.org/abs/2507.17520)
+* **Notes**:
+    *   Two-stage pipeline: pretrains an action expert/latent interface, then instruction-tunes a VLM.
+    *   Uses an MoE-adapted VLM to switch between textual reasoning and latent action generation.
+    *   Focuses on preserving multimodal reasoning while adding precise manipulation capabilities.
+
+---
+
 ### **π0.5 (pi0.5)**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
@@ -160,6 +322,28 @@ Curated database of foundation models for robotics
     * Uses a Diffusion Transformer (DiT) with Image and Text Encoders.
     * Demonstrated for complex bimanual manipulation tasks.
     * Has been implemented on a Boston Dynamics humanoid robot.
+
+---
+
+### **Unified VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Unified Vision-Language-Action Model](https://arxiv.org/abs/2506.19850)
+* **Notes**:
+    *   Autoregressively models vision, language, and actions as a single interleaved stream of discrete tokens.
+    *   Incorporates world modeling during post-training to capture causal dynamics.
+    *   Achieves strong results on CALVIN and LIBERO benchmarks.
+
+---
+
+### **UniVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](https://arxiv.org/abs/2505.06111)
+* **Notes**:
+    *   Learns task-centric action representations from videos using a latent action model (within DINO feature space).
+    *   Can leverage data from arbitrary embodiments and perspectives without explicit action labels.
+    *   Allows deploying generalist policies to various robots via efficient latent action decoding.
 
 ---
 
@@ -330,6 +514,19 @@ Curated database of foundation models for robotics
 
 ---
 
+### **Magma**
+*I, V, L → A (Image, Video, Language → Actions)*
+
+* **Website**: [microsoft.github.io/Magma](https://microsoft.github.io/Magma/)
+* **Paper**: [Magma: A Foundation Model for Multimodal AI Agents](https://arxiv.org/abs/2502.13130)
+* **Code**: [microsoft/Magma](https://github.com/microsoft/Magma)
+* **Notes**:
+    *   Multimodal foundation model for agentic tasks in digital and physical worlds.
+    *   Uses Set-of-Mark (SoM) for action grounding and Trace-of-Mark (ToM) for action planning.
+    *   State-of-the-art on UI navigation and robotic manipulation.
+
+---
+
 ### **ELLMER**
 *I, L, Force → A (Image, Language, Force → Actions)*
 
@@ -451,6 +648,25 @@ Curated database of foundation models for robotics
 * **Notes**:
     * Focuses on RGB-D based, viewpoint-invariant learning for imitation.
     * Provides a well-presented analysis of the limitations of current methods.
+
+---
+
+### **Risk-Guided Diffusion**
+* **Paper**: [Risk-Guided Diffusion: Toward Deploying Robot Foundation Models In Space](https://arxiv.org/abs/2506.17601)
+* **Notes**:
+    *   Proposes a risk-guided diffusion framework fusing a fast "System-1" with a slow, physics-based "System-2".
+    *   Addresses safety for deploying foundation models in space exploration.
+    *   Reduces failure rates by up to 4x while matching goal-reaching performance.
+
+---
+
+### **SafeDec: Constrained Decoding for Robotics Foundation Models**
+* **Website**: [constrained-robot-fms.github.io](https://constrained-robot-fms.github.io)
+* **Paper**: [Constrained Decoding for Robotics Foundation Models](https://arxiv.org/abs/2509.01728)
+* **Notes**:
+    *   A constrained decoding framework for autoregressive robot foundation models.
+    *   Enforces task-specific safety rules (Signal Temporal Logic) at inference time without retraining.
+    *   Compatible with state-of-the-art policies like SPOC and PoliFormer.
 
 ---
 
