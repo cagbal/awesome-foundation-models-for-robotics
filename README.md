@@ -78,17 +78,6 @@ Curated database of foundation models for robotics
 
 ---
 
-### **Behavior Foundation Model (BFM)**
-*I, P → A (Image, Proprioception → Actions)*
-
-* **Paper**: [Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2509.13780)
-* **Notes**:
-    *   Generative model pretrained on large-scale behavioral datasets for humanoid robots.
-    *   Integrates a masked online distillation framework with a Conditional Variational Autoencoder (CVAE).
-    *   Generalizes robustly across diverse Whole-Body Control (WBC) tasks and rapidly adapts to new behaviors.
-
----
-
 ### **Discrete Diffusion VLA**
 *I, L → A (Image, Language → Actions)*
 
