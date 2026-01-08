@@ -9,6 +9,18 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **Nvidia Isaac GR00T N1.6**
+*I, P, L → A (Image, Proprioception, Language → Actions)*
+
+* **Website**: [developer.nvidia.com/isaac/gr00t](https://developer.nvidia.com/isaac/gr00t)
+* **Notes**:
+    *   Released Jan 2026.
+    *   Reasoning VLA model for generalist humanoid robots.
+    *   Integrates `NVIDIA Cosmos Reason` for high-level reasoning and contextual understanding.
+    *   Unlocks full-body control for simultaneous moving and manipulation.
+
+---
+
 ### **π0.6 (pi0.6)**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
@@ -192,6 +204,52 @@ Curated database of foundation models for robotics
 
 ---
 
+### **MotoVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [motovla.github.io](https://motovla.github.io/)
+* **Paper**: [Generalist Robot Manipulation beyond Action Labeled Data](https://arxiv.org/abs/2509.19958)
+* **Notes**:
+    *   Leverages motion data (without explicit action labels) to train generalist policies.
+    *   Introduces a Motion Tokenizer to learn discrete motion representations.
+    *   Enables scaling up training data by utilizing large-scale video datasets.
+
+---
+
+### **FLOWER**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Flow Models](https://arxiv.org/abs/2509.04996)
+* **Notes**:
+    *   Proposes Vision-Language-Flow (VLF) models to make generalist policies more efficient.
+    *   Achieves 3x faster inference speed compared to diffusion-based VLAs.
+    *   Demonstrates strong performance on CALVIN and real-world tasks.
+
+---
+
+### **ManiFlow**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [maniflow-policy.github.io](https://maniflow-policy.github.io/)
+* **Paper**: [ManiFlow: A General Robot Manipulation Policy via Consistency Flow Training](https://arxiv.org/abs/2509.01819)
+* **Notes**:
+    *   Uses consistency-based flow matching for efficient action generation.
+    *   Trained on large-scale open-source datasets (Open-X).
+    *   Outperforms OpenVLA and other baselines in simulation and real-world experiments.
+
+---
+
+### **3DS-VLA**
+*I, L, D → A (Image, Language, Depth → Actions)*
+
+* **Paper**: [3DS-VLA: A 3D Spatial-Aware Vision Language Action Model for Robust Multi-Task Manipulation](https://proceedings.mlr.press/v305/li25g.html)
+* **Notes**:
+    *   Enhances 2D VLAs with explicit 3D spatial awareness.
+    *   Uses a 2D-to-3D positional alignment mechanism to encode spatial observations.
+    *   Outperforms state-of-the-art 2D and 3D policies on RLBench and real-world tasks.
+
+---
+
 ### **Discrete Diffusion VLA**
 *I, L → A (Image, Language → Actions)*
 
@@ -201,6 +259,30 @@ Curated database of foundation models for robotics
     *   Discretizes continuous action spaces and uses discrete diffusion for action decoding.
     *   Unified transformer framework compatible with standard VLM token interfaces.
     *   Achieves 96.3% success rate on LIBERO and outperforms continuous diffusion baselines.
+
+---
+
+### **Long-VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [long-vla.github.io](https://long-vla.github.io/)
+* **Paper**: [Long-VLA: Unleashing Long-Horizon Capability of Vision Language Action Model for Robot Manipulation](https://arxiv.org/abs/2508.19958)
+* **Notes**:
+    *   Addresses the limitation of current VLAs in long-horizon tasks.
+    *   Incorporates a hierarchical planning mechanism within the VLA framework.
+    *   Significantly improves success rates on multi-stage manipulation tasks.
+
+---
+
+### **RICL**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [ricl-vla.github.io](https://ricl-vla.github.io/)
+* **Paper**: [RICL: Adding In-Context Adaptability to Pre-Trained Vision-Language-Action Models](https://arxiv.org/abs/2508.02062)
+* **Notes**:
+    *   Enables VLA models to adapt to new tasks via in-context learning (ICL).
+    *   Uses a retrieval-based mechanism to fetch relevant demonstrations.
+    *   Avoids the need for expensive fine-tuning for every new task.
 
 ---
 
@@ -336,6 +418,29 @@ Curated database of foundation models for robotics
 
 ---
 
+### **RoboMonkey**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [robomonkey-vla.github.io](https://robomonkey-vla.github.io/)
+* **Paper**: [RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models](https://arxiv.org/abs/2506.17811)
+* **Notes**:
+    *   Focuses on test-time compute scaling for VLAs.
+    *   Uses a learned verifier (value function) to sample and select the best actions during inference.
+    *   Demonstrates that scaling test-time compute can rival training-time scaling.
+
+---
+
+### **ControlVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [ControlVLA: Few-shot Object-centric Adaptation for Pre-trained Vision-Language-Action Models](https://arxiv.org/abs/2506.16211)
+* **Notes**:
+    *   Adapts pre-trained VLAs to new objects and tasks using few-shot learning.
+    *   Employs object-centric representations via a ControlNet-style adapter to preserve pre-trained knowledge.
+    *   Achieves efficient adaptation with minimal data.
+
+---
+
 ### **UniVLA**
 *I, L → A (Image, Language → Actions)*
 
@@ -344,6 +449,43 @@ Curated database of foundation models for robotics
     *   Learns task-centric action representations from videos using a latent action model (within DINO feature space).
     *   Can leverage data from arbitrary embodiments and perspectives without explicit action labels.
     *   Allows deploying generalist policies to various robots via efficient latent action decoding.
+
+---
+
+### **TrackVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [pku-epic.github.io/TrackVLA-web](https://pku-epic.github.io/TrackVLA-web/)
+* **Paper**: [TrackVLA: Embodied Visual Tracking in the Wild](https://arxiv.org/abs/2505.23189)
+* **Notes**:
+    *   Integrates visual tracking capabilities into a VLA architecture.
+    *   Enables robots to track and interact with moving targets in dynamic environments.
+    *   Trained on a diverse dataset of tracking scenarios.
+
+---
+
+### **UniSkill**
+*I, V → A (Image, Video → Actions)*
+
+* **Website**: [kimhanjung.github.io/UniSkill](https://kimhanjung.github.io/UniSkill/)
+* **Paper**: [UniSkill: Imitating Human Videos via Cross-Embodiment Skill Representations](https://arxiv.org/abs/2505.08787)
+* **Notes**:
+    *   Learns skill representations from large-scale human videos.
+    *   Uses Inverse Skill Dynamics (ISD) to extract motion patterns and Forward Skill Dynamics (FSD) for future prediction.
+    *   Transfers these skills to robot embodiments using a cross-embodiment interface.
+    *   Enables learning from observing humans without explicit teleoperation data.
+
+---
+
+### **GraspVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [pku-epic.github.io/GraspVLA-web](https://pku-epic.github.io/GraspVLA-web/)
+* **Paper**: [GraspVLA: a Grasping Foundation Model Pre-trained on Billion-scale Synthetic Action Data](https://arxiv.org/abs/2505.03233)
+* **Notes**:
+    *   A specialist foundation model for grasping.
+    *   Pre-trained on a massive synthetic dataset (billion-scale) of grasping actions.
+    *   Demonstrates zero-shot transfer to real-world objects.
 
 ---
 
@@ -524,6 +666,18 @@ Curated database of foundation models for robotics
     *   Multimodal foundation model for agentic tasks in digital and physical worlds.
     *   Uses Set-of-Mark (SoM) for action grounding and Trace-of-Mark (ToM) for action planning.
     *   State-of-the-art on UI navigation and robotic manipulation.
+
+---
+
+### **DexVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [dex-vla.github.io](https://dex-vla.github.io/)
+* **Paper**: [DexVLA: Vision-Language Model with Plug-In Diffusion Expert for General Robot Control](https://arxiv.org/abs/2502.05855)
+* **Notes**:
+    *   Combines a VLM for high-level reasoning with a diffusion expert for low-level control.
+    *   The diffusion expert is "plug-in", allowing modular upgrades.
+    *   Focused on dexterous manipulation tasks.
 
 ---
 
