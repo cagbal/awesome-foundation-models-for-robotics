@@ -9,6 +9,18 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **Nvidia Isaac GR00T N1.6**
+*I, P, L → A (Image, Proprioception, Language → Actions)*
+
+* **Website**: [developer.nvidia.com/isaac/gr00t](https://developer.nvidia.com/isaac/gr00t)
+* **Notes**:
+    *   Released Jan 2026.
+    *   Reasoning VLA model for generalist humanoid robots.
+    *   Integrates `NVIDIA Cosmos Reason` for high-level reasoning and contextual understanding.
+    *   Unlocks full-body control for simultaneous moving and manipulation.
+
+---
+
 ### **π0.6 (pi0.6)**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
@@ -413,7 +425,7 @@ Curated database of foundation models for robotics
 * **Paper**: [RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models](https://arxiv.org/abs/2506.17811)
 * **Notes**:
     *   Focuses on test-time compute scaling for VLAs.
-    *   Uses a learned verifier to sample and select the best actions during inference.
+    *   Uses a learned verifier (value function) to sample and select the best actions during inference.
     *   Demonstrates that scaling test-time compute can rival training-time scaling.
 
 ---
@@ -424,7 +436,7 @@ Curated database of foundation models for robotics
 * **Paper**: [ControlVLA: Few-shot Object-centric Adaptation for Pre-trained Vision-Language-Action Models](https://arxiv.org/abs/2506.16211)
 * **Notes**:
     *   Adapts pre-trained VLAs to new objects and tasks using few-shot learning.
-    *   Employs object-centric representations to improve generalization.
+    *   Employs object-centric representations via a ControlNet-style adapter to preserve pre-trained knowledge.
     *   Achieves efficient adaptation with minimal data.
 
 ---
@@ -459,6 +471,7 @@ Curated database of foundation models for robotics
 * **Paper**: [UniSkill: Imitating Human Videos via Cross-Embodiment Skill Representations](https://arxiv.org/abs/2505.08787)
 * **Notes**:
     *   Learns skill representations from large-scale human videos.
+    *   Uses Inverse Skill Dynamics (ISD) to extract motion patterns and Forward Skill Dynamics (FSD) for future prediction.
     *   Transfers these skills to robot embodiments using a cross-embodiment interface.
     *   Enables learning from observing humans without explicit teleoperation data.
 
