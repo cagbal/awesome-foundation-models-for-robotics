@@ -28,8 +28,9 @@ Curated database of foundation models for robotics
 * **Paper**: [PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation](https://arxiv.org/abs/2601.03782)
 * **Code**: [huangwl18/PointWorld](https://github.com/huangwl18/PointWorld)
 * **Notes**:
-    *   Large pre-trained 3D world model predicting full-scene 3D point flow.
-    *   Unifies state and action in a shared 3D space as 3D point flows.
+    *   Large pre-trained 3D world model forecasting future states from single RGB-D images.
+    *   Represent actions and state changes as **3D point flows** (per-pixel displacements in 3D space), enabling geometry-aware predictions.
+    *   Unifies state and action in a shared 3D space, facilitating cross-embodiment learning.
     *   Trained on ~2M trajectories and 500 hours of real and simulated data.
     *   Enables diverse zero-shot manipulation skills (pushing, tool use) via MPC.
 
