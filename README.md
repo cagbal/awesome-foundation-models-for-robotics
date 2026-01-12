@@ -21,6 +21,21 @@ Curated database of foundation models for robotics
 
 ---
 
+### **PointWorld**
+*I, D, A → 3D Flow (Image, Depth, Actions → 3D Point Flow)*
+
+* **Website**: [point-world.github.io](https://point-world.github.io/)
+* **Paper**: [PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation](https://arxiv.org/abs/2601.03782)
+* **Code**: [huangwl18/PointWorld](https://github.com/huangwl18/PointWorld)
+* **Notes**:
+    *   Large pre-trained 3D world model forecasting future states from single RGB-D images.
+    *   Represent actions and state changes as **3D point flows** (per-pixel displacements in 3D space), enabling geometry-aware predictions.
+    *   Unifies state and action in a shared 3D space, facilitating cross-embodiment learning.
+    *   Trained on ~2M trajectories and 500 hours of real and simulated data.
+    *   Enables diverse zero-shot manipulation skills (pushing, tool use) via MPC.
+
+---
+
 ### **π0.6 (pi0.6)**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
@@ -40,6 +55,19 @@ Curated database of foundation models for robotics
     *   Natively bidirectional diffusion backbone is inherently suited for action chunking and parallel generation.
     *   Demonstrates superior performance on VLA tasks compared to autoregressive baselines.
 
+
+---
+
+### **VLA-Motion**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [vla-motion.github.io](https://vla-motion.github.io/)
+* **Paper**: [Robotic VLA Benefits from Joint Learning with Motion Image Diffusion](https://arxiv.org/abs/2512.18007)
+* **Notes**:
+    *   Enhances VLAs with motion reasoning by jointly training with a motion image diffusion head (optical flow).
+    *   The motion head acts as an auxiliary task, improving the shared representation.
+    *   Improves success rates on LIBERO (97.5%) and real-world tasks (23% gain).
+    *   No additional inference latency.
 
 ---
 
