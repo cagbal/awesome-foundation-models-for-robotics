@@ -9,6 +9,21 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **1X World Model (1XWM)**
+*I, L → V, A (Image, Language → Video, Actions)*
+
+* **Website**: [1x.tech/ai](https://www.1x.tech/ai)
+* **Notes**:
+    *   Released Jan 12, 2026.
+    *   Video-pretrained world model serving as NEO's cognitive core.
+    *   Derives robot actions from text-conditioned video generation (14B parameter backbone).
+    *   Uses a two-stage process: generates future video frames (World Model), then extracts actions via an Inverse Dynamics Model (IDM).
+    *   Trained on web-scale video, 900 hours of egocentric human video, and fine-tuned on 70 hours of robot data.
+    *   Explicitly functions as a **World Model**, predicting/hallucinating outcomes before execution.
+    *   Generalizes to novel objects and tasks without teleoperation data.
+
+---
+
 ### **Nvidia Isaac GR00T N1.6**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
