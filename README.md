@@ -204,7 +204,8 @@ Curated database of foundation models for robotics
 * **Notes**:
     *   Generative model pretrained on large-scale behavioral datasets for humanoid robots.
     *   Models the distribution of full-body behavioral trajectories conditioned on goals and proprioception.
-    *   Enables flexible operation across diverse control modes (velocity, motion tracking, teleop).
+    *   Integrates masked online distillation with CVAE.
+    *   Enables flexible operation across diverse control modes (velocity, motion tracking, teleop) and generalizes robustly.
 
 ---
 
@@ -241,6 +242,19 @@ Curated database of foundation models for robotics
     *   Leverages motion data (without explicit action labels) to train generalist policies.
     *   Introduces a Motion Tokenizer to learn discrete motion representations.
     *   Enables scaling up training data by utilizing large-scale video datasets.
+
+---
+
+### **UnifoLM-WMA-0**
+*I, A → I', A (Image, Actions → Future Images, Actions)*
+
+* **Website**: [unigen-x.github.io/unifolm-world-model-action.github.io](https://unigen-x.github.io/unifolm-world-model-action.github.io/)
+* **Code**: [unitreerobotics/unifolm-world-model-action](https://github.com/unitreerobotics/unifolm-world-model-action)
+* **Notes**:
+    *   Released Sep 2025.
+    *   Unitree's open-source world-model-action architecture for general-purpose robot learning.
+    *   Functions as both a Simulation Engine (generating synthetic data) and Policy Enhancement (predicting future interactions).
+    *   Trained on Unitree's open-source datasets and fine-tuned on Open-X.
 
 ---
 
@@ -314,18 +328,6 @@ Curated database of foundation models for robotics
 
 ---
 
-### **Behavior Foundation Model (BFM)**
-*P, G → A (Proprioception, Goal → Actions)*
-
-* **Paper**: [Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2509.13780)
-* **Notes**:
-    *   Generative model pretrained on large-scale behavioral datasets for humanoid robots.
-    *   Captures broad, reusable behavioral knowledge.
-    *   Integrates masked online distillation with CVAE.
-    *   Generalizes robustly across diverse whole-body control tasks.
-
----
-
 ### **DYNA-1**
 *I, L → A (Image, Language → Actions)*
 
@@ -375,6 +377,18 @@ Curated database of foundation models for robotics
     *   Trained on fleet movement data from hundreds of thousands of robots in Amazon warehouses.
     *   Explores four architectures, with Robot-Centric (RC) and Graph-Floor (GF) showing the most promise for scaling.
     *   Enables proactive planning to avoid congestion and deadlocks in complex multi-agent environments.
+
+---
+
+### **Genie Envisioner**
+*I, L → V (Image, Language → Video)*
+
+* **Paper**: [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](https://arxiv.org/abs/2508.05635)
+* **Notes**:
+    *   Released Aug 2025.
+    *   Unified platform collapsing robot sensing, policy learning, and evaluation into a single closed-loop video generative world model.
+    *   Trained on ~3,000 hours of video-language paired data (AgiBot-World-Beta).
+    *   RSS 2025 Best Systems Paper finalist.
 
 ---
 
@@ -477,6 +491,19 @@ Curated database of foundation models for robotics
     *   Learns task-centric action representations from videos using a latent action model (within DINO feature space).
     *   Can leverage data from arbitrary embodiments and perspectives without explicit action labels.
     *   Allows deploying generalist policies to various robots via efficient latent action decoding.
+
+---
+
+### **OpenHelix**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [openhelix-robot.github.io](https://openhelix-robot.github.io/)
+* **Paper**: [OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model...](https://arxiv.org/abs/2505.03912)
+* **Notes**:
+    *   Released May 2025.
+    *   Open-source Dual-System VLA (Vision-Language-Action) model.
+    *   Provides systematic empirical evaluations on dual-system architectures (System 1 for fast execution, System 2 for reasoning).
+    *   Aims to provide a low-cost, performant baseline for the community.
 
 ---
 
