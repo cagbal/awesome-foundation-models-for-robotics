@@ -503,7 +503,9 @@ Curated database of foundation models for robotics
     *   Released May 2025.
     *   Open-source Dual-System VLA (Vision-Language-Action) model.
     *   Provides systematic empirical evaluations on dual-system architectures (System 1 for fast execution, System 2 for reasoning).
-    *   Aims to provide a low-cost, performant baseline for the community.
+    *   Highlights a "prompt tuning" paradigm: adding a new `<ACT>` token and only training the `lm-head` preserves generalization.
+    *   Finds that pre-aligning the projector (MLP) between the MLLM and policy network is crucial.
+    *   Analysis reveals that action tokens mainly reflect instruction semantics rather than environmental details.
 
 ---
 
