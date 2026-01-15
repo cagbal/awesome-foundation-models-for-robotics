@@ -36,6 +36,19 @@ Curated database of foundation models for robotics
 
 ---
 
+### **ActiveVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [ActiveVLA: Injecting Active Perception into Vision-Language-Action Models for Precise 3D Robotic Manipulation](https://arxiv.org/abs/2601.08325)
+* **Notes**:
+    *   Released Jan 2026.
+    *   Injects active perception into VLA models, enabling dynamic viewpoint adjustment and camera resolution scaling.
+    *   Features **Active View Selection** to autonomously determine optimal perspectives.
+    *   Uses **Active 3D Zoom-in** to selectively enhance high-resolution views of task-critical regions.
+    *   Balances global context with fine-grained local details via a coarse-to-fine architecture.
+
+---
+
 ### **PointWorld**
 *I, D, A → 3D Flow (Image, Depth, Actions → 3D Point Flow)*
 
@@ -48,6 +61,21 @@ Curated database of foundation models for robotics
     *   Unifies state and action in a shared 3D space, facilitating cross-embodiment learning.
     *   Trained on ~2M trajectories and 500 hours of real and simulated data.
     *   Enables diverse zero-shot manipulation skills (pushing, tool use) via MPC.
+
+---
+
+### **VLM4VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [cladernyjorn.github.io/VLM4VLA.github.io](https://cladernyjorn.github.io/VLM4VLA.github.io/)
+* **Paper**: [VLM4VLA: Revisiting Vision-Language Models in Vision-Language-Action Models](https://arxiv.org/abs/2601.03309)
+* **Code**: [CladernyJorn/VLM4VLA](https://github.com/CladernyJorn/VLM4VLA)
+* **Notes**:
+    *   Released Jan 2026.
+    *   Unified framework for evaluating the impact of VLM backbones on VLA performance.
+    *   Finds that general VLM capabilities (VQA) do not correlate well with downstream robotic control performance.
+    *   Identifies the vision encoder as the primary bottleneck, showing that fine-tuning it is crucial to bridge the semantic gap.
+    *   Demonstrates that injecting control-relevant supervision into the vision encoder yields consistent gains.
 
 ---
 
