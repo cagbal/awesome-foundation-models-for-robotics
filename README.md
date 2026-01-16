@@ -36,6 +36,19 @@ Curated database of foundation models for robotics
 
 ---
 
+### **ActiveVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [ActiveVLA: Injecting Active Perception into Vision-Language-Action Models...](https://arxiv.org/abs/2601.08325)
+* **Notes**:
+    *   Injects active perception capabilities into the VLA framework.
+    *   **Active Viewpoint Selection**: Autonomously determines optimal camera perspectives during task execution to maximize visibility and reduce occlusion.
+    *   **Active 3D Zoom-in**: Selectively enhances high-resolution views of task-critical regions for fine-grained control.
+    *   Uses a coarse-to-fine architecture balancing global context with local details.
+    *   Demonstrates superior performance by dynamically refining observation strategies.
+
+---
+
 ### **PointWorld**
 *I, D, A → 3D Flow (Image, Depth, Actions → 3D Point Flow)*
 
@@ -48,6 +61,21 @@ Curated database of foundation models for robotics
     *   Unifies state and action in a shared 3D space, facilitating cross-embodiment learning.
     *   Trained on ~2M trajectories and 500 hours of real and simulated data.
     *   Enables diverse zero-shot manipulation skills (pushing, tool use) via MPC.
+
+---
+
+### **VLM4VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [cladernyjorn.github.io/VLM4VLA.github.io](https://cladernyjorn.github.io/VLM4VLA.github.io/)
+* **Paper**: [VLM4VLA: Revisiting Vision-Language Models in Vision-Language-Action Models](https://arxiv.org/abs/2601.03309)
+* **Code**: [CladernyJorn/VLM4VLA](https://github.com/CladernyJorn/VLM4VLA)
+* **Notes**:
+    *   Systematically studies the impact of Vision-Language Model (VLM) choice on VLA performance.
+    *   **Key Finding**: VLM general capabilities (e.g., VQA) are poor predictors of downstream robotic control performance.
+    *   Fine-tuning VLMs on auxiliary embodied tasks (e.g., embodied QA, pointing) often **degrades** downstream VLA performance.
+    *   Identifies the **vision encoder** as the primary bottleneck; freezing it leads to significant performance drops (unlike in LLMs).
+    *   Demonstrates that injecting control-relevant supervision into the vision encoder yields consistent gains.
 
 ---
 
