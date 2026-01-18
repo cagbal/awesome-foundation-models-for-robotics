@@ -9,6 +9,20 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **ActiveVLA**
+*I, L, 3D → A, Vp (Image, Language, 3D Input → Actions, Viewpoint)*
+
+* **Paper**: [ActiveVLA: Injecting Active Perception into Vision-Language-Action Models for Precise 3D Robotic Manipulation](https://arxiv.org/abs/2601.08325)
+* **Notes**:
+    *   Released Jan 13, 2026.
+    *   Injects active perception into VLA models to address limitations of static, end-effector-centric views.
+    *   Adopts a **coarse-to-fine paradigm**: first localizes critical 3D regions, then optimizes active perception.
+    *   Uses **Active View Selection** to choose viewpoints that maximize task relevance/diversity and minimize occlusion.
+    *   Applies **Active 3D Zoom-in** to enhance resolution in key areas for fine-grained manipulation.
+    *   Outperforms baselines on simulation benchmarks and transfers to real-world tasks.
+
+---
+
 ### **1X World Model (1XWM)**
 *I, L → V, A (Image, Language → Video, Actions)*
 
@@ -48,6 +62,21 @@ Curated database of foundation models for robotics
     *   Unifies state and action in a shared 3D space, facilitating cross-embodiment learning.
     *   Trained on ~2M trajectories and 500 hours of real and simulated data.
     *   Enables diverse zero-shot manipulation skills (pushing, tool use) via MPC.
+
+---
+
+### **VLM4VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [cladernyjorn.github.io/VLM4VLA.github.io](https://cladernyjorn.github.io/VLM4VLA.github.io/)
+* **Paper**: [Revisiting Vision-Language Models in Vision-Language-Action Models](https://arxiv.org/abs/2601.03309)
+* **Code**: [CladernyJorn/VLM4VLA](https://github.com/CladernyJorn/VLM4VLA)
+* **Notes**:
+    *   Released Jan 2026.
+    *   Unified training and evaluation framework (VLM4VLA) for studying VLM backbones in VLAs.
+    *   Reveals that **VLM general capabilities (VQA)** are poor predictors of downstream VLA performance.
+    *   Identifies the **vision encoder** as the primary bottleneck; fine-tuning it is crucial (freezing it leads to degradation).
+    *   Finds that fine-tuning on **auxiliary embodied tasks** (e.g., embodied QA, visual pointing) does not guarantee better control performance.
 
 ---
 
