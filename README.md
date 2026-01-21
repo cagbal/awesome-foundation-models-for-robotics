@@ -277,6 +277,20 @@ Curated database of foundation models for robotics
 
 ---
 
+### **SARM**
+*V → Stage, Progress (Video → Task Stage, Progress)*
+
+* **Website**: [qianzhong-chen.github.io/sarm.github.io](https://qianzhong-chen.github.io/sarm.github.io/)
+* **Paper**: [SARM: Stage-Aware Reward Modeling for Long Horizon Robot Manipulation](https://arxiv.org/abs/2509.25358)
+* **Notes**:
+    *   Video-based reward modeling framework for long-horizon manipulation.
+    *   Jointly predicts high-level task stages and fine-grained progress to handle variable-length demonstrations.
+    *   Derives reward labels from natural language subtask annotations.
+    *   Proposed **Reward-Aligned Behavior Cloning (RA-BC)** to filter and reweight training data based on reward quality.
+    *   Achieves 83% success on folding T-shirts, significantly outperforming vanilla behavior cloning.
+
+---
+
 ### **MotoVLA**
 *I, L → A (Image, Language → Actions)*
 
