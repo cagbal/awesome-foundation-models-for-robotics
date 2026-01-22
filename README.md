@@ -277,6 +277,21 @@ Curated database of foundation models for robotics
 
 ---
 
+### **SARM**
+*I, L → Reward (Image, Language → Reward/Progress)*
+
+* **Website**: [qianzhong-chen.github.io/sarm.github.io](https://qianzhong-chen.github.io/sarm.github.io/)
+* **Paper**: [SARM: Stage-Aware Reward Modeling for Long Horizon Robot Manipulation](https://arxiv.org/abs/2509.25358)
+* **Code**: [huggingface/lerobot](https://github.com/huggingface/lerobot)
+* **Notes**:
+    *   **Stage-Aware Reward Modeling** framework for long-horizon robot manipulation.
+    *   Jointly predicts the high-level task stage and fine-grained progress within each stage from video frames.
+    *   Uses natural language subtask annotations to derive consistent progress labels.
+    *   Enables **Reward-Aligned Behavior Cloning (RA-BC)**, weighting training samples based on predicted progress.
+    *   Integrated into `lerobot`.
+
+---
+
 ### **MotoVLA**
 *I, L → A (Image, Language → Actions)*
 
