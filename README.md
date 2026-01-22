@@ -9,6 +9,83 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **RBench & RoVid-X**
+*I, L → V (Image, Language → Video)*
+
+* **Website**: [dagroup-pku.github.io/ReVidgen.github.io](https://dagroup-pku.github.io/ReVidgen.github.io/)
+* **Paper**: [Rethinking Video Generation Model for the Embodied World](https://arxiv.org/abs/2601.15282)
+* **Code**: [DAGroup-PKU/ReVidgen](https://github.com/DAGroup-PKU/ReVidgen/)
+* **Notes**:
+    *   Released Jan 2026.
+    *   Introduces **RBench**, a comprehensive benchmark for evaluating robot-oriented video generation.
+    *   Presents **RoVid-X**, the largest open-source robotic video dataset with 4 million annotated clips.
+    *   Evaluates 25 models, revealing significant gaps in physical realism.
+
+---
+
+### **BayesianVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [BayesianVLA: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries](https://arxiv.org/abs/2601.15197)
+* **Notes**:
+    *   Released Jan 21, 2026.
+    *   Addresses "Information Collapse" in goal-driven datasets where language is ignored.
+    *   Uses **Bayesian decomposition** to estimate both vision-only priors and language-conditioned posteriors.
+    *   Optimizes the policy to maximize conditional Pointwise Mutual Information (PMI).
+    *   Achieves 11.3% improvement on out-of-distribution SimplerEnv benchmarks.
+
+---
+
+### **TIDAL**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control](https://arxiv.org/abs/2601.14945)
+* **Notes**:
+    *   Released Jan 21, 2026.
+    *   A hierarchical framework decoupling low-frequency semantic reasoning from high-frequency actuation.
+    *   Achieves **~9 Hz control** on edge hardware (compared to ~2.4 Hz baselines).
+    *   Uses a **temporally misaligned training strategy** to handle latency shifts.
+    *   Demonstrates 2x performance gain in dynamic interception tasks.
+
+---
+
+### **HumanoidVLM**
+*I, L → A (Image, Language → Impedance Parameters)*
+
+* **Paper**: [HumanoidVLM: Vision-Language-Guided Impedance Control for Contact-Rich Humanoid Manipulation](https://arxiv.org/abs/2601.14874)
+* **Notes**:
+    *   Released Jan 21, 2026.
+    *   Enables humanoids (Unitree G1) to select task-appropriate impedance parameters from egocentric vision.
+    *   Combines a VLM for semantic inference with a **FAISS-based RAG module**.
+    *   Retrieves validated stiffness-damping pairs for compliant manipulation.
+
+---
+
+### **TwinBrainVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks...](https://arxiv.org/abs/2601.14133)
+* **Code**: [ZGC-EmbodyAI/TwinBrainVLA](https://github.com/ZGC-EmbodyAI/TwinBrainVLA)
+* **Notes**:
+    *   Released Jan 20, 2026.
+    *   Resolves the tension between general semantic understanding and fine-grained motor skills.
+    *   Features an **Asymmetric Mixture-of-Transformers (AsyMoT)**: a frozen "Left Brain" (VLM) and a trainable "Right Brain" (proprioception).
+    *   Uses a Flow-Matching Action Expert for precise control.
+
+---
+
+### **DroneVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [DroneVLA: VLA based Aerial Manipulation](https://arxiv.org/abs/2601.13809)
+* **Notes**:
+    *   Released Jan 20, 2026.
+    *   Applies VLA models to autonomous aerial manipulation with a custom drone.
+    *   Integrates Grounding DINO for object localization and dynamic planning.
+    *   Features a human-centric controller for safe human-drone handovers.
+
+---
+
 ### **ActiveVLA**
 *I, L, 3D → A, Vp (Image, Language, 3D Input → Actions, Viewpoint)*
 
