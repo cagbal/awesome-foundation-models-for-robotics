@@ -9,6 +9,67 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **BayesianVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [BayesianVLA: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries](https://arxiv.org/abs/2601.15197)
+* **Notes**:
+    *   Released Jan 21, 2026.
+    *   Addresses "Information Collapse" in goal-driven datasets where language is ignored.
+    *   This collapse occurs because language instructions in existing datasets are often highly predictable from visual observations alone, causing the model to ignore language.
+    *   Proposes a Bayesian decomposition framework with learnable Latent Action Queries.
+    *   Maximizes conditional Pointwise Mutual Information (PMI) between actions and instructions.
+
+---
+
+### **TIDAL**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control](https://arxiv.org/abs/2601.14945)
+* **Notes**:
+    *   Released Jan 21, 2026.
+    *   Addresses high inference latency in large VLA models which causes execution blind spots.
+    *   Proposes a hierarchical framework: low-frequency macro-intent loop caches semantic embeddings, high-frequency micro-control loop interleaves single-step flow integration.
+    *   Enables ~9 Hz control on edge hardware (vs ~2.4 Hz baselines).
+    *   Uses a temporally misaligned training strategy to learn predictive compensation.
+
+---
+
+### **HumanoidVLM**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [HumanoidVLM: Vision-Language-Guided Impedance Control for Contact-Rich Humanoid Manipulation](https://arxiv.org/abs/2601.14874)
+* **Notes**:
+    *   Released Jan 21, 2026.
+    *   Enables humanoids (Unitree G1) to select task-appropriate impedance parameters from egocentric vision.
+    *   Combines a VLM for semantic inference with a FAISS-based RAG module which retrieves experimentally validated stiffness-damping pairs for compliant manipulation.
+
+---
+
+### **TwinBrainVLA**
+*I, P, L → A (Image, Proprioception, Language → Actions)*
+
+* **Paper**: [TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers](https://arxiv.org/abs/2601.14133)
+* **Notes**:
+    *   Released Jan 20, 2026.
+    *   Resolves the tension between general semantic understanding and fine-grained motor skills.
+    *   Features an **Asymmetric Mixture-of-Transformers (AsyMoT)** where the "Right Brain" (proprioception) can dynamically query the frozen "Left Brain" (VLM) for semantic knowledge, rather than just using standard fine-tuning.
+    *   Uses a Flow-Matching Action Expert for precise control.
+
+---
+
+### **DroneVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [DroneVLA: VLA based Aerial Manipulation](https://arxiv.org/abs/2601.13809)
+* **Notes**:
+    *   Released Jan 20, 2026.
+    *   Applies VLA models to autonomous aerial manipulation with a custom drone.
+    *   Integrates Grounding DINO as a separate module for object localization and dynamic planning within the pipeline.
+    *   Uses a human-centric controller for safe handovers.
+
+---
+
 ### **ActiveVLA**
 *I, L, 3D → A, Vp (Image, Language, 3D Input → Actions, Viewpoint)*
 
@@ -911,6 +972,16 @@ Curated database of foundation models for robotics
   - Tasks are specified using a visual goal image, not language.
 
 ## 🤖 Noteworthy Papers
+
+### **RBench & RoVid-X**
+* **Paper**: [Rethinking Video Generation Model for the Embodied World](https://arxiv.org/abs/2601.15282)
+* **Notes**:
+    *   Released Jan 2026.
+    *   Introduces **RBench**, a comprehensive robotics benchmark for video generation.
+    *   Presents **RoVid-X**, a large-scale high-quality robotic dataset for training video generation models.
+    *   Evaluation results on 25 video models show high agreement with human assessments.
+
+---
 
 ### **Adapt3R: Adaptive 3D Scene Representation for Domain Transfer**
 * **Paper**: [Wilcox, Albert, et al.](https://arxiv.org/abs/2503.04877)
