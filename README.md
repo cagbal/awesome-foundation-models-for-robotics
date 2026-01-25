@@ -298,9 +298,11 @@ Curated database of foundation models for robotics
 * **Paper**: [CLAP: A Closed-Loop Diffusion Transformer Action Foundation Model for Robotic Manipulation](https://ieeexplore.ieee.org/document/11246478)
 * **Notes**:
     *   Released Oct 2025 (IROS 2025).
-    *   Authors: Mu Li, Yubo Dong, Yang Zhou, Chenguang Yang.
+    *   **Authors**: Mu Li, Yubo Dong, Yang Zhou, Chenguang Yang.
     *   Uses a **Closed-Loop Diffusion Transformer** architecture for robust action generation.
-    *   Designed to continuously refine actions based on feedback.
+    *   Proposes a **componentized VLA architecture** where a specialized action module is conditioned on the output of a Vision-Language Model.
+    *   Incorporates a **critic module** during inference to evaluate and refine generated actions.
+    *   Demonstrates the ability to handle complex, high-precision tasks and generalize to unseen objects and backgrounds.
 
 ---
 
