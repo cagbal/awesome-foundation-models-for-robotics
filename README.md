@@ -9,6 +9,21 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **Cosmos Policy**
+*I, P, L → A, I', V (Image, Proprioception, Language → Actions, Future Images, Value)*
+
+* **Paper**: [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](https://arxiv.org/abs/2601.16163)
+* **Website**: [research.nvidia.com/labs/dir/cosmos-policy](https://research.nvidia.com/labs/dir/cosmos-policy/)
+* **Notes**:
+    *   Released Jan 22, 2026.
+    *   Adapts `Cosmos-Predict2` (video generation model) into a robot policy via single-stage post-training.
+    *   No architectural modifications to the base video model; actions are encoded as latent frames.
+    *   Generates **future state images** and **values** (expected rewards) alongside actions, enabling **test-time planning**.
+    *   Achieves state-of-the-art performance on LIBERO (98.5%) and RoboCasa (67.1%).
+    *   Can learn from experience (policy rollout data) to refine its world model.
+
+---
+
 ### **BayesianVLA**
 *I, L → A (Image, Language → Actions)*
 
@@ -298,7 +313,10 @@ Curated database of foundation models for robotics
 * **Paper**: [CLAP: A Closed-Loop Diffusion Transformer Action Foundation Model for Robotic Manipulation](https://ieeexplore.ieee.org/document/11246478)
 * **Notes**:
     *   A closed-loop diffusion transformer model presented at IROS 2025 (October).
-    *   Designed for robust robotic manipulation by continuously refining actions based on feedback.
+    *   Componentized VLA architecture with a specialized **action module** and a **critic module**.
+    *   Uses **diffusion action transformers** for modeling continuous temporal actions.
+    *   The **critic module** enables closed-loop inference by refining actions based on feedback.
+    *   Outperforms methods that use simple action quantization, handling complex, high-precision tasks and generalizing to unseen objects.
 
 ---
 
