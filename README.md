@@ -684,6 +684,21 @@ Curated database of foundation models for robotics
 
 ---
 
+### **Uncertainty-Aware RWM (RWM-U)**
+*I, P, A → I', P', U (Image, Proprioception, Actions → Future Images, Future Proprioception, Uncertainty)*
+
+* **Website**: [sites.google.com/view/uncertainty-aware-rwm](https://sites.google.com/view/uncertainty-aware-rwm)
+* **Paper**: [Offline Robotic World Model: Learning Robotic Policies without a Physics Simulator](https://arxiv.org/abs/2504.16680)
+* **Code**: [leggedrobotics/robotic_world_model_lite](https://github.com/leggedrobotics/robotic_world_model_lite)
+* **Notes**:
+    *   Released Apr 2025.
+    *   Extends `Robotic World Model (RWM)` with ensemble-based epistemic uncertainty estimation.
+    *   Enables **Offline Model-Based RL (MBRL)** on real robots by penalizing high-uncertainty transitions during imagination.
+    *   Uses **MOPO-PPO** to optimize policies entirely from offline datasets.
+    *   Demonstrated on manipulation and locomotion tasks (ANYmal D, Unitree G1).
+
+---
+
 ### **SAM2Act & SAM2Act+**
 *I, P → A (Image, Proprioception → Actions)*
 
