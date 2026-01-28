@@ -24,6 +24,22 @@ Curated database of foundation models for robotics
 
 ---
 
+### **EgoWM**
+*I, A → I' (Image, Actions → Future Images)*
+
+* **Website**: [egowm.github.io](https://egowm.github.io)
+* **Paper**: [Walk through Paintings: Egocentric World Models from Internet Priors](https://arxiv.org/abs/2601.15284)
+* **Code**: [miccooper9/egowm](https://github.com/miccooper9/egowm)
+* **Notes**:
+    *   Released Jan 21, 2026.
+    *   Transforms pretrained video diffusion models into action-conditioned world models.
+    *   Injects motor commands through lightweight conditioning layers.
+    *   Scales across embodiments, from 3-DoF mobile robots to 25-DoF humanoids.
+    *   Introduces the Structural Consistency Score (SCS) to measure physical correctness.
+    *   Generalizes to unseen environments, including paintings ("Walk through Paintings").
+
+---
+
 ### **BayesianVLA**
 *I, L → A (Image, Language → Actions)*
 
