@@ -9,6 +9,36 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **DeFM**
+*D → Representations (Depth → Representations)*
+
+* **Paper**: [DeFM: Learning Foundation Representations from Depth for Robotics](https://arxiv.org/abs/2601.18923)
+* **Code**: [leggedrobotics/defm](https://github.com/leggedrobotics/defm)
+* **Notes**:
+    *   Released Jan 26, 2026.
+    *   Self-supervised foundation model trained on 60M depth images.
+    *   Uses DINO-style self-distillation to learn metric-aware representations.
+    *   Introduces a three-channel input normalization strategy to preserve metric depth.
+    *   Distilled into compact models (as small as 3M params) for efficient policy learning.
+    *   Achieves SOTA on depth-based navigation, locomotion, and manipulation benchmarks.
+
+---
+
+### **LingBot-VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [A Pragmatic VLA Foundation Model](https://arxiv.org/abs/2601.18692)
+* **Website**: [technology.robbyant.com/lingbot-vla](https://technology.robbyant.com/lingbot-vla)
+* **Code**: [robbyant/lingbot-vla](https://github.com/robbyant/lingbot-vla)
+* **Notes**:
+    *   Released Jan 26, 2026.
+    *   Trained on 20,000 hours of real-world data from 9 diverse robot configurations.
+    *   Achieves superior performance on 100 tasks across 3 different robotic platforms.
+    *   Uses **Flow Matching** for continuous action modeling and **blockwise causal attention**.
+    *   Highly efficient training pipeline (261 samples/sec/GPU).
+
+---
+
 ### **Cosmos Policy**
 *I, P, L → A, I', V (Image, Proprioception, Language → Actions, Future Images, Value)*
 
@@ -21,6 +51,19 @@ Curated database of foundation models for robotics
     *   Generates **future state images** and **values** (expected rewards) alongside actions, enabling **test-time planning**.
     *   Achieves state-of-the-art performance on LIBERO (98.5%) and RoboCasa (67.1%).
     *   Can learn from experience (policy rollout data) to refine its world model.
+
+---
+
+### **Rho-alpha (ρα)**
+*I, L, Tactile → A (Image, Language, Tactile → Actions)*
+
+* **Website**: [microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/](https://www.microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/)
+* **Notes**:
+    *   Released Jan 21, 2026.
+    *   The first robotics model derived from Microsoft's **Phi** series.
+    *   **VLA+ Model**: Integrates tactile sensing directly into the decision-making process.
+    *   Uses a split architecture: a VLM for high-level reasoning and a specialized **action expert** for high-frequency control.
+    *   Trained using physical demonstrations and simulation (Isaac Sim).
 
 ---
 
