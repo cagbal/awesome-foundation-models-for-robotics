@@ -9,6 +9,23 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **LingBot-VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [A Pragmatic VLA Foundation Model](https://arxiv.org/abs/2601.18692)
+* **Website**: [technology.robbyant.com/lingbot-vla](https://technology.robbyant.com/lingbot-vla)
+* **Code**: [robbyant/lingbot-vla](https://github.com/robbyant/lingbot-vla)
+* **Weights**: [Hugging Face](https://huggingface.co/collections/robbyant/lingbot-vla)
+* **Notes**:
+    *   Released Jan 26, 2026.
+    *   Developed by Robbyant.
+    *   Pre-trained on 20,000 hours of real-world multi-embodiment robot data (9 dual-arm configurations).
+    *   Achieves clear superiority on 100 real-world tasks across 3 platforms.
+    *   Empirically validates that VLA performance scales with data volume without saturation.
+    *   Highly efficient training throughput.
+
+---
+
 ### **Cosmos Policy**
 *I, P, L → A, I', V (Image, Proprioception, Language → Actions, Future Images, Value)*
 
@@ -118,6 +135,9 @@ Curated database of foundation models for robotics
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
 * **Website**: [developer.nvidia.com/isaac/gr00t](https://developer.nvidia.com/isaac/gr00t)
+* **Research Page**: [research.nvidia.com/labs/gear/gr00t-n1_6/](https://research.nvidia.com/labs/gear/gr00t-n1_6/)
+* **Code**: [NVIDIA/Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)
+* **Weights**: [Hugging Face](https://huggingface.co/nvidia/GR00T-N1.6-3B)
 * **Notes**:
     *   Released Jan 2026.
     *   Reasoning VLA model for generalist humanoid robots.
