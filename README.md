@@ -784,6 +784,20 @@ Curated database of foundation models for robotics
 
 ---
 
+### **Uncertainty-Aware RWM (RWM-U)**
+*I, P, A → I', U (Image, Proprioception, Actions → Future Images, Uncertainty)*
+
+* **Website**: [sites.google.com/view/uncertainty-aware-rwm](https://sites.google.com/view/uncertainty-aware-rwm)
+* **Paper**: [Offline Robotic World Model: Learning Robotic Policies without a Physics Simulator](https://arxiv.org/abs/2504.16680)
+* **Code**: [leggedrobotics/robotic_world_model_lite](https://github.com/leggedrobotics/robotic_world_model_lite)
+* **Notes**:
+    *   Released April 2025.
+    *   Extends Robotic World Model (RWM) with ensemble-based epistemic uncertainty estimation.
+    *   Enables fully offline model-based reinforcement learning (MBRL) on real robots by penalizing high-risk imagined transitions (MOPO-PPO).
+    *   Evaluated on real quadruped and humanoid robots for manipulation and locomotion.
+
+---
+
 ### **OpenVLA**
 *I, L → A (Image, Language → Actions)*
 
