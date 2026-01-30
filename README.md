@@ -21,7 +21,7 @@ Curated database of foundation models for robotics
     *   Developed by Robbyant.
     *   Pre-trained on 20,000 hours of real-world multi-embodiment robot data (9 dual-arm configurations).
     *   Achieves clear superiority on 100 real-world tasks across 3 platforms.
-    *   Empirically validates that VLA performance scales with data volume without saturation.
+    *   Empirically validates **Scaling Laws** for VLAs: performance scales with data volume without saturation.
     *   Highly efficient training throughput.
 
 ---
