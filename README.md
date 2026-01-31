@@ -9,6 +9,20 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **DynamicVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [DynamicVLA: A Vision-Language-Action Model for Dynamic Object Manipulation](https://arxiv.org/abs/2601.22153)
+* **Website**: [infinitescript.com/project/dynamic-vla](https://www.infinitescript.com/project/dynamic-vla/)
+* **Code**: [hzxie/DynamicVLA](https://github.com/hzxie/DynamicVLA)
+* **Dataset**: [Hugging Face](https://huggingface.co/datasets/hzxie/DOM)
+* **Notes**:
+    *   Released Jan 2026.
+    *   Enables open-ended dynamic object manipulation by pairing a compact 0.4B VLM with low-latency Continuous Inference and Latent-aware Action Streaming.
+    *   Evaluated at scale through the new **DOM benchmark** in both simulation and the real world.
+
+---
+
 ### **DeFM**
 *D → Representations (Depth → Representations)*
 
