@@ -9,6 +9,21 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **DeFM**
+*D → Representations (Depth → Representations)*
+
+* **Paper**: [DeFM: Learning Foundation Representations from Depth for Robotics](https://arxiv.org/abs/2601.18923)
+* **Code**: [leggedrobotics/defm](https://github.com/leggedrobotics/defm)
+* **Notes**:
+    *   Released Jan 26, 2026.
+    *   Self-supervised foundation model trained on 60M depth images.
+    *   Uses DINO-style self-distillation to learn metric-aware representations.
+    *   Introduces a three-channel input normalization strategy to preserve metric depth.
+    *   Distilled into compact models (as small as 3M params) for efficient policy learning.
+    *   Achieves SOTA on depth-based navigation, locomotion, and manipulation benchmarks.
+
+---
+
 ### **LingBot-VLA**
 *I, L → A (Image, Language → Actions)*
 
@@ -54,6 +69,19 @@ Curated database of foundation models for robotics
     *   Scales across embodiments, from 3-DoF mobile robots to 25-DoF humanoids.
     *   Introduces the Structural Consistency Score (SCS) to measure physical correctness.
     *   Generalizes to unseen environments, including paintings ("Walk through Paintings").
+
+---
+
+### **Rho-alpha (ρα)**
+*I, L, Tactile → A (Image, Language, Tactile → Actions)*
+
+* **Website**: [microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/](https://www.microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/)
+* **Notes**:
+    *   Released Jan 21, 2026.
+    *   The first robotics model derived from Microsoft's **Phi** series.
+    *   **VLA+ Model**: Integrates tactile sensing directly into the decision-making process.
+    *   Uses a split architecture: a VLM for high-level reasoning and a specialized **action expert** for high-frequency control.
+    *   Trained using physical demonstrations and simulation (Isaac Sim).
 
 ---
 
