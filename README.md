@@ -9,6 +9,86 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **EgoActor**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models](https://arxiv.org/abs/2602.04515)
+* **Notes**:
+    *   Released Feb 4, 2026.
+    *   Unified and scalable VLM grounding high-level instructions into precise, spatially aware humanoid actions.
+    *   Predicts **locomotion primitives** (walk, turn), head movements, and manipulation commands.
+    *   Leverages broad supervision from real-world demos, spatial reasoning QA, and simulated demos.
+    *   Inference under 1s with 4B and 8B parameter models.
+
+---
+
+### **GeneralVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [GeneralVLA: Generalizable Vision-Language-Action Models with Knowledge-Guided Trajectory Planning](https://arxiv.org/abs/2602.04315)
+* **Website**: [aigeeksgroup.github.io/GeneralVLA](https://aigeeksgroup.github.io/GeneralVLA)
+* **Code**: [AIGeeksGroup/GeneralVLA](https://github.com/AIGeeksGroup/GeneralVLA)
+* **Notes**:
+    *   Released Feb 4, 2026.
+    *   Hierarchical VLA model enabling **zero-shot manipulation** without real-world robotic data collection.
+    *   High-level **ASM** (Affordance Segmentation Module) perceives image keypoint affordances.
+    *   Mid-level **3DAgent** carries out task understanding and trajectory planning.
+    *   Low-level **3D-aware control policy** executes precise manipulation.
+
+---
+
+### **SCALE**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [SCALE: Self-uncertainty Conditioned Adaptive Looking and Execution for Vision-Language-Action Models](https://arxiv.org/abs/2602.04208)
+* **Notes**:
+    *   Released Feb 4, 2026.
+    *   Inference strategy that jointly modulates visual perception and action based on **'self-uncertainty'**.
+    *   Inspired by **Active Inference** theory.
+    *   Requires no additional training, no verifier, and only a single forward pass.
+    *   Broadens exploration in perception and action under high uncertainty.
+
+---
+
+### **SD-VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Efficient Long-Horizon Vision-Language-Action Models via Static-Dynamic Disentanglement](https://arxiv.org/abs/2602.03983)
+* **Notes**:
+    *   Released Feb 3, 2026.
+    *   Disentangles visual inputs into multi-level **static and dynamic tokens**.
+    *   Retains a single copy of static tokens (e.g., background) to significantly reduce context length.
+    *   Reuses KV cache of static tokens via a lightweight **recache gate**.
+    *   Delivers 2.26x inference speedup and improves long-horizon task performance.
+
+---
+
+### **VLS**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [VLS: Steering Pretrained Robot Policies via Vision-Language Models](https://arxiv.org/abs/2602.03973)
+* **Website**: [vision-language-steering.github.io/webpage](https://vision-language-steering.github.io/webpage/)
+* **Notes**:
+    *   Released Feb 3, 2026.
+    *   **Training-free framework** for inference-time adaptation of frozen generative robot policies (diffusion or flow-matching).
+    *   Steers sampling process using VLMs to synthesize trajectory-differentiable reward functions.
+    *   Addresses failures near obstacles, on shifted surfaces, or with mild clutter.
+
+---
+
+### **DADP**
+*I → A (Image → Actions)*
+
+* **Paper**: [DADP: Domain Adaptive Diffusion Policy](https://arxiv.org/abs/2602.04037)
+* **Website**: [outsider86.github.io/DomainAdaptiveDiffusionPolicy](https://outsider86.github.io/DomainAdaptiveDiffusionPolicy/)
+* **Notes**:
+    *   Released Feb 3, 2026.
+    *   Achieves robust adaptation through unsupervised disentanglement and domain-aware diffusion injection.
+    *   Introduces **Lagged Context Dynamical Prediction** to filter out transient properties.
+    *   Integrates learned domain representations directly into the generative process.
+
+---
+
 ### **DeFM**
 *D → Representations (Depth → Representations)*
 
