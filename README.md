@@ -9,6 +9,21 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **DreamZero**
+*I, L → A, V (Image, Language → Actions, Video)*
+* **Website**: [dreamzero0.github.io](https://dreamzero0.github.io/)
+* **Paper**: [DreamZero: World Action Models Are Zero-Shot Policies](https://dreamzero0.github.io/DreamZero.pdf)
+* **Code**: [dreamzero0/dreamzero](https://github.com/dreamzero0/dreamzero)
+* **Weights**: [Hugging Face](https://huggingface.co/GEAR-Dreams/DreamZero-DROID)
+* **Notes**:
+    *   Released Feb 2026.
+    *   World Action Model (WAM) that jointly predicts actions and videos.
+    *   Achieves strong zero-shot generalization to new tasks and environments (over 2x improvement vs VLAs).
+    *   Demonstrates efficient cross-embodiment transfer (adapts to new robot with 30 mins of play data).
+    *   Enables real-time closed-loop control at 7Hz via model and system optimizations (DreamZero-Flash).
+
+---
+
 ### **DeFM**
 *D → Representations (Depth → Representations)*
 
