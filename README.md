@@ -9,6 +9,22 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **DreamZero**
+*I, L → A, I' (Image, Language → Actions, Future Images)*
+
+* **Website**: [dreamzero0.github.io](https://dreamzero0.github.io/)
+* **Paper**: [World Action Models are Zero-shot Policies](https://dreamzero0.github.io/DreamZero.pdf)
+* **Code**: [dreamzero0/dreamzero](https://github.com/dreamzero0/dreamzero)
+* **Notes**:
+    *   Released Feb 4, 2026.
+    *   14B robot foundation model built upon a pretrained video diffusion backbone.
+    *   **World Action Model (WAM)**: Jointly predicts future world states and actions.
+    *   Enables zero-shot generalization to new tasks and environments (2x improvement over VLAs).
+    *   Demonstrates efficient cross-embodiment transfer (adapts to new robot with 30 mins of play data).
+    *   Achieves real-time inference (7Hz) via optimizations.
+
+---
+
 ### **DeFM**
 *D → Representations (Depth → Representations)*
 
