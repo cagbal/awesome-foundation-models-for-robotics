@@ -9,6 +9,37 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **DreamZero**
+*I, L → V, A (Image, Language → Video, Actions)*
+
+* **Website**: [dreamzero0.github.io](https://dreamzero0.github.io)
+* **Paper**: [DreamZero: World Action Models are Zero-shot Policies](https://dreamzero0.github.io/DreamZero.pdf)
+* **Code**: [dreamzero0/dreamzero](https://github.com/dreamzero0/dreamzero)
+* **Notes**:
+    *   Released Feb 4, 2026.
+    *   Introduces **DreamZero**, a World Action Model (WAM) built upon a pretrained video diffusion backbone.
+    *   Learns physical dynamics by jointly predicting future world states and actions.
+    *   Achieves over 2x improvement in generalization to new tasks and environments compared to SOTA VLAs.
+    *   Demonstrates cross-embodiment transfer: adapts to a new robot (YAM) with only 30 minutes of play data.
+    *   Enables 14B autoregressive video diffusion model to perform real-time closed-loop control at 7Hz.
+
+---
+
+### **DynamicVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [infinitescript.com/project/dynamic-vla](https://www.infinitescript.com/project/dynamic-vla/)
+* **Paper**: [DynamicVLA: A Vision-Language-Action Model for Dynamic Object Manipulation](https://arxiv.org/abs/2601.22153)
+* **Code**: [hzxie/DynamicVLA](https://github.com/hzxie/DynamicVLA)
+* **Dataset**: [Hugging Face](https://huggingface.co/datasets/hzxie/DOM)
+* **Notes**:
+    *   Released Jan 29, 2026.
+    *   Enables open-ended dynamic object manipulation by pairing a compact 0.4B VLM with low-latency Continuous Inference and Latent-aware Action Streaming.
+    *   Introduces the **Dynamic Object Manipulation (DOM)** benchmark (2.8K scenes, 206 objects).
+    *   Outperforms π0.5, SmolVLA, and VLASH on dynamic manipulation tasks.
+
+---
+
 ### **DeFM**
 *D → Representations (Depth → Representations)*
 
