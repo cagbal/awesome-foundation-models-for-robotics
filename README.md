@@ -9,6 +9,118 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **DreamZero**
+*I, L → A, V (Image, Language → Actions, Video)*
+
+* **Website**: [dreamzero0.github.io](https://dreamzero0.github.io/)
+* **Paper**: [DreamZero: World Action Models Are Zero-Shot Policies](https://dreamzero0.github.io/DreamZero.pdf)
+* **Code**: [dreamzero0/dreamzero](https://github.com/dreamzero0/dreamzero)
+* **Weights**: [Hugging Face](https://huggingface.co/GEAR-Dreams/DreamZero-DROID)
+* **Notes**:
+    *   Released Feb 2026.
+    *   World Action Model (WAM) that jointly predicts actions and videos.
+    *   Achieves strong zero-shot generalization to new tasks and environments (over 2x improvement vs VLAs).
+    *   Demonstrates efficient cross-embodiment transfer (adapts to new robot with 30 mins of play data).
+    *   Enables real-time closed-loop control at 7Hz via model and system optimizations (DreamZero-Flash).
+
+---
+
+### **EgoActor**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models](https://arxiv.org/abs/2602.04515)
+* **Notes**:
+    *   Released Feb 4, 2026.
+    *   Unified and scalable VLM grounding high-level instructions into precise, spatially aware humanoid actions.
+    *   Predicts **locomotion primitives** (walk, turn), head movements, and manipulation commands.
+    *   Leverages broad supervision from real-world demos, spatial reasoning QA, and simulated demos.
+    *   Inference under 1s with 4B and 8B parameter models.
+
+---
+
+### **GeneralVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [GeneralVLA: Generalizable Vision-Language-Action Models with Knowledge-Guided Trajectory Planning](https://arxiv.org/abs/2602.04315)
+* **Website**: [aigeeksgroup.github.io/GeneralVLA](https://aigeeksgroup.github.io/GeneralVLA)
+* **Code**: [AIGeeksGroup/GeneralVLA](https://github.com/AIGeeksGroup/GeneralVLA)
+* **Notes**:
+    *   Released Feb 4, 2026.
+    *   Hierarchical VLA model enabling **zero-shot manipulation** without real-world robotic data collection.
+    *   High-level **ASM** (Affordance Segmentation Module) perceives image keypoint affordances.
+    *   Mid-level **3DAgent** carries out task understanding and trajectory planning.
+    *   Low-level **3D-aware control policy** executes precise manipulation.
+
+---
+
+### **SCALE**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [SCALE: Self-uncertainty Conditioned Adaptive Looking and Execution for Vision-Language-Action Models](https://arxiv.org/abs/2602.04208)
+* **Notes**:
+    *   Released Feb 4, 2026.
+    *   Inference strategy that jointly modulates visual perception and action based on **'self-uncertainty'**.
+    *   Inspired by **Active Inference** theory.
+    *   Requires no additional training, no verifier, and only a single forward pass.
+    *   Broadens exploration in perception and action under high uncertainty.
+
+---
+
+### **DADP**
+*I → A (Image → Actions)*
+
+* **Paper**: [DADP: Domain Adaptive Diffusion Policy](https://arxiv.org/abs/2602.04037)
+* **Website**: [outsider86.github.io/DomainAdaptiveDiffusionPolicy](https://outsider86.github.io/DomainAdaptiveDiffusionPolicy/)
+* **Notes**:
+    *   Released Feb 3, 2026.
+    *   Achieves robust adaptation through unsupervised disentanglement and domain-aware diffusion injection.
+    *   Introduces **Lagged Context Dynamical Prediction** to filter out transient properties.
+    *   Integrates learned domain representations directly into the generative process.
+
+---
+
+### **SD-VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Efficient Long-Horizon Vision-Language-Action Models via Static-Dynamic Disentanglement](https://arxiv.org/abs/2602.03983)
+* **Notes**:
+    *   Released Feb 3, 2026.
+    *   Disentangles visual inputs into multi-level **static and dynamic tokens**.
+    *   Retains a single copy of static tokens (e.g., background) to significantly reduce context length.
+    *   Reuses KV cache of static tokens via a lightweight **recache gate**.
+    *   Delivers 2.26x inference speedup and improves long-horizon task performance.
+
+---
+
+### **VLS**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [VLS: Steering Pretrained Robot Policies via Vision-Language Models](https://arxiv.org/abs/2602.03973)
+* **Website**: [vision-language-steering.github.io/webpage](https://vision-language-steering.github.io/webpage/)
+* **Notes**:
+    *   Released Feb 3, 2026.
+    *   **Training-free framework** for inference-time adaptation of frozen generative robot policies (diffusion or flow-matching).
+    *   Steers sampling process using VLMs to synthesize trajectory-differentiable reward functions.
+    *   Addresses failures near obstacles, on shifted surfaces, or with mild clutter.
+
+---
+
+### **DynamicVLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [DynamicVLA: A Vision-Language-Action Model for Dynamic Object Manipulation](https://arxiv.org/abs/2601.22153)
+* **Website**: [infinitescript.com/project/dynamic-vla](https://www.infinitescript.com/project/dynamic-vla/)
+* **Code**: [hzxie/DynamicVLA](https://github.com/hzxie/DynamicVLA)
+* **Dataset**: [Hugging Face](https://huggingface.co/datasets/hzxie/DOM)
+* **Notes**:
+    *   Released Jan 2026.
+    *   Enables open-ended dynamic object manipulation by pairing a compact 0.4B VLM with low-latency Continuous Inference.
+    *   Uses **Latent-Aware Action Streaming** to remove pauses and ensure seamless action transitions.
+    *   Introduces the **Dynamic Object Manipulation (DOM)** benchmark with 2.8K scenes and 206 objects.
+    *   Outperforms Pi0.5, SmolVLA, and VLASH in dynamic tasks.
+
+---
+
 ### **DeFM**
 *D → Representations (Depth → Representations)*
 
