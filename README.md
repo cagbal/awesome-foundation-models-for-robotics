@@ -9,6 +9,117 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **APEX**
+*I, P → A (Image, Proprioception → Actions)*
+
+* **Website**: [apex-humanoid.github.io](https://apex-humanoid.github.io/)
+* **Paper**: [APEX: Learning Adaptive High-Platform Traversal for Humanoid Robots](https://arxiv.org/abs/2602.11143)
+* **Notes**:
+    *   Released Feb 11, 2026.
+    *   System for perceptive, climbing-based high-platform traversal for humanoids.
+    *   Composes terrain-conditioned behaviors (climb-up, climb-down, walk, crawl).
+    *   Uses a generalized ratchet progress reward for learning contact-rich maneuvers.
+    *   Demonstrates zero-shot sim-to-real traversal of 0.8 meter platforms on Unitree G1.
+
+---
+
+### **RISE**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [opendrivelab.com/kai0-rl](https://opendrivelab.com/kai0-rl/)
+* **Paper**: [RISE: Self-Improving Robot Policy with Compositional World Model](https://arxiv.org/abs/2602.11075)
+* **Notes**:
+    *   Released Feb 11, 2026.
+    *   Scalable framework for robotic reinforcement learning via imagination.
+    *   **Compositional World Model**: predicts multi-view future via controllable dynamics model and evaluates outcomes.
+    *   Enables continuous self-improvement in imaginary space without costly physical interaction.
+    *   Achieves +35-45% improvement on real-world manipulation tasks.
+
+---
+
+### **ContactGaussian-WM**
+*V → I', Physics (Video → Future Images, Physics)*
+
+* **Paper**: [ContactGaussian-WM: Learning Physics-Grounded World Model from Videos](https://arxiv.org/abs/2602.11021)
+* **Notes**:
+    *   Released Feb 11, 2026.
+    *   Differentiable physics-grounded rigid-body world model.
+    *   Uses a unified **Gaussian representation** for visual appearance and collision geometry.
+    *   Learns physical laws directly from sparse and contact-rich video data.
+    *   Outperforms SOTA in learning complex scenarios and robust generalization.
+
+---
+
+### **VISTA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [vista-wm.github.io](https://vista-wm.github.io/)
+* **Paper**: [Scaling World Model for Hierarchical Manipulation Policies](https://arxiv.org/abs/2602.10983)
+* **Notes**:
+    *   Released Feb 11, 2026.
+    *   Hierarchical VLA framework using a world model for visual subgoal decomposition.
+    *   High-level world model divides tasks into subtask sequences with **synthesized goal images**.
+    *   Synthesized images provide visually and physically grounded details for the low-level policy.
+    *   Boosts performance in novel scenarios from 14% to 69% with world model guidance.
+
+---
+
+### **Say, Dream, and Act**
+*I, L → A, V (Image, Language → Actions, Video)*
+
+* **Paper**: [Say, Dream, and Act: Learning Video World Models for Instruction-Driven Robot Manipulation](https://arxiv.org/abs/2602.10717)
+* **Notes**:
+    *   Released Feb 11, 2026.
+    *   Framework for fast and predictive video-conditioned action.
+    *   Uses adversarial distillation for fast, few-step video generation ("Dreaming").
+    *   Action model leverages both generated videos and real observations to correct spatial errors.
+    *   Produces spatially accurate video predictions supporting precise manipulation.
+
+---
+
+### **LAP**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [lap-vla.github.io](https://lap-vla.github.io/)
+* **Paper**: [LAP: Language-Action Pre-Training Enables Zero-shot Cross-Embodiment Transfer](https://arxiv.org/abs/2602.10556)
+* **Notes**:
+    *   Released Feb 11, 2026.
+    *   **Language-Action Pre-training**: represents low-level robot actions directly in natural language.
+    *   Aligns action supervision with the pre-trained VLM's input-output distribution.
+    *   **LAP-3B** achieves >50% average zero-shot success on novel robots without fine-tuning.
+    *   Unifies action prediction and VQA in a shared language-action format.
+
+---
+
+### **LocoVLM**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [locovlm.github.io](https://locovlm.github.io/)
+* **Paper**: [LocoVLM: Grounding Vision and Language for Adapting Versatile Legged Locomotion Policies](https://arxiv.org/abs/2602.10399)
+* **Notes**:
+    *   Released Feb 11, 2026.
+    *   Integrates high-level commonsense reasoning from foundation models into legged locomotion.
+    *   Uses a VLM to extract environmental semantics and ground them in a skill database.
+    *   Trains a style-conditioned policy for diverse locomotion skills.
+    *   Achieves 87% instruction-following accuracy.
+
+---
+
+### **ST4VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [internrobotics.github.io/internvla-m1.github.io](https://internrobotics.github.io/internvla-m1.github.io/)
+* **Paper**: [ST4VLA: Spatially Guided Training for Vision-Language-Action Models](https://arxiv.org/abs/2602.10109)
+* **Notes**:
+    *   Released Feb 10, 2026.
+    *   Dual-system VLA framework leveraging **Spatial Guided Training**.
+    *   Stage 1: Spatial grounding pre-training (point, box, trajectory prediction).
+    *   Stage 2: Spatially guided action post-training with spatial prompting.
+    *   Substantial improvements on Google Robot and WidowX Robot tasks.
+    *   Accepted by ICLR 2026.
+
+---
+
 ### **DreamZero**
 *I, L → A, V (Image, Language → Actions, Video)*
 
