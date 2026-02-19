@@ -9,6 +9,49 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **RoboGene**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [robogene-boost-vla.github.io](https://robogene-boost-vla.github.io/)
+* **Paper**: [RoboGene: Boosting VLA Pre-training via Diversity-Driven Agentic Framework for Real-World Task Generation](https://arxiv.org/abs/2602.16444)
+* **Notes**:
+    *   Released Feb 18, 2026.
+    *   Agentic framework for automated generation of diverse manipulation tasks.
+    *   Integrates diversity-driven sampling, self-reflection, and human-in-the-loop refinement.
+    *   Collected 18k trajectories.
+    *   VLA models pre-trained with RoboGene achieve higher success rates and superior generalization.
+
+---
+
+### **DM0**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [DM0: An Embodied-Native Vision-Language-Action Model towards Physical AI](https://arxiv.org/abs/2602.14974)
+* **Code**: [Dexmal/dexbotic](https://github.com/Dexmal/dexbotic)
+* **Notes**:
+    *   Released Feb 16, 2026.
+    *   Embodied-Native VLA framework designed for Physical AI.
+    *   Unifies embodied manipulation and navigation by learning from heterogeneous data sources.
+    *   Builds a flow-matching action expert atop the VLM.
+    *   Uses Embodied Spatial Scaffolding for spatial CoT reasoning.
+    *   Achieves SOTA performance on RoboChallenge benchmark.
+
+---
+
+### **RynnBrain**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [alibaba-damo-academy.github.io/RynnBrain.github.io](https://alibaba-damo-academy.github.io/RynnBrain.github.io)
+* **Paper**: [RynnBrain: Open Embodied Foundation Models](https://arxiv.org/abs/2602.14979)
+* **Notes**:
+    *   Released Feb 13, 2026.
+    *   Open-source spatiotemporal foundation model for embodied intelligence.
+    *   Strengthens egocentric understanding, localization, reasoning, and physics-aware planning.
+    *   Family includes 2B, 8B, and 30B (MoE) models.
+    *   Outperforms existing embodied foundation models on 20 benchmarks.
+
+---
+
 ### **APEX**
 *I, P → A (Image, Proprioception → Actions)*
 
@@ -117,6 +160,20 @@ Curated database of foundation models for robotics
     *   Stage 2: Spatially guided action post-training with spatial prompting.
     *   Substantial improvements on Google Robot and WidowX Robot tasks.
     *   Accepted by ICLR 2026.
+
+---
+
+### **FUTURE-VLA**
+*I, L → A, I' (Image, Language → Actions, Future Images)*
+
+* **Paper**: [FUTURE-VLA: Forecasting Unified Trajectories Under Real-time Execution](https://arxiv.org/abs/2602.15882)
+* **Notes**:
+    *   Released Feb 5, 2026.
+    *   Unified architecture reformulating long-horizon control and future forecasting as a monolithic sequence-generation task.
+    *   Leverages **Temporally Adaptive Compression** for high spatiotemporal information density.
+    *   Performs **Latent-Space Autoregression** to align actionable dynamics with reviewable visual look-aheads.
+    *   Enables prediction-guided Human-In-the-Loop mechanisms.
+    *   Achieves 99.2% success on LIBERO.
 
 ---
 
