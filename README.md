@@ -9,6 +9,65 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **RoboGene**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [robogene-boost-vla.github.io](https://robogene-boost-vla.github.io/)
+* **Paper**: [RoboGene: Boosting VLA Pre-training via Diversity-Driven Agentic Framework for Real-World Task Generation](https://arxiv.org/abs/2602.16444)
+* **Notes**:
+    *   Released Feb 18, 2026.
+    *   Agentic framework for automated generation of diverse manipulation tasks.
+    *   Integrates diversity-driven sampling, self-reflection, and human-in-the-loop refinement.
+    *   Collected 18k trajectories.
+    *   VLA models pre-trained with RoboGene achieve higher success rates and superior generalization.
+
+---
+
+### **DreamZero**
+*I, L → A, V (Image, Language → Actions, Video)*
+
+* **Website**: [dreamzero0.github.io](https://dreamzero0.github.io/)
+* **Paper**: [DreamZero: World Action Models Are Zero-Shot Policies](https://arxiv.org/abs/2602.15922)
+* **Code**: [dreamzero0/dreamzero](https://github.com/dreamzero0/dreamzero)
+* **Weights**: [Hugging Face](https://huggingface.co/GEAR-Dreams/DreamZero-DROID)
+* **Notes**:
+    *   Released Feb 17, 2026.
+    *   World Action Model (WAM) that jointly predicts actions and videos.
+    *   Achieves strong zero-shot generalization to new tasks and environments (over 2x improvement vs VLAs).
+    *   Demonstrates efficient cross-embodiment transfer (adapts to new robot with 30 mins of play data).
+    *   Enables real-time closed-loop control at 7Hz via model and system optimizations (DreamZero-Flash).
+
+---
+
+### **DM0**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [DM0: An Embodied-Native Vision-Language-Action Model towards Physical AI](https://arxiv.org/abs/2602.14974)
+* **Code**: [Dexmal/dexbotic](https://github.com/Dexmal/dexbotic)
+* **Notes**:
+    *   Released Feb 16, 2026.
+    *   Embodied-Native VLA framework designed for Physical AI.
+    *   Unifies embodied manipulation and navigation by learning from heterogeneous data sources.
+    *   Builds a flow-matching action expert atop the VLM.
+    *   Uses Embodied Spatial Scaffolding for spatial CoT reasoning.
+    *   Achieves SOTA performance on RoboChallenge benchmark.
+
+---
+
+### **RynnBrain**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [alibaba-damo-academy.github.io/RynnBrain.github.io](https://alibaba-damo-academy.github.io/RynnBrain.github.io)
+* **Paper**: [RynnBrain: Open Embodied Foundation Models](https://arxiv.org/abs/2602.14979)
+* **Notes**:
+    *   Released Feb 13, 2026.
+    *   Open-source spatiotemporal foundation model for embodied intelligence.
+    *   Strengthens egocentric understanding, localization, reasoning, and physics-aware planning.
+    *   Family includes 2B, 8B, and 30B (MoE) models.
+    *   Outperforms existing embodied foundation models on 20 benchmarks.
+
+---
+
 ### **APEX**
 *I, P → A (Image, Proprioception → Actions)*
 
@@ -120,19 +179,17 @@ Curated database of foundation models for robotics
 
 ---
 
-### **DreamZero**
-*I, L → A, V (Image, Language → Actions, Video)*
+### **FUTURE-VLA**
+*I, L → A, I' (Image, Language → Actions, Future Images)*
 
-* **Website**: [dreamzero0.github.io](https://dreamzero0.github.io/)
-* **Paper**: [DreamZero: World Action Models Are Zero-Shot Policies](https://dreamzero0.github.io/DreamZero.pdf)
-* **Code**: [dreamzero0/dreamzero](https://github.com/dreamzero0/dreamzero)
-* **Weights**: [Hugging Face](https://huggingface.co/GEAR-Dreams/DreamZero-DROID)
+* **Paper**: [FUTURE-VLA: Forecasting Unified Trajectories Under Real-time Execution](https://arxiv.org/abs/2602.15882)
 * **Notes**:
-    *   Released Feb 2026.
-    *   World Action Model (WAM) that jointly predicts actions and videos.
-    *   Achieves strong zero-shot generalization to new tasks and environments (over 2x improvement vs VLAs).
-    *   Demonstrates efficient cross-embodiment transfer (adapts to new robot with 30 mins of play data).
-    *   Enables real-time closed-loop control at 7Hz via model and system optimizations (DreamZero-Flash).
+    *   Released Feb 5, 2026.
+    *   Unified architecture reformulating long-horizon control and future forecasting as a monolithic sequence-generation task.
+    *   Leverages **Temporally Adaptive Compression** for high spatiotemporal information density.
+    *   Performs **Latent-Space Autoregression** to align actionable dynamics with reviewable visual look-aheads.
+    *   Enables prediction-guided Human-In-the-Loop mechanisms.
+    *   Achieves 99.2% success on LIBERO.
 
 ---
 
@@ -1283,7 +1340,7 @@ Curated database of foundation models for robotics
 *I, P, G → A (Image, Proprioception, Goal Image → Actions)*
 
 - **Website**: [Google DeepMind Blog Post](https://deepmind.google/discover/blog/robocat-a-self-improving-robotic-agent/)
-- **Paper**: [RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation](https://arxiv.org/abs/2306.11706)r
+- **Paper**: [RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation](https://arxiv.org/abs/2306.11706)
 - **Notes**:
   - A multi-task, multi-embodiment generalist agent based on a decision transformer architecture (Gato).
   - Demonstrates a self-improvement loop: a trained model is fine-tuned for a new task, generates more data for that task, and this new data is used to train the next, more capable version of the generalist agent.
