@@ -9,6 +9,22 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **VLANeXt**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [dravenalg.github.io/VLANeXt](https://dravenalg.github.io/VLANeXt/)
+* **Paper**: [VLANeXt: Recipes for Building Strong VLA Models](https://arxiv.org/abs/2602.18532)
+* **Code**: [DravenALG/VLANeXt](https://github.com/DravenALG/VLANeXt)
+* **Notes**:
+    *   Released Feb 20, 2026.
+    *   Systematically dissects design choices and distills 12 key "recipes" for building effective VLA models.
+    *   Reexamines the VLA design space under a unified framework and evaluation setup.
+    *   Outperforms prior state-of-the-art methods on LIBERO and LIBERO-plus benchmarks.
+    *   Demonstrates strong generalization in real-world experiments.
+    *   Uses LLaMA as the language backbone and SigLIP2 as the vision encoder.
+
+---
+
 ### **RoboGene**
 *I, L → A (Image, Language → Actions)*
 
