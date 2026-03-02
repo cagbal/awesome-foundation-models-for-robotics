@@ -9,6 +9,20 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **TOPReward**
+*I, L → V (Image, Language → Value)*
+
+* **Website**: [topreward.github.io/webpage](https://topreward.github.io/webpage/)
+* **Paper**: [TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics](https://arxiv.org/abs/2602.19313)
+* **Code**: [GitHub](https://github.com/TOPReward/TOPReward)
+* **Notes**:
+    *   Released Feb 22, 2026. Authors: Shirui Chen, Cole Harrison, Ying-Chun Lee, Angela Jin Yang, Zhongzheng Ren, Lillian J. Ratliff, Jiafei Duan, Dieter Fox, Ranjay Krishna.
+    *   A zero-shot progress estimator that interprets pretrained video VLM token likelihoods as temporal value functions.
+    *   Avoids relying on numerical output, leveraging token probabilities (e.g., the token "True") for instruction satisfaction.
+    *   Enables success detection and reward-aligned behavior cloning.
+
+---
+
 ### **RoboGene**
 *I, L → A (Image, Language → Actions)*
 
