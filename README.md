@@ -9,6 +9,103 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **LiLo-VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [yy-gx.github.io/LiLo-VLA](https://yy-gx.github.io/LiLo-VLA/)
+* **Paper**: [LiLo-VLA: Compositional Long-Horizon Manipulation via Linked Object-Centric Policies](https://arxiv.org/abs/2602.21531)
+* **Notes**:
+    *   Released Feb 25, 2026.
+    *   Linked Local VLA framework for compositional long-horizon manipulation.
+    *   Decouples transport (global motion) from interaction (object-centric VLA).
+    *   Zero-shot generalization to novel long-horizon tasks.
+    *   Introduces **LIBERO-Long++** and **Ultra-Long** benchmarks.
+
+---
+
+### **JALA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Joint-Aligned Latent Action: Towards Scalable VLA Pretraining in the Wild](https://arxiv.org/abs/2602.21736)
+* **Notes**:
+    *   Released Feb 25, 2026.
+    *   Pretraining framework that learns **Jointly-Aligned Latent Actions (JALA)**.
+    *   Learns a predictive action embedding aligned with both inverse dynamics and real actions.
+    *   Scales with **UniHand-Mix**, a 7.5M video corpus (>2,000 hours).
+    *   Significantly improves downstream robot manipulation performance.
+
+---
+
+### **Self-Correcting VLA (SC-VLA)**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Self-Correcting VLA: Online Action Refinement via Sparse World Imagination](https://arxiv.org/abs/2602.21633)
+* **Code**: [Kisaragi0/SC-VLA](https://github.com/Kisaragi0/SC-VLA)
+* **Notes**:
+    *   Released Feb 25, 2026.
+    *   Achieves self-improvement by intrinsically guiding action refinement through sparse imagination.
+    *   Integrates auxiliary predictive heads to forecast current task progress and future trajectory trends.
+    *   Introduces online action refinement to reshape progress-dependent dense rewards.
+    *   Yields highest task throughput with 16% fewer steps and 9% higher success rate than baselines.
+
+---
+
+### **HALO**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [HALO: A Unified Vision-Language-Action Model for Embodied Multimodal Chain-of-Thought Reasoning](https://arxiv.org/abs/2602.21157)
+* **Notes**:
+    *   Released Feb 24, 2026.
+    *   Unified VLA model for Embodied Multimodal Chain-of-Thought (EM-CoT) reasoning.
+    *   Mixture-of-Transformers (MoT) architecture decoupling semantic reasoning, visual foresight, and action prediction.
+    *   Surpasses baseline policy pi_0 by 34.1% on RoboTwin benchmark.
+    *   Demonstrates strong generalization under aggressive unseen environmental randomization.
+
+---
+
+### **AutoHorizon**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [hatchetproject.github.io/autohorizon](https://hatchetproject.github.io/autohorizon/)
+* **Paper**: [VLA Knows Its Limits](https://arxiv.org/abs/2602.21445)
+* **Notes**:
+    *   Released Feb 24, 2026.
+    *   Test-time method that dynamically estimates the execution horizon for each predicted action chunk.
+    *   Analyzes self-attention weights in flow-based VLAs.
+    *   Finds that intra-chunk actions attend invariantly to vision-language tokens.
+    *   Incurs negligible computational overhead and generalizes across diverse tasks and flow-based models.
+
+---
+
+### **TOPReward**
+*I, L → V (Image, Language → Value)*
+
+* **Website**: [topreward.github.io/webpage](https://topreward.github.io/webpage/)
+* **Paper**: [TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics](https://arxiv.org/abs/2602.19313)
+* **Code**: [GitHub](https://github.com/TOPReward/TOPReward)
+* **Notes**:
+    *   Released Feb 22, 2026. Authors: Shirui Chen, Cole Harrison, Ying-Chun Lee, Angela Jin Yang, Zhongzheng Ren, Lillian J. Ratliff, Jiafei Duan, Dieter Fox, Ranjay Krishna.
+    *   A zero-shot progress estimator that interprets pretrained video VLM token likelihoods as temporal value functions.
+    *   Avoids relying on numerical output, leveraging token probabilities (e.g., the token "True") for instruction satisfaction.
+    *   Enables success detection and reward-aligned behavior cloning.
+
+---
+
+### **VLANeXt**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [dravenalg.github.io/VLANeXt](https://dravenalg.github.io/VLANeXt/)
+* **Paper**: [VLANeXt: Recipes for Building Strong VLA Models](https://arxiv.org/abs/2602.18532)
+* **Code**: [DravenALG/VLANeXt](https://github.com/DravenALG/VLANeXt)
+* **Notes**:
+    *   Released Feb 20, 2026.
+    *   Systematically dissects VLA design choices: foundational components, perception essentials, and action modelling.
+    *   Distills 12 key findings forming a practical recipe for building strong VLA models.
+    *   Outperforms prior SOTA on LIBERO and LIBERO-plus benchmarks.
+    *   Demonstrates strong generalization in real-world experiments.
+
+---
+
 ### **RoboGene**
 *I, L → A (Image, Language → Actions)*
 
