@@ -9,6 +9,34 @@ Curated database of foundation models for robotics
 
 ## Main list 👇
 
+### **TOPReward**
+*I, L → V (Image, Language → Value)*
+
+* **Website**: [topreward.github.io/webpage](https://topreward.github.io/webpage/)
+* **Paper**: [TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics](https://arxiv.org/abs/2502.19313)
+* **Code**: [GitHub](https://github.com/TOPReward/TOPReward)
+* **Notes**:
+    *   Released Feb 22, 2025. Authors: Shirui Chen, Cole Harrison, Ying-Chun Lee, Angela Jin Yang, Zhongzheng Ren, Lillian J. Ratliff, Jiafei Duan, Dieter Fox, Ranjay Krishna.
+    *   A zero-shot progress estimator that interprets pretrained video VLM token likelihoods as temporal value functions.
+    *   Avoids relying on numerical output, leveraging token probabilities (e.g., the token "True") for instruction satisfaction.
+    *   Enables success detection and reward-aligned behavior cloning.
+
+---
+
+### **VLANeXt**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [dravenalg.github.io/VLANeXt](https://dravenalg.github.io/VLANeXt/)
+* **Paper**: [VLANeXt: Recipes for Building Strong VLA Models](https://arxiv.org/abs/2502.18532)
+* **Code**: [DravenALG/VLANeXt](https://github.com/DravenALG/VLANeXt)
+* **Notes**:
+    *   Released Feb 20, 2025.
+    *   Systematically explores the VLA design space under a unified framework to distill 12 key findings.
+    *   Introduces VLANeXt, a simple yet effective model that outperforms prior state-of-the-art on LIBERO and LIBERO-plus benchmarks.
+    *   Demonstrates strong generalization in real-world experiments.
+
+---
+
 ### **RoboGene**
 *I, L → A (Image, Language → Actions)*
 
