@@ -13,7 +13,7 @@ Curated database of foundation models for robotics
 *I, L → V (Image, Language → Value)*
 
 * **Website**: [topreward.github.io/webpage](https://topreward.github.io/webpage/)
-* **Paper**: [TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics](https://arxiv.org/abs/2502.19313)
+* **Paper**: [TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics](https://arxiv.org/abs/2602.19313)
 * **Code**: [GitHub](https://github.com/TOPReward/TOPReward)
 * **Notes**:
     *   Released Feb 22, 2025. Authors: Shirui Chen, Cole Harrison, Ying-Chun Lee, Angela Jin Yang, Zhongzheng Ren, Lillian J. Ratliff, Jiafei Duan, Dieter Fox, Ranjay Krishna.
@@ -27,7 +27,7 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [dravenalg.github.io/VLANeXt](https://dravenalg.github.io/VLANeXt/)
-* **Paper**: [VLANeXt: Recipes for Building Strong VLA Models](https://arxiv.org/abs/2502.18532)
+* **Paper**: [VLANeXt: Recipes for Building Strong VLA Models](https://arxiv.org/abs/2602.18532)
 * **Code**: [DravenALG/VLANeXt](https://github.com/DravenALG/VLANeXt)
 * **Notes**:
     *   Released Feb 20, 2025.
@@ -55,7 +55,7 @@ Curated database of foundation models for robotics
 *I, L → A, V (Image, Language → Actions, Video)*
 
 * **Website**: [dreamzero0.github.io](https://dreamzero0.github.io/)
-* **Paper**: [DreamZero: World Action Models Are Zero-Shot Policies](https://arxiv.org/abs/2602.15922)
+* **Paper**: [World Action Models are Zero-shot Policies](https://arxiv.org/abs/2602.15922)
 * **Code**: [dreamzero0/dreamzero](https://github.com/dreamzero0/dreamzero)
 * **Weights**: [Hugging Face](https://huggingface.co/GEAR-Dreams/DreamZero-DROID)
 * **Notes**:
@@ -396,7 +396,7 @@ Curated database of foundation models for robotics
 ### **BayesianVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [BayesianVLA: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries](https://arxiv.org/abs/2601.15197)
+* **Paper**: [LangForce: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries](https://arxiv.org/abs/2601.15197)
 * **Notes**:
     *   Released Jan 21, 2026.
     *   Addresses "Information Collapse" in goal-driven datasets where language is ignored.
@@ -517,7 +517,7 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [cladernyjorn.github.io/VLM4VLA.github.io](https://cladernyjorn.github.io/VLM4VLA.github.io/)
-* **Paper**: [Revisiting Vision-Language Models in Vision-Language-Action Models](https://arxiv.org/abs/2601.03309)
+* **Paper**: [VLM4VLA: Revisiting Vision-Language-Models in Vision-Language-Action Models](https://arxiv.org/abs/2601.03309)
 * **Code**: [CladernyJorn/VLM4VLA](https://github.com/CladernyJorn/VLM4VLA)
 * **Notes**:
     *   Released Jan 2026.
@@ -541,7 +541,7 @@ Curated database of foundation models for robotics
 ### **Dream-VLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models...](https://arxiv.org/abs/2512.22615)
+* **Paper**: [Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone](https://arxiv.org/abs/2512.22615)
 * **Notes**:
     *   Diffusion LLM-based VLA (dVLA) developed through continuous pre-training on open robotic datasets.
     *   Natively bidirectional diffusion backbone is inherently suited for action chunking and parallel generation.
@@ -566,7 +566,7 @@ Curated database of foundation models for robotics
 ### **FASTerVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [FASTer: Toward Efficient Autoregressive Vision Language Action Modeling...](https://arxiv.org/abs/2512.04952)
+* **Paper**: [FASTer: Toward Efficient Autoregressive Vision Language Action Modeling via Neural Action Tokenization](https://arxiv.org/abs/2512.04952)
 * **Notes**:
     *   Builds on the FAST tokenizer with block-wise autoregressive decoding and a lightweight action expert.
     *   Uses a learnable action tokenizer (FASTerVQ) that encodes action chunks as single-channel images.
@@ -649,7 +649,7 @@ Curated database of foundation models for robotics
 *I, V, L → A, R (Image, Video, Language → Actions, Reasoning)*
 
 * **Website**: [deepmind.google/models/gemini-robotics/](https://deepmind.google/models/gemini-robotics/)
-* **Paper**: [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots...](https://arxiv.org/abs/2510.03342)
+* **Paper**: [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](https://arxiv.org/abs/2510.03342)
 * **Notes**:
     *   A dual-model system: VLA for low-level control and Embodied Reasoning (ER) for high-level planning.
     *   Interleaves actions with a natural language "thinking" process to decompose complex tasks.
@@ -771,7 +771,7 @@ Curated database of foundation models for robotics
 ### **FLOWER**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Flow Models](https://arxiv.org/abs/2509.04996)
+* **Paper**: [FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Action Flow Policies](https://arxiv.org/abs/2509.04996)
 * **Notes**:
     *   Proposes Vision-Language-Flow (VLF) models to make generalist policies more efficient.
     *   Achieves 3x faster inference speed compared to diffusion-based VLAs.
@@ -805,7 +805,7 @@ Curated database of foundation models for robotics
 ### **Discrete Diffusion VLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding...](https://arxiv.org/abs/2508.20072)
+* **Paper**: [Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies](https://arxiv.org/abs/2508.20072)
 * **Code**: [Liang-ZX/DiscreteDiffusionVLA](https://github.com/Liang-ZX/DiscreteDiffusionVLA)
 * **Notes**:
     *   Discretizes continuous action spaces and uses discrete diffusion for action decoding.
@@ -950,8 +950,7 @@ Curated database of foundation models for robotics
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
 * **Website**: [toyotaresearchinstitute.github.io/lbm1/](https://toyotaresearchinstitute.github.io/lbm1/)
-* **Paper**: [A careful examination of large behavior models...](https://arxiv.org/abs/2507.05331)
-* **Code**: [lucidrains/TRI-LBM](https://github.com/lucidrains/TRI-LBM)
+* **Paper**: [A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation](https://arxiv.org/abs/2507.05331)
 * **Notes**:
     * Uses a Diffusion Transformer (DiT) with Image and Text Encoders.
     * Demonstrated for complex bimanual manipulation tasks.
@@ -1008,7 +1007,7 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [openhelix-robot.github.io](https://openhelix-robot.github.io/)
-* **Paper**: [OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model...](https://arxiv.org/abs/2505.03912)
+* **Paper**: [OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation](https://arxiv.org/abs/2505.03912)
 * **Notes**:
     *   Released May 2025.
     *   Open-source Dual-System VLA (Vision-Language-Action) model.
@@ -1060,7 +1059,7 @@ Curated database of foundation models for robotics
 *I, P → A (Image, Proprioception → Actions)*
 
 * **Website**: [sam2act.github.io](https://sam2act.github.io)
-* **Paper**: [SAM2Act: Integrating Visual Foundation Model with A Memory Architecture...](https://arxiv.org/abs/2501.18564)
+* **Paper**: [SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation](https://arxiv.org/abs/2501.18564)
 * **Code**: [sam2act/sam2act](https://github.com/sam2act/sam2act)
 * **Notes**:
     *   Integrates the SAM2 visual foundation model with a memory architecture for robotic manipulation.
@@ -1087,7 +1086,7 @@ Curated database of foundation models for robotics
 *S, Map → Trajectory*
 
 * **Website**: [waymo.com/research/scaling-laws-of-motion-forecasting-and-planning](https://waymo.com/research/scaling-laws-of-motion-forecasting-and-planning/)
-* **Paper**: [Scaling Laws of Motion Forecasting and Planning](https://arxiv.org/abs/2506.08228)
+* **Paper**: [Scaling Laws of Motion Forecasting and Planning -- Technical Report](https://arxiv.org/abs/2506.08228)
 * **Notes**:
     *   Demonstrates that motion forecasting and planning models follow scaling laws similar to LLMs.
     *   Trained on a massive dataset of 500,000 hours of driving data.
@@ -1135,7 +1134,7 @@ Curated database of foundation models for robotics
 *I, L, M → A (Image, Language, Memory → Actions)*
 
 * **Website**: [3dllm-mem.github.io](https://3dllm-mem.github.io/)
-* **Paper**: [3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D LLM](https://arxiv.org/abs/2505.22657)
+* **Paper**: [3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D Large Language Model](https://arxiv.org/abs/2505.22657)
 * **Notes**:
     *   Introduces a dynamic memory management system for Embodied 3D Large Language Models.
     *   Uses working memory tokens to selectively attend to episodic memory, enabling long-term spatial-temporal reasoning.
@@ -1148,7 +1147,7 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [agentic-robot.github.io](https://agentic-robot.github.io/)
-* **Paper**: [Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models...](https://arxiv.org/abs/2505.23450)
+* **Paper**: [Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models in Embodied Agents](https://arxiv.org/abs/2505.23450)
 * **Notes**:
     *   A brain-inspired framework that uses a Large Reasoning Model (LRM) to decompose tasks into subgoals (Standardized Action Procedure).
     *   Features a VLA executor for low-level control and a temporal verifier for error recovery.
@@ -1160,7 +1159,7 @@ Curated database of foundation models for robotics
 *I, P, A → I', U (Image, Proprioception, Actions → Future Images, Uncertainty)*
 
 * **Website**: [sites.google.com/view/uncertainty-aware-rwm](https://sites.google.com/view/uncertainty-aware-rwm)
-* **Paper**: [Offline Robotic World Model: Learning Robotic Policies without a Physics Simulator](https://arxiv.org/abs/2504.16680)
+* **Paper**: [Uncertainty-Aware Robotic World Model Makes Offline Model-Based Reinforcement Learning Work on Real Robots](https://arxiv.org/abs/2504.16680)
 * **Code**: [leggedrobotics/robotic_world_model_lite](https://github.com/leggedrobotics/robotic_world_model_lite)
 * **Notes**:
     *   Released April 2025.
@@ -1228,7 +1227,7 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [hybrid-vla.github.io](https://hybrid-vla.github.io/)
-* **Paper**: [HybridVLA: Collaborative Diffusion and Autoregression...](https://arxiv.org/abs/2503.10631)
+* **Paper**: [HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model](https://arxiv.org/abs/2503.10631)
 * **Code**: [PKU-HMI-Lab/Hybrid-VLA](https://github.com/PKU-HMI-Lab/Hybrid-VLA)
 * **Notes**:
     *   Unified framework integrating autoregressive reasoning and diffusion-based action prediction.
@@ -1291,7 +1290,7 @@ Curated database of foundation models for robotics
 ### **GR-3**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
-* **Paper**: [GR-3: Foundation Models for Generalist Robots](https://arxiv.org/abs/2507.15493)
+* **Paper**: [GR-3 Technical Report](https://arxiv.org/abs/2507.15493)
 * **Code**: None available.
 * **Notes**:
     * Trained on three diverse data types: internet-scale vision-language data, human hand tracking data, and robot trajectories.
@@ -1305,7 +1304,7 @@ Curated database of foundation models for robotics
 *Video → Embeddings (V-JEPA 2) / Actions (V-JEPA 2-AC)*
 
 * **Website**: [ai.meta.com/vjepa/](https://ai.meta.com/vjepa/)
-* **Paper**: [V-JEPA 2: Self-supervised video models enable understanding...](https://arxiv.org/abs/2506.09985)
+* **Paper**: [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2506.09985)
 * **Code**: [Official facebookresearch Repo](https://github.com/facebookresearch/vjepa2)
 * **Notes**:
     * A spatially capable vision encoder trained entirely with self-supervision.
@@ -1388,7 +1387,7 @@ Curated database of foundation models for robotics
 ---
 
 ### **Adapt3R: Adaptive 3D Scene Representation for Domain Transfer**
-* **Paper**: [Wilcox, Albert, et al.](https://arxiv.org/abs/2503.04877)
+* **Paper**: [Adapt3R: Adaptive 3D Scene Representation for Domain Transfer in Imitation Learning](https://arxiv.org/abs/2503.04877)
 * **Code**: [Official pairlab Repo](https://github.com/pairlab/Adapt3R)
 * **Notes**:
     * Focuses on RGB-D based, viewpoint-invariant learning for imitation.
@@ -1397,7 +1396,7 @@ Curated database of foundation models for robotics
 ---
 
 ### **Risk-Guided Diffusion**
-* **Paper**: [Risk-Guided Diffusion: Toward Deploying Robot Foundation Models In Space](https://arxiv.org/abs/2506.17601)
+* **Paper**: [Risk-Guided Diffusion: Toward Deploying Robot Foundation Models in Space, Where Failure Is Not An Option](https://arxiv.org/abs/2506.17601)
 * **Notes**:
     *   Proposes a risk-guided diffusion framework fusing a fast "System-1" with a slow, physics-based "System-2".
     *   Addresses safety for deploying foundation models in space exploration.
