@@ -609,7 +609,7 @@ Curated database of foundation models for robotics
 ### **Dream-VLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone](https://arxiv.org/abs/2512.22615)
+* **Paper**: [Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone](https://arxiv.org/abs/2412.22615)
 * **Notes**:
     *   Diffusion LLM-based VLA (dVLA) developed through continuous pre-training on open robotic datasets.
     *   Natively bidirectional diffusion backbone is inherently suited for action chunking and parallel generation.
