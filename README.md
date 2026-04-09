@@ -352,18 +352,6 @@ Curated database of foundation models for robotics
     *   Distilled into compact models (as small as 3M params) for efficient policy learning.
     *   Achieves SOTA on depth-based navigation, locomotion, and manipulation benchmarks.
 
-#### **SAM2Act & SAM2Act+**
-*I, P → A (Image, Proprioception → Actions)*
-
-* **Website**: [sam2act.github.io](https://sam2act.github.io)
-* **Paper**: [SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation](https://arxiv.org/abs/2601.18564)
-* **Code**: [sam2act/sam2act](https://github.com/sam2act/sam2act)
-* **Notes**:
-    *   Released Jan 2026.
-    *   Integrates the SAM2 visual foundation model with a memory architecture for robotic manipulation.
-    *   SAM2Act+ incorporates a memory bank and encoder for episodic recall, enabling spatial memory-dependent tasks.
-    *   Achieves state-of-the-art performance on RLBench (86.8%) and robust generalization on The Colosseum.
-
 #### **LingBot-VLA**
 *I, L → A (Image, Language → Actions)*
 
@@ -454,19 +442,6 @@ Curated database of foundation models for robotics
     *   Applies VLA models to autonomous aerial manipulation with a custom drone.
     *   Integrates Grounding DINO as a separate module for object localization and dynamic planning within the pipeline.
     *   Uses a human-centric controller for safe handovers.
-
-#### **UniAct**
-*I, L → A (Image, Language → Actions)*
-
-* **Website**: [2toinf.github.io/UniAct](https://2toinf.github.io/UniAct/)
-* **Paper**: [Universal Actions for Enhanced Embodied Foundation Models](https://arxiv.org/abs/2601.10105)
-* **Code**: [2toinf/UniAct](https://github.com/2toinf/UniAct)
-* **Notes**:
-    *   Released Jan 2026.
-    *   Operates in a Universal Action Space constructed as a vector-quantized (VQ) codebook.
-    *   Learns universal actions capturing generic atomic behaviors shared across robots.
-    *   Uses streamlined heterogeneous decoders to translate universal actions into embodiment-specific commands.
-    *   0.5B model outperforms significantly larger models (14x larger).
 
 #### **ActiveVLA**
 *I, L, D → A, Vp (Image, Language, Depth → Actions, Viewpoint)*
@@ -713,7 +688,7 @@ Curated database of foundation models for robotics
 
 * **Website**: [qianzhong-chen.github.io/sarm.github.io](https://qianzhong-chen.github.io/sarm.github.io/)
 * **Paper**: [SARM: Stage-Aware Reward Modeling for Long Horizon Robot Manipulation](https://arxiv.org/abs/2509.25358)
-* **Code**: [Qianzhong-Chen/SARM](https://github.com/Qianzhong-Chen/SARM)
+* **Code**: [xdofai/opensarm](https://github.com/xdofai/opensarm)
 * **Notes**:
     *   Released Sep 2025.
     *   **Stage-Aware Reward Modeling** framework for long-horizon robot manipulation.
@@ -785,6 +760,15 @@ Curated database of foundation models for robotics
     *   Unitree's open-source world-model-action architecture for general-purpose robot learning.
     *   Functions as both a Simulation Engine (generating synthetic data) and Policy Enhancement (predicting future interactions).
     *   Trained on Unitree's open-source datasets and fine-tuned on Open-X.
+
+#### **Genie Envisioner**
+*I, L → Vid, A (Image, Language → Video, Actions)*
+
+* **Paper**: [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](https://arxiv.org/abs/2508.05635)
+* **Notes**:
+    *   Released Aug 2025 (Presented at RSS 2025 as Best Systems Paper finalist).
+    *   Unified platform collapsing robot sensing, policy learning, and evaluation into a single closed-loop video generative world model.
+    *   Trained on ~3,000 hours of video-language paired data (AgiBot-World-Beta).
 
 #### **Discrete Diffusion VLA**
 *I, L → A (Image, Language → Actions)*
@@ -898,16 +882,6 @@ Curated database of foundation models for robotics
     *   Demonstrated for complex bimanual manipulation tasks.
     *   Has been implemented on a Boston Dynamics humanoid robot.
 
-#### **Unified VLA**
-*I, L → A (Image, Language → Actions)*
-
-* **Paper**: [Unified Vision-Language-Action Model](https://arxiv.org/abs/2506.19850)
-* **Notes**:
-    *   Released Jun 2025.
-    *   Autoregressively models vision, language, and actions as a single interleaved stream of discrete tokens.
-    *   Incorporates world modeling during post-training to capture causal dynamics.
-    *   Achieves strong results on CALVIN and LIBERO benchmarks.
-
 #### **RoboMonkey**
 *I, L → A (Image, Language → Actions)*
 
@@ -953,15 +927,6 @@ Curated database of foundation models for robotics
     *   Uses an encoder-decoder autoregressive transformer architecture.
     *   Shows that increasing compute and data predictably improves both open-loop and closed-loop performance.
 
-#### **Genie Envisioner**
-*I, L → Vid, A (Image, Language → Video, Actions)*
-
-* **Paper**: [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](https://arxiv.org/abs/2506.05635)
-* **Notes**:
-    *   Released Jun 2025 (Presented at RSS 2025 as Best Systems Paper finalist).
-    *   Unified platform collapsing robot sensing, policy learning, and evaluation into a single closed-loop video generative world model.
-    *   Trained on ~3,000 hours of video-language paired data (AgiBot-World-Beta).
-
 #### **Fast-in-Slow (FiS)**
 *I, L → A (Image, Language → Actions)*
 
@@ -983,6 +948,16 @@ Curated database of foundation models for robotics
     *   A robot learning system that models human tactile behavior to learn force-sensitive manipulation.
     *   Uses a tactile glove to collect human demonstrations with precise contact forces.
     *   Achieves robust force-aware control by continuously predicting the forces needed for manipulation.
+
+#### **Unified VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Unified Vision-Language-Action Model](https://arxiv.org/abs/2505.11917)
+* **Notes**:
+    *   Released May 2025.
+    *   Autoregressively models vision, language, and actions as a single interleaved stream of discrete tokens.
+    *   Incorporates world modeling during post-training to capture causal dynamics.
+    *   Achieves strong results on CALVIN and LIBERO benchmarks.
 
 #### **Agentic Robot**
 *I, L → A (Image, Language → Actions)*
@@ -1128,6 +1103,31 @@ Curated database of foundation models for robotics
     *   Combines a VLM for high-level reasoning with a diffusion expert for low-level control.
     *   The diffusion expert is "plug-in", allowing modular upgrades.
     *   Focused on dexterous manipulation tasks.
+
+#### **UniAct**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [2toinf.github.io/UniAct](https://2toinf.github.io/UniAct/)
+* **Paper**: [Universal Actions for Enhanced Embodied Foundation Models](https://arxiv.org/abs/2501.10105)
+* **Code**: [2toinf/UniAct](https://github.com/2toinf/UniAct)
+* **Notes**:
+    *   Released Jan 2025.
+    *   Operates in a Universal Action Space constructed as a vector-quantized (VQ) codebook.
+    *   Learns universal actions capturing generic atomic behaviors shared across robots.
+    *   Uses streamlined heterogeneous decoders to translate universal actions into embodiment-specific commands.
+    *   0.5B model outperforms significantly larger models (14x larger).
+
+#### **SAM2Act & SAM2Act+**
+*I, P → A (Image, Proprioception → Actions)*
+
+* **Website**: [sam2act.github.io](https://sam2act.github.io)
+* **Paper**: [SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation](https://arxiv.org/abs/2501.18564)
+* **Code**: [sam2act/sam2act](https://github.com/sam2act/sam2act)
+* **Notes**:
+    *   Released Jan 2025.
+    *   Integrates the SAM2 visual foundation model with a memory architecture for robotic manipulation.
+    *   SAM2Act+ incorporates a memory bank and encoder for episodic recall, enabling spatial memory-dependent tasks.
+    *   Achieves state-of-the-art performance on RLBench (86.8%) and robust generalization on The Colosseum.
 
 #### **Nvidia Cosmos**
 *Vid, L, A → Vid, L (Video, Language, Control → Video, Language/Reasoning)*
