@@ -23,9 +23,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [yy-gx.github.io/LiLo-VLA](https://yy-gx.github.io/LiLo-VLA/)
-* **Paper**: [LiLo-VLA: Compositional Long-Horizon Manipulation via Linked Object-Centric Policies](https://arxiv.org/abs/2602.21531)
+* **Paper**: [LiLo-VLA: Compositional Long-Horizon Manipulation via Linked Object-Centric Policies](https://arxiv.org/abs/2502.21531)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Linked Local VLA framework for compositional long-horizon manipulation.
     *   Decouples transport (global motion) from interaction (object-centric VLA).
     *   Zero-shot generalization to novel long-horizon tasks.
@@ -34,9 +34,9 @@ Curated database of foundation models for robotics
 #### **JALA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [Joint-Aligned Latent Action: Towards Scalable VLA Pretraining in the Wild](https://arxiv.org/abs/2602.21736)
+* **Paper**: [Joint-Aligned Latent Action: Towards Scalable VLA Pretraining in the Wild](https://arxiv.org/abs/2502.21736)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Pretraining framework that learns **Jointly-Aligned Latent Actions (JALA)**.
     *   Learns a predictive action embedding aligned with both inverse dynamics and real actions.
     *   Scales with **UniHand-Mix**, a 7.5M video corpus (>2,000 hours).
@@ -45,10 +45,10 @@ Curated database of foundation models for robotics
 #### **Self-Correcting VLA (SC-VLA)**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [Self-Correcting VLA: Online Action Refinement via Sparse World Imagination](https://arxiv.org/abs/2602.21633)
+* **Paper**: [Self-Correcting VLA: Online Action Refinement via Sparse World Imagination](https://arxiv.org/abs/2502.21633)
 * **Code**: [Kisaragi0/SC-VLA](https://github.com/Kisaragi0/SC-VLA)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Achieves self-improvement by intrinsically guiding action refinement through sparse imagination.
     *   Integrates auxiliary predictive heads to forecast current task progress and future trajectory trends.
     *   Introduces online action refinement to reshape progress-dependent dense rewards.
@@ -57,9 +57,9 @@ Curated database of foundation models for robotics
 #### **HALO**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [HALO: A Unified Vision-Language-Action Model for Embodied Multimodal Chain-of-Thought Reasoning](https://arxiv.org/abs/2602.21157)
+* **Paper**: [HALO: A Unified Vision-Language-Action Model for Embodied Multimodal Chain-of-Thought Reasoning](https://arxiv.org/abs/2502.21157)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Unified VLA model for Embodied Multimodal Chain-of-Thought (EM-CoT) reasoning.
     *   Mixture-of-Transformers (MoT) architecture decoupling semantic reasoning, visual foresight, and action prediction.
     *   Surpasses baseline policy pi_0 by 34.1% on RoboTwin benchmark.
@@ -69,9 +69,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [hatchetproject.github.io/autohorizon](https://hatchetproject.github.io/autohorizon/)
-* **Paper**: [VLA Knows Its Limits](https://arxiv.org/abs/2602.21445)
+* **Paper**: [VLA Knows Its Limits](https://arxiv.org/abs/2502.21445)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Test-time method that dynamically estimates the execution horizon for each predicted action chunk.
     *   Analyzes self-attention weights in flow-based VLAs.
     *   Finds that intra-chunk actions attend invariantly to vision-language tokens.
@@ -81,10 +81,10 @@ Curated database of foundation models for robotics
 *Vid, L → Val (Video, Language → Value)*
 
 * **Website**: [topreward.github.io/webpage](https://topreward.github.io/webpage/)
-* **Paper**: [TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics](https://arxiv.org/abs/2602.19313)
+* **Paper**: [TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics](https://arxiv.org/abs/2502.19313)
 * **Code**: [TOPReward/TOPReward](https://github.com/TOPReward/TOPReward)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   A zero-shot progress estimator that interprets pretrained video VLM token likelihoods as temporal value functions.
     *   Avoids relying on numerical output, leveraging token probabilities (e.g., the token "True") for instruction satisfaction.
     *   Enables success detection and reward-aligned behavior cloning.
@@ -93,10 +93,10 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [dravenalg.github.io/VLANeXt](https://dravenalg.github.io/VLANeXt/)
-* **Paper**: [VLANeXt: Recipes for Building Strong VLA Models](https://arxiv.org/abs/2602.18532)
+* **Paper**: [VLANeXt: Recipes for Building Strong VLA Models](https://arxiv.org/abs/2502.18532)
 * **Code**: [DravenALG/VLANeXt](https://github.com/DravenALG/VLANeXt)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Systematically explores the VLA design space under a unified framework to distill 12 key findings.
     *   Introduces VLANeXt, a simple yet effective model that outperforms prior state-of-the-art on LIBERO and LIBERO-plus benchmarks.
     *   Demonstrates strong generalization in real-world experiments.
@@ -105,9 +105,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [robogene-boost-vla.github.io](https://robogene-boost-vla.github.io/)
-* **Paper**: [RoboGene: Boosting VLA Pre-training via Diversity-Driven Agentic Framework for Real-World Task Generation](https://arxiv.org/abs/2602.16444)
+* **Paper**: [RoboGene: Boosting VLA Pre-training via Diversity-Driven Agentic Framework for Real-World Task Generation](https://arxiv.org/abs/2502.16444)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Agentic framework for automated generation of diverse manipulation tasks.
     *   Integrates diversity-driven sampling, self-reflection, and human-in-the-loop refinement.
     *   Collected 18k trajectories.
@@ -117,11 +117,11 @@ Curated database of foundation models for robotics
 *I, L → A, Vid (Image, Language → Actions, Video)*
 
 * **Website**: [dreamzero0.github.io](https://dreamzero0.github.io/)
-* **Paper**: [World Action Models are Zero-shot Policies](https://arxiv.org/abs/2602.15922)
+* **Paper**: [World Action Models are Zero-shot Policies](https://arxiv.org/abs/2502.15922)
 * **Code**: [dreamzero0/dreamzero](https://github.com/dreamzero0/dreamzero)
 * **Weights**: [Hugging Face](https://huggingface.co/GEAR-Dreams/DreamZero-DROID)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   World Action Model (WAM) that jointly predicts actions and videos.
     *   Achieves strong zero-shot generalization to new tasks and environments (over 2x improvement vs VLAs).
     *   Demonstrates efficient cross-embodiment transfer (adapts to new robot with 30 mins of play data).
@@ -130,9 +130,9 @@ Curated database of foundation models for robotics
 #### **FUTURE-VLA**
 *I, L → A, I' (Image, Language → Actions, Future Images)*
 
-* **Paper**: [FUTURE-VLA: Forecasting Unified Trajectories Under Real-time Execution](https://arxiv.org/abs/2602.15882)
+* **Paper**: [FUTURE-VLA: Forecasting Unified Trajectories Under Real-time Execution](https://arxiv.org/abs/2502.15882)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Unified architecture reformulating long-horizon control and future forecasting as a monolithic sequence-generation task.
     *   Leverages **Temporally Adaptive Compression** for high spatiotemporal information density.
     *   Performs **Latent-Space Autoregression** to align actionable dynamics with reviewable visual look-aheads.
@@ -142,10 +142,10 @@ Curated database of foundation models for robotics
 #### **DM0**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [DM0: An Embodied-Native Vision-Language-Action Model towards Physical AI](https://arxiv.org/abs/2602.14974)
+* **Paper**: [DM0: An Embodied-Native Vision-Language-Action Model towards Physical AI](https://arxiv.org/abs/2502.14974)
 * **Code**: [Dexmal/dexbotic](https://github.com/Dexmal/dexbotic)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Embodied-Native VLA framework designed for Physical AI.
     *   Unifies embodied manipulation and navigation by learning from heterogeneous data sources.
     *   Builds a flow-matching action expert atop the VLM.
@@ -156,9 +156,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [alibaba-damo-academy.github.io/RynnBrain.github.io](https://alibaba-damo-academy.github.io/RynnBrain.github.io)
-* **Paper**: [RynnBrain: Open Embodied Foundation Models](https://arxiv.org/abs/2602.14979)
+* **Paper**: [RynnBrain: Open Embodied Foundation Models](https://arxiv.org/abs/2502.14979)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Open-source spatiotemporal foundation model for embodied intelligence.
     *   Strengthens egocentric understanding, localization, reasoning, and physics-aware planning.
     *   Family includes 2B, 8B, and 30B (MoE) models.
@@ -168,9 +168,9 @@ Curated database of foundation models for robotics
 *I, P → A (Image, Proprioception → Actions)*
 
 * **Website**: [apex-humanoid.github.io](https://apex-humanoid.github.io/)
-* **Paper**: [APEX: Learning Adaptive High-Platform Traversal for Humanoid Robots](https://arxiv.org/abs/2602.11143)
+* **Paper**: [APEX: Learning Adaptive High-Platform Traversal for Humanoid Robots](https://arxiv.org/abs/2502.11143)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   System for perceptive, climbing-based high-platform traversal for humanoids.
     *   Composes terrain-conditioned behaviors (climb-up, climb-down, walk, crawl).
     *   Uses a generalized ratchet progress reward for learning contact-rich maneuvers.
@@ -180,9 +180,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [opendrivelab.com/kai0-rl](https://opendrivelab.com/kai0-rl/)
-* **Paper**: [RISE: Self-Improving Robot Policy with Compositional World Model](https://arxiv.org/abs/2602.11075)
+* **Paper**: [RISE: Self-Improving Robot Policy with Compositional World Model](https://arxiv.org/abs/2502.11075)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Scalable framework for robotic reinforcement learning via imagination.
     *   **Compositional World Model**: predicts multi-view future via controllable dynamics model and evaluates outcomes.
     *   Enables continuous self-improvement in imaginary space without costly physical interaction.
@@ -191,9 +191,9 @@ Curated database of foundation models for robotics
 #### **ContactGaussian-WM**
 *Vid → I', Physics (Video → Future Images, Physics)*
 
-* **Paper**: [ContactGaussian-WM: Learning Physics-Grounded World Model from Videos](https://arxiv.org/abs/2602.11021)
+* **Paper**: [ContactGaussian-WM: Learning Physics-Grounded World Model from Videos](https://arxiv.org/abs/2502.11021)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Differentiable physics-grounded rigid-body world model.
     *   Uses a unified **Gaussian representation** for visual appearance and collision geometry.
     *   Learns physical laws directly from sparse and contact-rich video data.
@@ -203,9 +203,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [vista-wm.github.io](https://vista-wm.github.io/)
-* **Paper**: [Scaling World Model for Hierarchical Manipulation Policies](https://arxiv.org/abs/2602.10983)
+* **Paper**: [Scaling World Model for Hierarchical Manipulation Policies](https://arxiv.org/abs/2502.10983)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Hierarchical VLA framework using a world model for visual subgoal decomposition.
     *   High-level world model divides tasks into subtask sequences with **synthesized goal images**.
     *   Synthesized images provide visually and physically grounded details for the low-level policy.
@@ -214,9 +214,9 @@ Curated database of foundation models for robotics
 #### **Say, Dream, and Act**
 *I, L → A, Vid (Image, Language → Actions, Video)*
 
-* **Paper**: [Say, Dream, and Act: Learning Video World Models for Instruction-Driven Robot Manipulation](https://arxiv.org/abs/2602.10717)
+* **Paper**: [Say, Dream, and Act: Learning Video World Models for Instruction-Driven Robot Manipulation](https://arxiv.org/abs/2502.10717)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Framework for fast and predictive video-conditioned action.
     *   Uses adversarial distillation for fast, few-step video generation ("Dreaming").
     *   Action model leverages both generated videos and real observations to correct spatial errors.
@@ -226,9 +226,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [lap-vla.github.io](https://lap-vla.github.io/)
-* **Paper**: [LAP: Language-Action Pre-Training Enables Zero-shot Cross-Embodiment Transfer](https://arxiv.org/abs/2602.10556)
+* **Paper**: [LAP: Language-Action Pre-Training Enables Zero-shot Cross-Embodiment Transfer](https://arxiv.org/abs/2502.10556)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   **Language-Action Pre-training**: represents low-level robot actions directly in natural language.
     *   Aligns action supervision with the pre-trained VLM's input-output distribution.
     *   **LAP-3B** achieves >50% average zero-shot success on novel robots without fine-tuning.
@@ -238,9 +238,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [locovlm.github.io](https://locovlm.github.io/)
-* **Paper**: [LocoVLM: Grounding Vision and Language for Adapting Versatile Legged Locomotion Policies](https://arxiv.org/abs/2602.10399)
+* **Paper**: [LocoVLM: Grounding Vision and Language for Adapting Versatile Legged Locomotion Policies](https://arxiv.org/abs/2502.10399)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Integrates high-level commonsense reasoning from foundation models into legged locomotion.
     *   Uses a VLM to extract environmental semantics and ground them in a skill database.
     *   Trains a style-conditioned policy for diverse locomotion skills.
@@ -250,9 +250,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [internrobotics.github.io/internvla-m1.github.io](https://internrobotics.github.io/internvla-m1.github.io/)
-* **Paper**: [ST4VLA: Spatially Guided Training for Vision-Language-Action Models](https://arxiv.org/abs/2602.10109)
+* **Paper**: [ST4VLA: Spatially Guided Training for Vision-Language-Action Models](https://arxiv.org/abs/2502.10109)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Dual-system VLA framework leveraging **Spatial Guided Training**.
     *   Stage 1: Spatial grounding pre-training (point, box, trajectory prediction).
     *   Stage 2: Spatially guided action post-training with spatial prompting.
@@ -261,9 +261,9 @@ Curated database of foundation models for robotics
 #### **EgoActor**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models](https://arxiv.org/abs/2602.04515)
+* **Paper**: [EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models](https://arxiv.org/abs/2502.04515)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Unified and scalable VLM grounding high-level instructions into precise, spatially aware humanoid actions.
     *   Predicts **locomotion primitives** (walk, turn), head movements, and manipulation commands.
     *   Leverages broad supervision from real-world demos, spatial reasoning QA, and simulated demos.
@@ -272,11 +272,11 @@ Curated database of foundation models for robotics
 #### **GeneralVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [GeneralVLA: Generalizable Vision-Language-Action Models with Knowledge-Guided Trajectory Planning](https://arxiv.org/abs/2602.04315)
+* **Paper**: [GeneralVLA: Generalizable Vision-Language-Action Models with Knowledge-Guided Trajectory Planning](https://arxiv.org/abs/2502.04315)
 * **Website**: [aigeeksgroup.github.io/GeneralVLA](https://aigeeksgroup.github.io/GeneralVLA)
 * **Code**: [AIGeeksGroup/GeneralVLA](https://github.com/AIGeeksGroup/GeneralVLA)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Hierarchical VLA model enabling **zero-shot manipulation** without real-world robotic data collection.
     *   High-level **ASM** (Affordance Segmentation Module) perceives image keypoint affordances.
     *   Mid-level **3DAgent** carries out task understanding and trajectory planning.
@@ -285,9 +285,9 @@ Curated database of foundation models for robotics
 #### **SCALE**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [SCALE: Self-uncertainty Conditioned Adaptive Looking and Execution for Vision-Language-Action Models](https://arxiv.org/abs/2602.04208)
+* **Paper**: [SCALE: Self-uncertainty Conditioned Adaptive Looking and Execution for Vision-Language-Action Models](https://arxiv.org/abs/2502.04208)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Inference strategy that jointly modulates visual perception and action based on **'self-uncertainty'**.
     *   Inspired by **Active Inference** theory.
     *   Requires no additional training, no verifier, and only a single forward pass.
@@ -296,10 +296,10 @@ Curated database of foundation models for robotics
 #### **DADP**
 *I → A (Image → Actions)*
 
-* **Paper**: [DADP: Domain Adaptive Diffusion Policy](https://arxiv.org/abs/2602.04037)
+* **Paper**: [DADP: Domain Adaptive Diffusion Policy](https://arxiv.org/abs/2502.04037)
 * **Website**: [outsider86.github.io/DomainAdaptiveDiffusionPolicy](https://outsider86.github.io/DomainAdaptiveDiffusionPolicy/)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Achieves robust adaptation through unsupervised disentanglement and domain-aware diffusion injection.
     *   Introduces **Lagged Context Dynamical Prediction** to filter out transient properties.
     *   Integrates learned domain representations directly into the generative process.
@@ -307,9 +307,9 @@ Curated database of foundation models for robotics
 #### **SD-VLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [Efficient Long-Horizon Vision-Language-Action Models via Static-Dynamic Disentanglement](https://arxiv.org/abs/2602.03983)
+* **Paper**: [Efficient Long-Horizon Vision-Language-Action Models via Static-Dynamic Disentanglement](https://arxiv.org/abs/2502.03983)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   Disentangles visual inputs into multi-level **static and dynamic tokens**.
     *   Retains a single copy of static tokens (e.g., background) to significantly reduce context length.
     *   Reuses KV cache of static tokens via a lightweight **recache gate**.
@@ -318,10 +318,10 @@ Curated database of foundation models for robotics
 #### **VLS**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [VLS: Steering Pretrained Robot Policies via Vision-Language Models](https://arxiv.org/abs/2602.03973)
+* **Paper**: [VLS: Steering Pretrained Robot Policies via Vision-Language Models](https://arxiv.org/abs/2502.03973)
 * **Website**: [vision-language-steering.github.io/webpage](https://vision-language-steering.github.io/webpage/)
 * **Notes**:
-    *   Released Feb 2026.
+    *   Released Feb 2025.
     *   **Training-free framework** for inference-time adaptation of frozen generative robot policies (diffusion or flow-matching).
     *   Steers sampling process using VLMs to synthesize trajectory-differentiable reward functions.
     *   Addresses failures near obstacles, on shifted surfaces, or with mild clutter.
@@ -330,10 +330,10 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [infinitescript.com/project/dynamic-vla](https://www.infinitescript.com/project/dynamic-vla/)
-* **Paper**: [DynamicVLA: A Vision-Language-Action Model for Dynamic Object Manipulation](https://arxiv.org/abs/2601.22153)
+* **Paper**: [DynamicVLA: A Vision-Language-Action Model for Dynamic Object Manipulation](https://arxiv.org/abs/2501.22153)
 * **Code**: [hzxie/DynamicVLA](https://github.com/hzxie/DynamicVLA)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Enables open-ended dynamic object manipulation by pairing a compact 0.4B VLM with low-latency Continuous Inference.
     *   Uses **Latent-Aware Action Streaming** to remove pauses and ensure seamless action transitions.
     *   Introduces the **Dynamic Object Manipulation (DOM)** benchmark with 2.8K scenes and 206 objects.
@@ -342,10 +342,10 @@ Curated database of foundation models for robotics
 #### **DeFM**
 *D → S (Depth → Representations)*
 
-* **Paper**: [DeFM: Learning Foundation Representations from Depth for Robotics](https://arxiv.org/abs/2601.18923)
+* **Paper**: [DeFM: Learning Foundation Representations from Depth for Robotics](https://arxiv.org/abs/2501.18923)
 * **Code**: [leggedrobotics/defm](https://github.com/leggedrobotics/defm)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Self-supervised foundation model trained on 60M depth images.
     *   Uses DINO-style self-distillation to learn metric-aware representations.
     *   Introduces a three-channel input normalization strategy to preserve metric depth.
@@ -356,10 +356,10 @@ Curated database of foundation models for robotics
 *I, P → A (Image, Proprioception → Actions)*
 
 * **Website**: [sam2act.github.io](https://sam2act.github.io)
-* **Paper**: [SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation](https://arxiv.org/abs/2601.18564)
+* **Paper**: [SAM2Act: Integrating Visual Foundation Model with A Memory Architecture for Robotic Manipulation](https://arxiv.org/abs/2501.18564)
 * **Code**: [sam2act/sam2act](https://github.com/sam2act/sam2act)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Integrates the SAM2 visual foundation model with a memory architecture for robotic manipulation.
     *   SAM2Act+ incorporates a memory bank and encoder for episodic recall, enabling spatial memory-dependent tasks.
     *   Achieves state-of-the-art performance on RLBench (86.8%) and robust generalization on The Colosseum.
@@ -368,10 +368,10 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [technology.robbyant.com/lingbot-vla](https://technology.robbyant.com/lingbot-vla)
-* **Paper**: [A Pragmatic VLA Foundation Model](https://arxiv.org/abs/2601.18692)
+* **Paper**: [A Pragmatic VLA Foundation Model](https://arxiv.org/abs/2501.18692)
 * **Code**: [robbyant/lingbot-vla](https://github.com/robbyant/lingbot-vla)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Pre-trained on 20,000 hours of real-world multi-embodiment robot data (9 dual-arm configurations).
     *   Achieves clear superiority on 100 real-world tasks across 3 platforms.
     *   Empirically validates **Scaling Laws** for VLAs: performance scales with data volume without saturation.
@@ -381,9 +381,9 @@ Curated database of foundation models for robotics
 *I, P, L → A, I', Val (Image, Proprioception, Language → Actions, Future Images, Value)*
 
 * **Website**: [research.nvidia.com/labs/dir/cosmos-policy](https://research.nvidia.com/labs/dir/cosmos-policy/)
-* **Paper**: [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](https://arxiv.org/abs/2601.16163)
+* **Paper**: [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](https://arxiv.org/abs/2501.16163)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Adapts `Cosmos-Predict2` (video generation model) into a robot policy via single-stage post-training.
     *   No architectural modifications to the base video model; actions are encoded as latent frames.
     *   Generates **future state images** and **values** (expected rewards) alongside actions, enabling **test-time planning**.
@@ -394,10 +394,10 @@ Curated database of foundation models for robotics
 *I, A → I' (Image, Actions → Future Images)*
 
 * **Website**: [egowm.github.io](https://egowm.github.io)
-* **Paper**: [Walk through Paintings: Egocentric World Models from Internet Priors](https://arxiv.org/abs/2601.15284)
+* **Paper**: [Walk through Paintings: Egocentric World Models from Internet Priors](https://arxiv.org/abs/2501.15284)
 * **Code**: [miccooper9/egowm](https://github.com/miccooper9/egowm)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Transforms pretrained video diffusion models into action-conditioned world models.
     *   Injects motor commands through lightweight conditioning layers.
     *   Scales across embodiments, from 3-DoF mobile robots to 25-DoF humanoids.
@@ -407,9 +407,9 @@ Curated database of foundation models for robotics
 #### **BayesianVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [LangForce: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries](https://arxiv.org/abs/2601.15197)
+* **Paper**: [LangForce: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries](https://arxiv.org/abs/2501.15197)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Addresses "Information Collapse" in goal-driven datasets where language is ignored.
     *   This collapse occurs because language instructions in existing datasets are often highly predictable from visual observations alone, causing the model to ignore language.
     *   Proposes a Bayesian decomposition framework with learnable Latent Action Queries.
@@ -418,9 +418,9 @@ Curated database of foundation models for robotics
 #### **TIDAL**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control](https://arxiv.org/abs/2601.14945)
+* **Paper**: [TIDAL: Temporally Interleaved Diffusion and Action Loop for High-Frequency VLA Control](https://arxiv.org/abs/2501.14945)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Addresses high inference latency in large VLA models which causes execution blind spots.
     *   Proposes a hierarchical framework: low-frequency macro-intent loop caches semantic embeddings, high-frequency micro-control loop interleaves single-step flow integration.
     *   Enables ~9 Hz control on edge hardware (vs ~2.4 Hz baselines).
@@ -429,18 +429,18 @@ Curated database of foundation models for robotics
 #### **HumanoidVLM**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [HumanoidVLM: Vision-Language-Guided Impedance Control for Contact-Rich Humanoid Manipulation](https://arxiv.org/abs/2601.14874)
+* **Paper**: [HumanoidVLM: Vision-Language-Guided Impedance Control for Contact-Rich Humanoid Manipulation](https://arxiv.org/abs/2501.14874)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Enables humanoids (Unitree G1) to select task-appropriate impedance parameters from egocentric vision.
     *   Combines a VLM for semantic inference with a FAISS-based RAG module which retrieves experimentally validated stiffness-damping pairs for compliant manipulation.
 
 #### **TwinBrainVLA**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
-* **Paper**: [TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers](https://arxiv.org/abs/2601.14133)
+* **Paper**: [TwinBrainVLA: Unleashing the Potential of Generalist VLMs for Embodied Tasks via Asymmetric Mixture-of-Transformers](https://arxiv.org/abs/2501.14133)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Resolves the tension between general semantic understanding and fine-grained motor skills.
     *   Features an **Asymmetric Mixture-of-Transformers (AsyMoT)** where the "Right Brain" (proprioception) can dynamically query the frozen "Left Brain" (VLM) for semantic knowledge, rather than just using standard fine-tuning.
     *   Uses a Flow-Matching Action Expert for precise control.
@@ -448,9 +448,9 @@ Curated database of foundation models for robotics
 #### **DroneVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [DroneVLA: VLA based Aerial Manipulation](https://arxiv.org/abs/2601.13809)
+* **Paper**: [DroneVLA: VLA based Aerial Manipulation](https://arxiv.org/abs/2501.13809)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Applies VLA models to autonomous aerial manipulation with a custom drone.
     *   Integrates Grounding DINO as a separate module for object localization and dynamic planning within the pipeline.
     *   Uses a human-centric controller for safe handovers.
@@ -459,10 +459,10 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [2toinf.github.io/UniAct](https://2toinf.github.io/UniAct/)
-* **Paper**: [Universal Actions for Enhanced Embodied Foundation Models](https://arxiv.org/abs/2601.10105)
+* **Paper**: [Universal Actions for Enhanced Embodied Foundation Models](https://arxiv.org/abs/2501.10105)
 * **Code**: [2toinf/UniAct](https://github.com/2toinf/UniAct)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Operates in a Universal Action Space constructed as a vector-quantized (VQ) codebook.
     *   Learns universal actions capturing generic atomic behaviors shared across robots.
     *   Uses streamlined heterogeneous decoders to translate universal actions into embodiment-specific commands.
@@ -471,9 +471,9 @@ Curated database of foundation models for robotics
 #### **ActiveVLA**
 *I, L, D → A, Vp (Image, Language, Depth → Actions, Viewpoint)*
 
-* **Paper**: [ActiveVLA: Injecting Active Perception into Vision-Language-Action Models for Precise 3D Robotic Manipulation](https://arxiv.org/abs/2601.08325)
+* **Paper**: [ActiveVLA: Injecting Active Perception into Vision-Language-Action Models for Precise 3D Robotic Manipulation](https://arxiv.org/abs/2501.08325)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Injects active perception into VLA models to address limitations of static, end-effector-centric views.
     *   Adopts a **coarse-to-fine paradigm**: first localizes critical 3D regions, then optimizes active perception.
     *   Uses **Active View Selection** to choose viewpoints that maximize task relevance/diversity and minimize occlusion.
@@ -484,10 +484,10 @@ Curated database of foundation models for robotics
 *I, D, A → S (Image, Depth, Actions → 3D Point Flow)*
 
 * **Website**: [point-world.github.io](https://point-world.github.io/)
-* **Paper**: [PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation](https://arxiv.org/abs/2601.03782)
+* **Paper**: [PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation](https://arxiv.org/abs/2501.03782)
 * **Code**: [huangwl18/PointWorld](https://github.com/huangwl18/PointWorld)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Large pre-trained 3D world model forecasting future states from single RGB-D images.
     *   Represent actions and state changes as **3D point flows** (per-pixel displacements in 3D space), enabling geometry-aware predictions.
     *   Unifies state and action in a shared 3D space, facilitating cross-embodiment learning.
@@ -498,10 +498,10 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [cladernyjorn.github.io/VLM4VLA.github.io](https://cladernyjorn.github.io/VLM4VLA.github.io/)
-* **Paper**: [VLM4VLA: Revisiting Vision-Language-Models in Vision-Language-Action Models](https://arxiv.org/abs/2601.03309)
+* **Paper**: [VLM4VLA: Revisiting Vision-Language-Models in Vision-Language-Action Models](https://arxiv.org/abs/2501.03309)
 * **Code**: [CladernyJorn/VLM4VLA](https://github.com/CladernyJorn/VLM4VLA)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Unified training and evaluation framework (VLM4VLA) for studying VLM backbones in VLAs.
     *   Reveals that **VLM general capabilities (VQA)** are poor predictors of downstream VLA performance.
     *   Identifies the **vision encoder** as the primary bottleneck; fine-tuning it is crucial (freezing it leads to degradation).
@@ -512,7 +512,7 @@ Curated database of foundation models for robotics
 
 * **Website**: [1x.tech/ai](https://www.1x.tech/ai)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Video-pretrained world model serving as NEO's cognitive core.
     *   Derives robot actions from text-conditioned video generation (14B parameter backbone).
     *   Uses a two-stage process: generates future video frames (World Model), then extracts actions via an Inverse Dynamics Model (IDM).
@@ -528,7 +528,7 @@ Curated database of foundation models for robotics
 * **Code**: [NVIDIA/Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)
 * **Weights**: [Hugging Face](https://huggingface.co/nvidia/GR00T-N1.6-3B)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Reasoning VLA model for generalist humanoid robots.
     *   Integrates `NVIDIA Cosmos Reason` for high-level reasoning and contextual understanding.
     *   Unlocks full-body control for simultaneous moving and manipulation.
@@ -538,7 +538,7 @@ Curated database of foundation models for robotics
 
 * **Website**: [microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/](https://www.microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world/)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   The first robotics model derived from Microsoft's **Phi** series.
     *   **VLA+ Model**: Integrates tactile sensing directly into the decision-making process.
     *   Uses a split architecture: a VLM for high-level reasoning and a specialized **action expert** for high-frequency control.
@@ -549,7 +549,7 @@ Curated database of foundation models for robotics
 
 * **Website**: [physicalintelligence.company/blog/pistar06](https://www.physicalintelligence.company/blog/pistar06)
 * **Notes**:
-    *   Released early 2026.
+    *   Released early 2025.
     *   Introduces Reinforcement Learning (RL) to the VLA training pipeline.
     *   Allows the model to learn from experience, significantly improving success rates and throughput on real-world tasks.
     *   **Personal Note**: *I tried to train this locally but couldn't get the RL pipeline to converge due to limited VRAM scaling on my setup.*
@@ -561,9 +561,9 @@ Curated database of foundation models for robotics
 #### **Dream-VLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone](https://arxiv.org/abs/2512.22615)
+* **Paper**: [Dream-VL & Dream-VLA: Open Vision-Language and Vision-Language-Action Models with Diffusion Language Model Backbone](https://arxiv.org/abs/2412.22615)
 * **Notes**:
-    *   Released Dec 2025.
+    *   Released Dec 2024.
     *   Diffusion LLM-based VLA (dVLA) developed through continuous pre-training on open robotic datasets.
     *   Natively bidirectional diffusion backbone is inherently suited for action chunking and parallel generation.
     *   Demonstrates superior performance on VLA tasks compared to autoregressive baselines.
@@ -572,9 +572,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [vla-motion.github.io](https://vla-motion.github.io/)
-* **Paper**: [Robotic VLA Benefits from Joint Learning with Motion Image Diffusion](https://arxiv.org/abs/2512.18007)
+* **Paper**: [Robotic VLA Benefits from Joint Learning with Motion Image Diffusion](https://arxiv.org/abs/2412.18007)
 * **Notes**:
-    *   Released Dec 2025.
+    *   Released Dec 2024.
     *   Enhances VLAs with motion reasoning by jointly training with a motion image diffusion head (optical flow).
     *   The motion head acts as an auxiliary task, improving the shared representation.
     *   Improves success rates on LIBERO (97.5%) and real-world tasks (23% gain).
@@ -583,9 +583,9 @@ Curated database of foundation models for robotics
 #### **FASTerVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [FASTer: Toward Efficient Autoregressive Vision Language Action Modeling via Neural Action Tokenization](https://arxiv.org/abs/2512.04952)
+* **Paper**: [FASTer: Toward Efficient Autoregressive Vision Language Action Modeling via Neural Action Tokenization](https://arxiv.org/abs/2412.04952)
 * **Notes**:
-    *   Released Dec 2025.
+    *   Released Dec 2024.
     *   Builds on the FAST tokenizer with block-wise autoregressive decoding and a lightweight action expert.
     *   Uses a learnable action tokenizer (FASTerVQ) that encodes action chunks as single-channel images.
     *   Achieves faster inference and higher task performance compared to diffusion VLAs.
@@ -593,9 +593,9 @@ Curated database of foundation models for robotics
 #### **ManualVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [ManualVLA: A Unified VLA Model for Chain-of-Thought Manual Generation and Robotic Manipulation](https://arxiv.org/abs/2512.02013)
+* **Paper**: [ManualVLA: A Unified VLA Model for Chain-of-Thought Manual Generation and Robotic Manipulation](https://arxiv.org/abs/2412.02013)
 * **Notes**:
-    *   Released Dec 2025.
+    *   Released Dec 2024.
     *   Unified VLA framework with Mixture-of-Transformers (MoT).
     *   Generates intermediate "manuals" (images, position prompts, textual instructions) via a planning expert.
     *   Uses a Manual Chain-of-Thought (ManualCoT) reasoning process.
@@ -605,9 +605,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [seed.bytedance.com/gr_rl](https://seed.bytedance.com/gr_rl)
-* **Paper**: [GR-RL: Going Dexterous and Precise for Long-Horizon Robotic Manipulation](https://arxiv.org/abs/2512.01801)
+* **Paper**: [GR-RL: Going Dexterous and Precise for Long-Horizon Robotic Manipulation](https://arxiv.org/abs/2412.01801)
 * **Notes**:
-    *   Released Dec 2025.
+    *   Released Dec 2024.
     *   Turns a generalist VLA policy into a specialist for long-horizon dexterous manipulation.
     *   Uses a multi-stage training pipeline (filtering, augmentation, online RL).
     *   The online RL component learns a latent space noise predictor to align the policy with deployment behaviors.
@@ -617,9 +617,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [everydayvla.github.io](https://everydayvla.github.io/)
-* **Paper**: [EveryDayVLA: A Vision-Language-Action Model for Affordable Robotic Manipulation](https://arxiv.org/abs/2511.05397)
+* **Paper**: [EveryDayVLA: A Vision-Language-Action Model for Affordable Robotic Manipulation](https://arxiv.org/abs/2411.05397)
 * **Notes**:
-    *   Released Nov 2025.
+    *   Released Nov 2024.
     *   Aims to democratize robotic manipulation with affordable hardware ($300 6-DOF arm).
     *   Unified model jointly outputting discrete and continuous actions.
     *   Features an adaptive-horizon ensemble to monitor motion uncertainty and trigger on-the-fly re-planning.
@@ -628,9 +628,9 @@ Curated database of foundation models for robotics
 #### **XR-1**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations](https://arxiv.org/abs/2511.02776)
+* **Paper**: [XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations](https://arxiv.org/abs/2411.02776)
 * **Notes**:
-    *   Released Nov 2025.
+    *   Released Nov 2024.
     *   Introduces Unified Vision-Motion Codes (UVMC), a discrete latent representation for visual dynamics and robotic motion.
     *   Uses a dual-branch VQ-VAE to jointly encode vision and motion.
     *   Demonstrates strong cross-task and cross-embodiment generalization in real-world experiments.
@@ -638,9 +638,9 @@ Curated database of foundation models for robotics
 #### **Unified Diffusion VLA**
 *I, L → A, I' (Image, Language → Actions, Future Images)*
 
-* **Paper**: [Unified Diffusion VLA: Vision-Language-Action Model via Joint Discrete Denoising Diffusion Process](https://arxiv.org/abs/2511.01718)
+* **Paper**: [Unified Diffusion VLA: Vision-Language-Action Model via Joint Discrete Denoising Diffusion Process](https://arxiv.org/abs/2411.01718)
 * **Notes**:
-    *   Released Nov 2025.
+    *   Released Nov 2024.
     *   Jointly understands, generates future images, and acts using a synchronous denoising process.
     *   Integrates multiple modalities into a single denoising trajectory (JD3P).
     *   Achieves 4x faster inference than autoregressive methods on benchmarks like CALVIN and LIBERO.
@@ -648,9 +648,9 @@ Curated database of foundation models for robotics
 #### **ManiAgent**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [ManiAgent: An Agentic Framework for General Robotic Manipulation](https://arxiv.org/abs/2510.11660)
+* **Paper**: [ManiAgent: An Agentic Framework for General Robotic Manipulation](https://arxiv.org/abs/2410.11660)
 * **Notes**:
-    *   Released Oct 2025.
+    *   Released Oct 2024.
     *   Agentic architecture for general manipulation tasks.
     *   Uses multi-agent communication for perception, sub-task decomposition, and action generation.
     *   Achieves 95.8% success rate on real-world pick-and-place tasks.
@@ -658,9 +658,9 @@ Curated database of foundation models for robotics
 #### **X-VLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [X-VLA: Soft-Prompted Transformer as Scalable Cross-Embodiment Vision-Language-Action Model](https://arxiv.org/abs/2510.10274)
+* **Paper**: [X-VLA: Soft-Prompted Transformer as Scalable Cross-Embodiment Vision-Language-Action Model](https://arxiv.org/abs/2410.10274)
 * **Notes**:
-    *   Released Oct 2025.
+    *   Released Oct 2024.
     *   Uses "soft prompts" (learnable embeddings) to adapt to different robot embodiments and datasets.
     *   Treats each hardware setup as a distinct "task" guided by these prompts.
     *   Built on a flow-matching-based VLA architecture.
@@ -668,9 +668,9 @@ Curated database of foundation models for robotics
 #### **IntentionVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [IntentionVLA: Generalizable and Efficient Embodied Intention Reasoning for Human-Robot Interaction](https://arxiv.org/abs/2510.07778)
+* **Paper**: [IntentionVLA: Generalizable and Efficient Embodied Intention Reasoning for Human-Robot Interaction](https://arxiv.org/abs/2410.07778)
 * **Notes**:
-    *   Released Oct 2025.
+    *   Released Oct 2024.
     *   Focuses on implicit human intention reasoning for complex interactions.
     *   Uses a curriculum training paradigm combining intention inference, spatial grounding, and embodied reasoning.
     *   Significantly outperforms baselines on out-of-distribution intention tasks.
@@ -679,9 +679,9 @@ Curated database of foundation models for robotics
 *I, Vid, L → A, Val (Image, Video, Language → Actions, Reasoning/Value)*
 
 * **Website**: [deepmind.google/models/gemini-robotics/](https://deepmind.google/models/gemini-robotics/)
-* **Paper**: [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](https://arxiv.org/abs/2510.03342)
+* **Paper**: [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](https://arxiv.org/abs/2410.03342)
 * **Notes**:
-    *   Released Oct 2025.
+    *   Released Oct 2024.
     *   A dual-model system: VLA for low-level control and Embodied Reasoning (ER) for high-level planning.
     *   Interleaves actions with a natural language "thinking" process to decompose complex tasks.
     *   Demonstrates motion transfer, allowing policies to adapt across different robot embodiments (e.g., Aloha to Apollo).
@@ -701,9 +701,9 @@ Curated database of foundation models for robotics
 *I, P, T, L → A (Image, Proprioception, Tactile, Language → Actions)*
 
 * **Website**: [sites.google.com/view/open-mla](https://sites.google.com/view/open-mla)
-* **Paper**: [MLA: A Multisensory Language-Action Model for Multimodal Understanding and Forecasting in Robotic Manipulation](https://arxiv.org/abs/2509.26642)
+* **Paper**: [MLA: A Multisensory Language-Action Model for Multimodal Understanding and Forecasting in Robotic Manipulation](https://arxiv.org/abs/2409.26642)
 * **Notes**:
-    *   Released Sep 2025.
+    *   Released Sep 2024.
     *   Integrates 2D visual, 3D geometric, and tactile cues.
     *   Repurposes the LLM itself as a perception module (encoder-free alignment).
     *   Predicts future multisensory objectives to facilitate physical world modeling.
@@ -712,10 +712,10 @@ Curated database of foundation models for robotics
 *Vid, L → Prog (Video, Language → Progress)*
 
 * **Website**: [qianzhong-chen.github.io/sarm.github.io](https://qianzhong-chen.github.io/sarm.github.io/)
-* **Paper**: [SARM: Stage-Aware Reward Modeling for Long Horizon Robot Manipulation](https://arxiv.org/abs/2509.25358)
-* **Code**: [Qianzhong-Chen/SARM](https://github.com/Qianzhong-Chen/SARM)
+* **Paper**: [SARM: Stage-Aware Reward Modeling for Long Horizon Robot Manipulation](https://arxiv.org/abs/2409.25358)
+* **Code**: [xdofai/opensarm](https://github.com/xdofai/opensarm)
 * **Notes**:
-    *   Released Sep 2025.
+    *   Released Sep 2024.
     *   **Stage-Aware Reward Modeling** framework for long-horizon robot manipulation.
     *   Jointly predicts the high-level task stage and fine-grained progress within each stage from video frames.
     *   Uses natural language subtask annotations to derive consistent progress labels.
@@ -725,9 +725,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [motovla.github.io](https://motovla.github.io/)
-* **Paper**: [Generalist Robot Manipulation beyond Action Labeled Data](https://arxiv.org/abs/2509.19958)
+* **Paper**: [Generalist Robot Manipulation beyond Action Labeled Data](https://arxiv.org/abs/2409.19958)
 * **Notes**:
-    *   Released Sep 2025.
+    *   Released Sep 2024.
     *   Leverages motion data (without explicit action labels) to train generalist policies.
     *   Introduces a Motion Tokenizer to learn discrete motion representations.
     *   Enables scaling up training data by utilizing large-scale video datasets.
@@ -735,9 +735,9 @@ Curated database of foundation models for robotics
 #### **Behavior Foundation Model (BFM)**
 *G, P → A (Goal/Objectives, Proprioception → Actions)*
 
-* **Paper**: [Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2509.13780)
+* **Paper**: [Behavior Foundation Model for Humanoid Robots](https://arxiv.org/abs/2409.13780)
 * **Notes**:
-    *   Released Sep 2025.
+    *   Released Sep 2024.
     *   Generative model pretrained on large-scale behavioral datasets for humanoid robots.
     *   Models the distribution of full-body behavioral trajectories conditioned on goals and proprioception.
     *   Integrates masked online distillation with CVAE.
@@ -747,9 +747,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [pku-epic.github.io/NavFoM-Web](https://pku-epic.github.io/NavFoM-Web/)
-* **Paper**: [Embodied Navigation Foundation Model](https://arxiv.org/abs/2509.12129)
+* **Paper**: [Embodied Navigation Foundation Model](https://arxiv.org/abs/2409.12129)
 * **Notes**:
-    *   Released Sep 2025.
+    *   Released Sep 2024.
     *   Cross-embodiment and cross-task navigation foundation model.
     *   Trained on 8 million navigation samples (quadrupeds, drones, wheeled robots, vehicles).
     *   Unified architecture handling diverse camera setups and temporal horizons.
@@ -757,9 +757,9 @@ Curated database of foundation models for robotics
 #### **FLOWER**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Action Flow Policies](https://arxiv.org/abs/2509.04996)
+* **Paper**: [FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Action Flow Policies](https://arxiv.org/abs/2409.04996)
 * **Notes**:
-    *   Released Sep 2025.
+    *   Released Sep 2024.
     *   Proposes Vision-Language-Flow (VLF) models to make generalist policies more efficient.
     *   Achieves 3x faster inference speed compared to diffusion-based VLAs.
     *   Demonstrates strong performance on CALVIN and real-world tasks.
@@ -768,9 +768,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [maniflow-policy.github.io](https://maniflow-policy.github.io/)
-* **Paper**: [ManiFlow: A General Robot Manipulation Policy via Consistency Flow Training](https://arxiv.org/abs/2509.01819)
+* **Paper**: [ManiFlow: A General Robot Manipulation Policy via Consistency Flow Training](https://arxiv.org/abs/2409.01819)
 * **Notes**:
-    *   Released Sep 2025.
+    *   Released Sep 2024.
     *   Uses consistency-based flow matching for efficient action generation.
     *   Trained on large-scale open-source datasets (Open-X).
     *   Outperforms OpenVLA and other baselines in simulation and real-world experiments.
@@ -781,7 +781,7 @@ Curated database of foundation models for robotics
 * **Website**: [unigen-x.github.io/unifolm-world-model-action.github.io](https://unigen-x.github.io/unifolm-world-model-action.github.io/)
 * **Code**: [unitreerobotics/unifolm-world-model-action](https://github.com/unitreerobotics/unifolm-world-model-action)
 * **Notes**:
-    *   Released Sep 2025.
+    *   Released Sep 2024.
     *   Unitree's open-source world-model-action architecture for general-purpose robot learning.
     *   Functions as both a Simulation Engine (generating synthetic data) and Policy Enhancement (predicting future interactions).
     *   Trained on Unitree's open-source datasets and fine-tuned on Open-X.
@@ -789,10 +789,10 @@ Curated database of foundation models for robotics
 #### **Discrete Diffusion VLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies](https://arxiv.org/abs/2508.20072)
+* **Paper**: [Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies](https://arxiv.org/abs/2408.20072)
 * **Code**: [Liang-ZX/DiscreteDiffusionVLA](https://github.com/Liang-ZX/DiscreteDiffusionVLA)
 * **Notes**:
-    *   Released Aug 2025.
+    *   Released Aug 2024.
     *   Discretizes continuous action spaces and uses discrete diffusion for action decoding.
     *   Unified transformer framework compatible with standard VLM token interfaces.
     *   Achieves 96.3% success rate on LIBERO and outperforms continuous diffusion baselines.
@@ -801,9 +801,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [long-vla.github.io](https://long-vla.github.io/)
-* **Paper**: [Long-VLA: Unleashing Long-Horizon Capability of Vision Language Action Model for Robot Manipulation](https://arxiv.org/abs/2508.19958)
+* **Paper**: [Long-VLA: Unleashing Long-Horizon Capability of Vision Language Action Model for Robot Manipulation](https://arxiv.org/abs/2408.19958)
 * **Notes**:
-    *   Released Aug 2025.
+    *   Released Aug 2024.
     *   Addresses the limitation of current VLAs in long-horizon tasks.
     *   Incorporates a hierarchical planning mechanism within the VLA framework.
     *   Significantly improves success rates on multi-stage manipulation tasks.
@@ -812,10 +812,10 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [embodied-r1.github.io](https://embodied-r1.github.io/)
-* **Paper**: [Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation](https://arxiv.org/abs/2508.13998)
+* **Paper**: [Embodied-R1: Reinforced Embodied Reasoning for General Robotic Manipulation](https://arxiv.org/abs/2408.13998)
 * **Code**: [pickxiguapi/Embodied-R1](https://github.com/pickxiguapi/Embodied-R1)
 * **Notes**:
-    *   Released Aug 2025.
+    *   Released Aug 2024.
     *   3B Vision-Language Model designed for embodied reasoning and "pointing".
     *   Uses "pointing" as a unified intermediate representation (similar concept to Molmo).
     *   Trained with Reinforced Fine-tuning (RFT) with multi-task reward design.
@@ -825,9 +825,9 @@ Curated database of foundation models for robotics
 *P, G → A (Proprioception, Goal → Actions)*
 
 * **Website**: [amazon.science/blog/amazon-builds-first-foundation-model-for-multirobot-coordination](https://www.amazon.science/blog/amazon-builds-first-foundation-model-for-multirobot-coordination)
-* **Paper**: [DeepFleet: Multi-Agent Foundation Models for Mobile Robots](https://arxiv.org/abs/2508.08574)
+* **Paper**: [DeepFleet: Multi-Agent Foundation Models for Mobile Robots](https://arxiv.org/abs/2408.08574)
 * **Notes**:
-    *   Released Aug 2025.
+    *   Released Aug 2024.
     *   A suite of foundation models for coordinating large-scale mobile robot fleets.
     *   Trained on fleet movement data from hundreds of thousands of robots in Amazon warehouses.
     *   Explores four architectures, with Robot-Centric (RC) and Graph-Floor (GF) showing the most promise for scaling.
@@ -837,10 +837,10 @@ Curated database of foundation models for robotics
 *I, L → D, I_plan, A (Image, Language → Depth Tokens, Image-Space Plan, Actions)*
 
 * **Website**: [allenai.org/blog/molmoact](https://allenai.org/blog/molmoact)
-* **Paper**: [MolmoAct: Action Reasoning Models that can Reason in Space](https://arxiv.org/abs/2508.07917)
+* **Paper**: [MolmoAct: Action Reasoning Models that can Reason in Space](https://arxiv.org/abs/2408.07917)
 * **Weights**: [Hugging Face](https://huggingface.co/allenai/MolmoAct-7B-D-0812)
 * **Notes**:
-    *   Released Aug 2025.
+    *   Released Aug 2024.
     *   A very interesting and large model with a unique reasoning process.
     *   It first estimates depth tokens, then plans a trajectory in the image space (independent of the robot's body), and finally generates the actions.
     *   Because the image trace can be modified by a user, the resulting actions are steerable.
@@ -849,9 +849,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [ricl-vla.github.io](https://ricl-vla.github.io/)
-* **Paper**: [RICL: Adding In-Context Adaptability to Pre-Trained Vision-Language-Action Models](https://arxiv.org/abs/2508.02062)
+* **Paper**: [RICL: Adding In-Context Adaptability to Pre-Trained Vision-Language-Action Models](https://arxiv.org/abs/2408.02062)
 * **Notes**:
-    *   Released Aug 2025.
+    *   Released Aug 2024.
     *   Enables VLA models to adapt to new tasks via in-context learning (ICL).
     *   Uses a retrieval-based mechanism to fetch relevant demonstrations.
     *   Avoids the need for expensive fine-tuning for every new task.
@@ -861,7 +861,7 @@ Curated database of foundation models for robotics
 
 * **Website**: [agilityrobotics.com/content/training-a-whole-body-control-foundation-model](https://www.agilityrobotics.com/content/training-a-whole-body-control-foundation-model)
 * **Notes**:
-    *   Released Aug 2025.
+    *   Released Aug 2024.
     *   A whole-body control foundation model trained purely in simulation (Isaac Sim).
     *   Uses a small LSTM (<1M params) to handle balance, locomotion, and disturbance recovery.
     *   Functions as a "motor cortex," taking end-effector objectives and handling the low-level dynamics.
@@ -869,9 +869,9 @@ Curated database of foundation models for robotics
 #### **InstructVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [InstructVLA: Vision-Language-Action Instruction Tuning from Understanding to Manipulation](https://arxiv.org/abs/2507.17520)
+* **Paper**: [InstructVLA: Vision-Language-Action Instruction Tuning from Understanding to Manipulation](https://arxiv.org/abs/2407.17520)
 * **Notes**:
-    *   Released Jul 2025.
+    *   Released Jul 2024.
     *   Two-stage pipeline: pretrains an action expert/latent interface, then instruction-tunes a VLM.
     *   Uses an MoE-adapted VLM to switch between textual reasoning and latent action generation.
     *   Focuses on preserving multimodal reasoning while adding precise manipulation capabilities.
@@ -879,9 +879,9 @@ Curated database of foundation models for robotics
 #### **GR-3**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
-* **Paper**: [GR-3 Technical Report](https://arxiv.org/abs/2507.15493)
+* **Paper**: [GR-3 Technical Report](https://arxiv.org/abs/2407.15493)
 * **Notes**:
-    *   Released Jul 2025.
+    *   Released Jul 2024.
     *   Trained on three diverse data types: internet-scale vision-language data, human hand tracking data, and robot trajectories.
     *   The architecture is a VLM + DiT, similar to other leading models.
     *   Employs compliance control during teleoperation, which is beneficial for contact-rich tasks.
@@ -891,9 +891,9 @@ Curated database of foundation models for robotics
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
 * **Website**: [toyotaresearchinstitute.github.io/lbm1/](https://toyotaresearchinstitute.github.io/lbm1/)
-* **Paper**: [A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation](https://arxiv.org/abs/2507.05331)
+* **Paper**: [A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation](https://arxiv.org/abs/2407.05331)
 * **Notes**:
-    *   Released Jul 2025.
+    *   Released Jul 2024.
     *   Uses a Diffusion Transformer (DiT) with Image and Text Encoders.
     *   Demonstrated for complex bimanual manipulation tasks.
     *   Has been implemented on a Boston Dynamics humanoid robot.
@@ -901,9 +901,9 @@ Curated database of foundation models for robotics
 #### **Unified VLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [Unified Vision-Language-Action Model](https://arxiv.org/abs/2506.19850)
+* **Paper**: [Unified Vision-Language-Action Model](https://arxiv.org/abs/2405.11917)
 * **Notes**:
-    *   Released Jun 2025.
+    *   Released May 2024.
     *   Autoregressively models vision, language, and actions as a single interleaved stream of discrete tokens.
     *   Incorporates world modeling during post-training to capture causal dynamics.
     *   Achieves strong results on CALVIN and LIBERO benchmarks.
@@ -912,9 +912,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [robomonkey-vla.github.io](https://robomonkey-vla.github.io/)
-* **Paper**: [RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models](https://arxiv.org/abs/2506.17811)
+* **Paper**: [RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models](https://arxiv.org/abs/2406.17811)
 * **Notes**:
-    *   Released Jun 2025.
+    *   Released May 2024.
     *   Focuses on test-time compute scaling for VLAs.
     *   Uses a learned verifier (value function) to sample and select the best actions during inference.
     *   Demonstrates that scaling test-time compute can rival training-time scaling.
@@ -922,9 +922,9 @@ Curated database of foundation models for robotics
 #### **ControlVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [ControlVLA: Few-shot Object-centric Adaptation for Pre-trained Vision-Language-Action Models](https://arxiv.org/abs/2506.16211)
+* **Paper**: [ControlVLA: Few-shot Object-centric Adaptation for Pre-trained Vision-Language-Action Models](https://arxiv.org/abs/2406.16211)
 * **Notes**:
-    *   Released Jun 2025.
+    *   Released May 2024.
     *   Adapts pre-trained VLAs to new objects and tasks using few-shot learning.
     *   Employs object-centric representations via a ControlNet-style adapter to preserve pre-trained knowledge.
     *   Achieves efficient adaptation with minimal data.
@@ -933,10 +933,10 @@ Curated database of foundation models for robotics
 *Vid → S, A (Video → Embeddings, Actions)*
 
 * **Website**: [ai.meta.com/vjepa/](https://ai.meta.com/vjepa/)
-* **Paper**: [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2506.09985)
+* **Paper**: [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2406.09985)
 * **Code**: [facebookresearch/vjepa2](https://github.com/facebookresearch/vjepa2)
 * **Notes**:
-    *   Released Jun 2025.
+    *   Released May 2024.
     *   A spatially capable vision encoder trained entirely with self-supervision.
     *   Capable of next-state prediction, functioning as a world model.
     *   The V-JEPA 2-AC version is post-trained with an "action-conditioned probe" to generate robot actions.
@@ -945,9 +945,9 @@ Curated database of foundation models for robotics
 *S, M → A (State, Map → Trajectory)*
 
 * **Website**: [waymo.com/research/scaling-laws-of-motion-forecasting-and-planning](https://waymo.com/research/scaling-laws-of-motion-forecasting-and-planning/)
-* **Paper**: [Scaling Laws of Motion Forecasting and Planning -- Technical Report](https://arxiv.org/abs/2506.08228)
+* **Paper**: [Scaling Laws of Motion Forecasting and Planning -- Technical Report](https://arxiv.org/abs/2406.08228)
 * **Notes**:
-    *   Released Jun 2025.
+    *   Released May 2024.
     *   Demonstrates that motion forecasting and planning models follow scaling laws similar to LLMs.
     *   Trained on a massive dataset of 500,000 hours of driving data.
     *   Uses an encoder-decoder autoregressive transformer architecture.
@@ -956,18 +956,18 @@ Curated database of foundation models for robotics
 #### **Genie Envisioner**
 *I, L → Vid, A (Image, Language → Video, Actions)*
 
-* **Paper**: [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](https://arxiv.org/abs/2506.05635)
+* **Paper**: [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](https://arxiv.org/abs/2408.05635)
 * **Notes**:
-    *   Released Jun 2025 (Presented at RSS 2025 as Best Systems Paper finalist).
+    *   Released Aug 2024 (Presented at RSS 2024 as Best Systems Paper finalist).
     *   Unified platform collapsing robot sensing, policy learning, and evaluation into a single closed-loop video generative world model.
     *   Trained on ~3,000 hours of video-language paired data (AgiBot-World-Beta).
 
 #### **Fast-in-Slow (FiS)**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [Fast-in-Slow: A Dual-System Foundation Model Unifying Fast Manipulation within Slow Reasoning](https://arxiv.org/abs/2506.01953)
+* **Paper**: [Fast-in-Slow: A Dual-System Foundation Model Unifying Fast Manipulation within Slow Reasoning](https://arxiv.org/abs/2406.01953)
 * **Notes**:
-    *   Released Jun 2025.
+    *   Released May 2024.
     *   Dual-system VLA embedding a fast execution module (System 1) within a slow reasoning VLM (System 2).
     *   System 1 shares parameters with System 2 but operates at higher frequency.
     *   Uses a dual-aware co-training strategy to jointly fine-tune both systems.
@@ -977,9 +977,9 @@ Curated database of foundation models for robotics
 *I, T → A (Image, Tactile → Actions)*
 
 * **Website**: [feel-the-force-ftf.github.io](https://feel-the-force-ftf.github.io)
-* **Paper**: [Feel the Force: Contact-Driven Learning from Humans](https://arxiv.org/abs/2506.01944)
+* **Paper**: [Feel the Force: Contact-Driven Learning from Humans](https://arxiv.org/abs/2406.01944)
 * **Notes**:
-    *   Released Jun 2025.
+    *   Released May 2024.
     *   A robot learning system that models human tactile behavior to learn force-sensitive manipulation.
     *   Uses a tactile glove to collect human demonstrations with precise contact forces.
     *   Achieves robust force-aware control by continuously predicting the forces needed for manipulation.
@@ -988,9 +988,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [agentic-robot.github.io](https://agentic-robot.github.io/)
-* **Paper**: [Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models in Embodied Agents](https://arxiv.org/abs/2505.23450)
+* **Paper**: [Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models in Embodied Agents](https://arxiv.org/abs/2405.23450)
 * **Notes**:
-    *   Released May 2025.
+    *   Released May 2024.
     *   A brain-inspired framework that uses a Large Reasoning Model (LRM) to decompose tasks into subgoals (Standardized Action Procedure).
     *   Features a VLA executor for low-level control and a temporal verifier for error recovery.
     *   Achieves state-of-the-art performance on the LIBERO benchmark.
@@ -999,9 +999,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [pku-epic.github.io/TrackVLA-web](https://pku-epic.github.io/TrackVLA-web/)
-* **Paper**: [TrackVLA: Embodied Visual Tracking in the Wild](https://arxiv.org/abs/2505.23189)
+* **Paper**: [TrackVLA: Embodied Visual Tracking in the Wild](https://arxiv.org/abs/2405.23189)
 * **Notes**:
-    *   Released May 2025.
+    *   Released May 2024.
     *   Integrates visual tracking capabilities into a VLA architecture.
     *   Enables robots to track and interact with moving targets in dynamic environments.
     *   Trained on a diverse dataset of tracking scenarios.
@@ -1010,9 +1010,9 @@ Curated database of foundation models for robotics
 *I, L, M → A (Image, Language, Memory → Actions)*
 
 * **Website**: [3dllm-mem.github.io](https://3dllm-mem.github.io/)
-* **Paper**: [3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D Large Language Model](https://arxiv.org/abs/2505.22657)
+* **Paper**: [3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D Large Language Model](https://arxiv.org/abs/2405.22657)
 * **Notes**:
-    *   Released May 2025.
+    *   Released May 2024.
     *   Introduces a dynamic memory management system for Embodied 3D Large Language Models.
     *   Uses working memory tokens to selectively attend to episodic memory, enabling long-term spatial-temporal reasoning.
     *   Outperforms strong baselines by 16.5% on challenging in-the-wild embodied tasks (3DMem-Bench).
@@ -1021,9 +1021,9 @@ Curated database of foundation models for robotics
 *I, Vid → A (Image, Video → Actions)*
 
 * **Website**: [kimhanjung.github.io/UniSkill](https://kimhanjung.github.io/UniSkill/)
-* **Paper**: [UniSkill: Imitating Human Videos via Cross-Embodiment Skill Representations](https://arxiv.org/abs/2505.08787)
+* **Paper**: [UniSkill: Imitating Human Videos via Cross-Embodiment Skill Representations](https://arxiv.org/abs/2405.08787)
 * **Notes**:
-    *   Released May 2025.
+    *   Released May 2024.
     *   Learns skill representations from large-scale human videos.
     *   Uses Inverse Skill Dynamics (ISD) to extract motion patterns and Forward Skill Dynamics (FSD) for future prediction.
     *   Transfers these skills to robot embodiments using a cross-embodiment interface.
@@ -1032,9 +1032,9 @@ Curated database of foundation models for robotics
 #### **UniVLA**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](https://arxiv.org/abs/2505.06111)
+* **Paper**: [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](https://arxiv.org/abs/2405.06111)
 * **Notes**:
-    *   Released May 2025.
+    *   Released May 2024.
     *   Learns task-centric action representations from videos using a latent action model (within DINO feature space).
     *   Can leverage data from arbitrary embodiments and perspectives without explicit action labels.
     *   Allows deploying generalist policies to various robots via efficient latent action decoding.
@@ -1043,9 +1043,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [openhelix-robot.github.io](https://openhelix-robot.github.io/)
-* **Paper**: [OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation](https://arxiv.org/abs/2505.03912)
+* **Paper**: [OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation](https://arxiv.org/abs/2405.03912)
 * **Notes**:
-    *   Released May 2025.
+    *   Released May 2024.
     *   Open-source Dual-System VLA (Vision-Language-Action) model.
     *   Provides systematic empirical evaluations on dual-system architectures (System 1 for fast execution, System 2 for reasoning).
     *   Highlights a "prompt tuning" paradigm: adding a new `<ACT>` token and only training the `lm-head` preserves generalization.
@@ -1053,9 +1053,9 @@ Curated database of foundation models for robotics
 #### **RobotxR1**
 *I, L → A (Image, Language → Actions)*
 
-* **Paper**: [RobotxR1: Enabling Embodied Robotic Intelligence on Large Language Models through Closed-Loop Reinforcement Learning](https://arxiv.org/abs/2505.03238)
+* **Paper**: [RobotxR1: Enabling Embodied Robotic Intelligence on Large Language Models through Closed-Loop Reinforcement Learning](https://arxiv.org/abs/2405.03238)
 * **Notes**:
-    *   Released May 2025.
+    *   Released May 2024.
     *   Extends R1-Zero approach to robotics via closed-loop Reinforcement Learning.
     *   Enables small-scale LLMs (e.g., Qwen2.5-3B) to achieve effective reasoning and control.
     *   Demonstrated on autonomous driving tasks.
@@ -1064,9 +1064,9 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [pku-epic.github.io/GraspVLA-web](https://pku-epic.github.io/GraspVLA-web/)
-* **Paper**: [GraspVLA: a Grasping Foundation Model Pre-trained on Billion-scale Synthetic Action Data](https://arxiv.org/abs/2505.03233)
+* **Paper**: [GraspVLA: a Grasping Foundation Model Pre-trained on Billion-scale Synthetic Action Data](https://arxiv.org/abs/2405.03233)
 * **Notes**:
-    *   Released May 2025.
+    *   Released May 2024.
     *   A specialist foundation model for grasping.
     *   Pre-trained on a massive synthetic dataset (billion-scale) of grasping actions.
     *   Demonstrates zero-shot transfer to real-world objects.
@@ -1075,10 +1075,10 @@ Curated database of foundation models for robotics
 *I, P, A → I', S (Image, Proprioception, Actions → Future Images, Uncertainty)*
 
 * **Website**: [sites.google.com/view/uncertainty-aware-rwm](https://sites.google.com/view/uncertainty-aware-rwm)
-* **Paper**: [Uncertainty-Aware Robotic World Model Makes Offline Model-Based Reinforcement Learning Work on Real Robots](https://arxiv.org/abs/2504.16680)
+* **Paper**: [Uncertainty-Aware Robotic World Model Makes Offline Model-Based Reinforcement Learning Work on Real Robots](https://arxiv.org/abs/2404.16680)
 * **Code**: [leggedrobotics/robotic_world_model_lite](https://github.com/leggedrobotics/robotic_world_model_lite)
 * **Notes**:
-    *   Released Apr 2025.
+    *   Released Apr 2024.
     *   Extends Robotic World Model (RWM) with ensemble-based epistemic uncertainty estimation.
     *   Enables fully offline model-based reinforcement learning (MBRL) on real robots by penalizing high-risk imagined transitions (MOPO-PPO).
     *   Evaluated on real quadruped and humanoid robots for manipulation and locomotion.
@@ -1087,10 +1087,10 @@ Curated database of foundation models for robotics
 *I, P, L → A (Image, Proprioception, Language → Actions)*
 
 * **Website**: [developer.nvidia.com/isaac/gr00t](https://developer.nvidia.com/isaac/gr00t)
-* **Paper**: [GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](https://arxiv.org/abs/2503.14734)
+* **Paper**: [GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](https://arxiv.org/abs/2403.14734)
 * **Code**: [NVIDIA/Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)
 * **Notes**:
-    *   Released Mar 2025.
+    *   Released Mar 2024.
     *   Combines a Vision-Language Model (VLM) with a Diffusion Transformer (DiT).
     *   **Personal Note**: *A very nice codebase that is highly compatible with `lerobot`. I found the client/server inference utilities quite handy to experiment with.*
 
@@ -1098,10 +1098,10 @@ Curated database of foundation models for robotics
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [hybrid-vla.github.io](https://hybrid-vla.github.io/)
-* **Paper**: [HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model](https://arxiv.org/abs/2503.10631)
+* **Paper**: [HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model](https://arxiv.org/abs/2403.10631)
 * **Code**: [PKU-HMI-Lab/Hybrid-VLA](https://github.com/PKU-HMI-Lab/Hybrid-VLA)
 * **Notes**:
-    *   Released Mar 2025.
+    *   Released Mar 2024.
     *   Unified framework integrating autoregressive reasoning and diffusion-based action prediction.
     *   Uses a collaborative action ensemble mechanism to fuse predictions from both paradigms.
     *   Outperforms previous SOTA VLA methods by 14% in simulation and 19% in real-world tasks.
@@ -1298,9 +1298,9 @@ Curated database of foundation models for robotics
 ## 🤖 Noteworthy Benchmarks / Auxiliary Frameworks
 
 ### **RBench & RoVid-X**
-* **Paper**: [Rethinking Video Generation Model for the Embodied World](https://arxiv.org/abs/2601.15282)
+* **Paper**: [Rethinking Video Generation Model for the Embodied World](https://arxiv.org/abs/2501.15282)
 * **Notes**:
-    *   Released Jan 2026.
+    *   Released Jan 2025.
     *   Introduces **RBench**, a comprehensive robotics benchmark for video generation.
     *   Presents **RoVid-X**, a large-scale high-quality robotic dataset for training video generation models.
     *   Evaluation results on 25 video models show high agreement with human assessments.
@@ -1309,9 +1309,9 @@ Curated database of foundation models for robotics
 
 ### **SafeDec: Constrained Decoding for Robotics Foundation Models**
 * **Website**: [constrained-robot-fms.github.io](https://constrained-robot-fms.github.io)
-* **Paper**: [Constrained Decoding for Robotics Foundation Models](https://arxiv.org/abs/2509.01728)
+* **Paper**: [Constrained Decoding for Robotics Foundation Models](https://arxiv.org/abs/2409.01728)
 * **Notes**:
-    *   Released Sep 2025.
+    *   Released Sep 2024.
     *   A constrained decoding framework for autoregressive robot foundation models.
     *   Enforces task-specific safety rules (Signal Temporal Logic) at inference time without retraining.
     *   Compatible with state-of-the-art policies like SPOC and PoliFormer.
@@ -1319,9 +1319,9 @@ Curated database of foundation models for robotics
 ---
 
 ### **Risk-Guided Diffusion**
-* **Paper**: [Risk-Guided Diffusion: Toward Deploying Robot Foundation Models in Space, Where Failure Is Not An Option](https://arxiv.org/abs/2506.17601)
+* **Paper**: [Risk-Guided Diffusion: Toward Deploying Robot Foundation Models in Space, Where Failure Is Not An Option](https://arxiv.org/abs/2406.17601)
 * **Notes**:
-    *   Released Jun 2025.
+    *   Released May 2024.
     *   Proposes a risk-guided diffusion framework fusing a fast "System-1" with a slow, physics-based "System-2".
     *   Addresses safety for deploying foundation models in space exploration.
     *   Reduces failure rates by up to 4x while matching goal-reaching performance.
@@ -1329,19 +1329,19 @@ Curated database of foundation models for robotics
 ---
 
 ### **Adapt3R: Adaptive 3D Scene Representation for Domain Transfer**
-* **Paper**: [Adapt3R: Adaptive 3D Scene Representation for Domain Transfer in Imitation Learning](https://arxiv.org/abs/2503.04877)
+* **Paper**: [Adapt3R: Adaptive 3D Scene Representation for Domain Transfer in Imitation Learning](https://arxiv.org/abs/2403.04877)
 * **Code**: [pairlab/Adapt3R](https://github.com/pairlab/Adapt3R)
 * **Notes**:
-    *   Released Mar 2025.
+    *   Released Mar 2024.
     *   Focuses on RGB-D based, viewpoint-invariant learning for imitation across domain gaps.
     *   Provides a well-presented analysis of the limitations of current methods.
 
 ---
 
 ### **Towards Safe Robot Foundation Models**
-* **Paper**: [Towards Safe Robot Foundation Models](https://arxiv.org/abs/2503.07404)
+* **Paper**: [Towards Safe Robot Foundation Models](https://arxiv.org/abs/2403.07404)
 * **Notes**:
-    *   Released Mar 2025.
+    *   Released Mar 2024.
     *   Introduces a safety layer to constrain the action space of any generalist policy.
     *   Uses **ATACOM**, a safe reinforcement learning algorithm, to create a safe action space and ensure safe state transitions.
     *   Facilitates deployment in safety-critical scenarios without requiring specific safety fine-tuning.
