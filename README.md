@@ -15,6 +15,9 @@ Curated database of foundation models for robotics
 
 ---
 
+## NotebookLM - if you want to listen to this repo
+**Notebook**: [Link](https://notebooklm.google.com/notebook/9692265a-7b38-4112-8aa5-6463f7a69a2d))
+
 ## Main list 👇
 
 ### 🚀 2026 Models
