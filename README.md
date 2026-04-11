@@ -261,6 +261,17 @@ Curated database of foundation models for robotics
     *   Stage 2: Spatially guided action post-training with spatial prompting.
     *   Substantial improvements on Google Robot and WidowX Robot tasks.
 
+#### **DreamDojo**
+*Vid, A → Vid' (Video, Actions → Future Video) [World Model]*
+
+* **Website**: [dreamdojo-world.github.io](https://dreamdojo-world.github.io/)
+* **Paper**: [DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos](https://arxiv.org/abs/2602.06949)
+* **Code**: [NVIDIA/DreamDojo](https://github.com/NVIDIA/DreamDojo)
+* **Notes**:
+    *   Released Feb 2026.
+    *   Foundation world model learning diverse interactions and dexterous controls from 44k hours of egocentric human videos.
+    *   Distillation pipeline accelerates to real-time 10.81 FPS.
+
 #### **EgoActor**
 *I, L → A (Image, Language → Actions)*
 
