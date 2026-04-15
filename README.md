@@ -1323,6 +1323,16 @@ Curated database of foundation models for robotics
 
 ---
 
+### **CRISP**
+* **Website**: [utiasDSL.github.io/crisp_controllers](https://utiasDSL.github.io/crisp_controllers)
+* **Paper**: [CRISP -- Compliant ROS2 Controllers for Learning-Based Manipulation Policies and Teleoperation](https://arxiv.org/abs/2509.06819)
+* **Notes**:
+    *   Released Sep 2025.
+    *   A lightweight C++ implementation of compliant Cartesian and joint-space controllers for the ROS2 control standard.
+    *   Designed for seamless integration with high-level learning-based policies as well as teleoperation.
+
+---
+
 ### **SafeDec: Constrained Decoding for Robotics Foundation Models**
 * **Website**: [constrained-robot-fms.github.io](https://constrained-robot-fms.github.io)
 * **Paper**: [Constrained Decoding for Robotics Foundation Models](https://arxiv.org/abs/2509.01728)
