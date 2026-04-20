@@ -22,6 +22,29 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **$\pi_{0.7}$ (Pi 0.7)**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [pi.website/pi07](https://www.pi.website/pi07)
+* **Paper**: [$\pi_{0.7}$: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities](https://www.pi.website/download/pi07.pdf)
+* **Notes**:
+    *   Released Apr 2026.
+    *   A steerable generalist robot foundation model.
+    *   Trained with diverse prompts that contain task description, detailed language, generated subgoal images, and episode metadata.
+    *   Exhibits compositional generalization, recombining skills from various tasks to solve new problems.
+
+#### **ManiDreams**
+*S → A (State → Actions)*
+
+* **Website**: [rice-robotpi-lab.github.io/ManiDreams](https://rice-robotpi-lab.github.io/ManiDreams/)
+* **Paper**: [ManiDreams: An Open-Source Library for Robust Object Manipulation via Uncertainty-aware Task-specific Intuitive Physics](https://arxiv.org/abs/2603.18336)
+* **Code**: [Rice-RobotPI-Lab/ManiDreams](https://github.com/Rice-RobotPI-Lab/ManiDreams)
+* **Notes**:
+    *   Released Mar 2026.
+    *   A modular framework for uncertainty-aware manipulation planning over intuitive physics models.
+    *   Maintains a time-varying constraint (cage) around target objects, sampling and evaluating candidate actions via parallel forward simulation.
+    *   Supports simulation-based and learning-based backends.
+
 #### **ForceVLA2**
 *I, L → A (Image, Language → Actions)*
 
