@@ -22,6 +22,17 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **ForceVLA2**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [sites.google.com/view/force-vla2/home](https://sites.google.com/view/force-vla2/home)
+* **Paper**: [ForceVLA2: Unleashing Hybrid Force-Position Control with Force Awareness for Contact-Rich Manipulation](https://arxiv.org/abs/2603.15169)
+* **Notes**:
+    *   Released Mar 2026.
+    *   End-to-end vision-language-action framework for hybrid force-position control.
+    *   Introduces force-based prompts to the VLM and uses a Cross-Scale Mixture-of-Experts (MoE) in the action expert to fuse task concepts with real-time interaction forces.
+    *   Outperforms pi0 and pi0.5 in contact-rich manipulation tasks.
+
 #### **LiLo-VLA**
 *I, L → A (Image, Language → Actions)*
 
