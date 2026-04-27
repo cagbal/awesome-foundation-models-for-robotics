@@ -30,7 +30,11 @@ Curated database of foundation models for robotics
 * **Code**: [PKU-EPIC/LDA](https://github.com/PKU-EPIC/LDA)
 * **Notes**:
     *   Released Feb 2026.
-    *   Scaling Latent Dynamics Action Model via Universal Embodied Data Ingestion.
+    *   Jointly learns dynamics, policy, and visual forecasting.
+    *   Assembled EI-30k, an embodied interaction dataset comprising over 30k hours of trajectories.
+    *   Uses a structured DINO latent space for scalable dynamics learning.
+    *   Employs a multi-modal diffusion transformer to handle asynchronous vision and action streams.
+    *   Outperforms prior methods (like $\pi_{0.5}$) on contact-rich, dexterous, and long-horizon tasks.
 
 
 #### **$\pi_{0.7}$ (Pi 0.7)**
