@@ -663,6 +663,18 @@ Curated database of foundation models for robotics
     *   The online RL component learns a latent space noise predictor to align the policy with deployment behaviors.
     *   Can autonomously lace up a shoe (83.3% success rate), requiring millimeter-level precision.
 
+#### **SONIC**
+*S, P → A (State, Proprioception → Actions)*
+
+* **Website**: [nvlabs.github.io/SONIC](https://nvlabs.github.io/SONIC/)
+* **Paper**: [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](https://arxiv.org/abs/2511.07820)
+* **Code**: [huggingface/trl](https://github.com/huggingface/trl) (Related)
+* **Notes**:
+    *   Released Nov 2025.
+    *   Addresses the challenge of diverse human motion data scarcity by extracting an expansive motion dataset (OmniHuman) containing diverse skills and realistic movements.
+    *   Introduces SONIC, a large-scale neural tracking policy demonstrating natural humanoid motions with up to 10.7x lower tracking error.
+    *   Validates zero-shot deployment in real-world scenarios for expressive humanoid movements.
+
 #### **EveryDayVLA**
 *I, L → A (Image, Language → Actions)*
 
@@ -694,6 +706,18 @@ Curated database of foundation models for robotics
     *   Jointly understands, generates future images, and acts using a synchronous denoising process.
     *   Integrates multiple modalities into a single denoising trajectory (JD3P).
     *   Achieves 4x faster inference than autoregressive methods on benchmarks like CALVIN and LIBERO.
+
+#### **RL-100**
+*I, P → A (Image, Proprioception → Actions)*
+
+* **Website**: [lei-kun.github.io/RL-100](https://lei-kun.github.io/RL-100/)
+* **Paper**: [RL-100: Performant Robotic Manipulation with Real-World Reinforcement Learning](https://arxiv.org/abs/2510.14830)
+* **Code**: [Lei-Kun/Uni-o4](https://github.com/Lei-Kun/Uni-o4)
+* **Notes**:
+    *   Released Oct 2025.
+    *   Tackles the efficiency issues of traditional deep RL in real-world environments.
+    *   Introduces an algorithmic framework built on a cross-modal transformer backbone designed to learn directly on real robots.
+    *   Achieves rapid acquisition of complex manipulation skills (within 1-2 hours) with high success rates across 100+ tasks in a single day.
 
 #### **ManiAgent**
 *I, L → A (Image, Language → Actions)*
