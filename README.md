@@ -22,6 +22,21 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **LDA-1B**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [pku-epic.github.io/LDA](https://pku-epic.github.io/LDA/)
+* **Paper**: [LDA-1B: Scaling Latent Dynamics Action Model via Universal Embodied Data Ingestion](https://arxiv.org/abs/2602.12215)
+* **Code**: [PKU-EPIC/LDA](https://github.com/PKU-EPIC/LDA)
+* **Notes**:
+    *   Released Feb 2026.
+    *   Jointly learns dynamics, policy, and visual forecasting.
+    *   Assembled EI-30k, an embodied interaction dataset comprising over 30k hours of trajectories.
+    *   Uses a structured DINO latent space for scalable dynamics learning.
+    *   Employs a multi-modal diffusion transformer to handle asynchronous vision and action streams.
+    *   Outperforms prior methods (like $\pi_{0.5}$) on contact-rich, dexterous, and long-horizon tasks.
+
+
 #### **$\pi_{0.7}$ (Pi 0.7)**
 *I, L → A (Image, Language → Actions)*
 
