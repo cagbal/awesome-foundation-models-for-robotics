@@ -1386,6 +1386,19 @@ Curated database of foundation models for robotics
 
 ## 🤖 Noteworthy Benchmarks / Auxiliary Frameworks
 
+### **KinDER**
+* **Website**: [kinder-site](https://prpl-group.com/kinder-site/)
+* **Paper**: [KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning](https://arxiv.org/abs/2604.25788)
+* **Code**: [Princeton-Robot-Planning-and-Learning/kindergarden](https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden)
+* **Notes**:
+    *   Released Apr 2026.
+    *   A physical reasoning benchmark for robot learning and planning.
+    *   Comprises 25 procedurally generated environments testing spatial relations, nonprehensile multi-object manipulation, tool use, combinatorial geometric constraints, and dynamic constraints.
+    *   Includes a Gymnasium-compatible Python library with parameterized skills and demonstrations.
+    *   Provides a standardized evaluation suite with 13 baselines spanning TAMP, imitation learning, RL, and foundation-model-based approaches.
+
+---
+
 ### **RBench & RoVid-X**
 * **Paper**: [Rethinking Video Generation Model for the Embodied World](https://arxiv.org/abs/2601.15282)
 * **Notes**:
