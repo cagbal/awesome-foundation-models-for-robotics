@@ -22,6 +22,10 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Realtime-VLA FLASH**
+* **Website**: [dexmal.github.io/realtime-vla-flash](https://dexmal.github.io/realtime-vla-flash)
+* **Paper**: [Realtime-VLA FLASH: Speculative Inference Framework for Diffusion-based VLAs](https://arxiv.org/abs/2605.13778)
+
 #### **PhysForge**
 * **Website**: [hku-mmlab.github.io/PhysForge](https://hku-mmlab.github.io/PhysForge/)
 * **Paper**: [PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World](https://arxiv.org/abs/2605.05163)
