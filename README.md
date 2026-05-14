@@ -22,6 +22,19 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **PhysForge**
+* **Website**: [hku-mmlab.github.io/PhysForge](https://hku-mmlab.github.io/PhysForge/)
+* **Paper**: [PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World](https://arxiv.org/abs/2605.05163)
+* **Code**: [GitHub](https://github.com/HKU-MMLab/PhysForge)
+
+#### **MolmoAct 2**
+* **Website**: [allenai.org/blog/molmoact2](https://allenai.org/blog/molmoact2)
+* **Paper**: [MolmoAct 2: An open foundation for robots that work in the real world](https://allenai.org/papers/molmoact2)
+* **Code**: [GitHub](https://github.com/allenai/molmoact2)
+* **Weights**: [Hugging Face](https://huggingface.co/collections/allenai/molmoact2-models)
+* **Data**: [Hugging Face](https://huggingface.co/collections/allenai/molmoact2-datasets)
+
+
 #### **LDA-1B**
 *I, L → A (Image, Language → Actions)*
 
