@@ -22,6 +22,17 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **ZPRL**
+* **Website**: [manutdmoon.github.io/ZPRL](https://manutdmoon.github.io/ZPRL/)
+* **Paper**: [Beyond Action Residuals: Real-World Robot Policy Steering via Bottleneck Latent Reinforcement Learning](https://arxiv.org/abs/2605.19919)
+
+#### **ContactPrompt**
+* **Website**: [contactprompt-release.github.io](https://contactprompt-release.github.io/)
+* **Paper**: [Training-Free Dense Hand Contact Estimation with Multi-Modal Large Language Models](https://arxiv.org/abs/2605.05886)
+
+#### **ExpertGen**
+* **Paper**: [ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect Behavior Priors](https://arxiv.org/abs/2603.15956)
+
 #### **PhysForge**
 * **Website**: [hku-mmlab.github.io/PhysForge](https://hku-mmlab.github.io/PhysForge/)
 * **Paper**: [PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World](https://arxiv.org/abs/2605.05163)
