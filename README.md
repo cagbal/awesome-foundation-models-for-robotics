@@ -636,6 +636,11 @@ Curated database of foundation models for robotics
 
 ### 📆 2025 Models
 
+#### **Multimodal Diffusion Forcing**
+*Multimodal Diffusion Forcing for Forceful Manipulation*
+Zixuan Huang, Huaidian Hou, Dmitry Berenson
+[[Paper]](https://arxiv.org/abs/2511.04812) | [[Website]](https://unified-df.github.io/)
+
 #### **Dream-VLA**
 *I, L → A (Image, Language → Actions)*
 
