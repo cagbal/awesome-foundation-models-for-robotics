@@ -35,6 +35,21 @@ Curated database of foundation models for robotics
 * **Data**: [Hugging Face](https://huggingface.co/collections/allenai/molmoact2-datasets)
 
 
+
+#### **MINT**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [renming-huang.github.io/MINT](https://renming-huang.github.io/MINT/)
+* **Paper**: [Mimic Intent, Not Just Trajectories](https://arxiv.org/abs/2602.08602)
+* **Code**: [RenMing-Huang/MINT](https://github.com/RenMing-Huang/MINT)
+* **Notes**:
+    *   Released Feb 2026.
+    *   Proposes explicitly disentangling behavior intent from execution details in end-to-end imitation learning (MINT).
+    *   Achieves this via multi-scale frequency-space tokenization, forcing a spectral decomposition of action chunk representation.
+    *   Learns action tokens with a multi-scale coarse-to-fine structure, capturing low-frequency global structure with the coarsest token and high-frequency details with finer tokens.
+    *   Yields an abstract Intent token for planning and transfer, and multi-scale Execution tokens for precise adaptation.
+    *   Enables one-shot transfer of skills by injecting the Intent token from a demonstration into the autoregressive generation process.
+
 #### **LDA-1B**
 *I, L → A (Image, Language → Actions)*
 
