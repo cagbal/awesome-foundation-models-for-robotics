@@ -34,6 +34,11 @@ Paper: [Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Mode
 * Employs Language-Guided Exploration via a critic model for structured systematic exploration and an Experience Memory for warm-starting adaptation to similar tasks.
 * Achieves substantial improvements on LIBERO benchmark, with +12.3% on long-horizon tasks, +28.5% in 1-shot learning, and 2.4x faster convergence than existing methods.
 
+#### **Realtime-VLA FLASH**
+* **Website**: [dexmal.github.io/realtime-vla-flash](https://dexmal.github.io/realtime-vla-flash)
+* **Paper**: [Realtime-VLA FLASH: Speculative Inference Framework for Diffusion-based VLAs](https://arxiv.org/abs/2605.13778)
+* **Notes**: Speculative inference framework for diffusion-based VLAs, eliminating full inference calls during replanning for low latency.
+
 #### **PhysForge**
 * **Website**: [hku-mmlab.github.io/PhysForge](https://hku-mmlab.github.io/PhysForge/)
 * **Paper**: [PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World](https://arxiv.org/abs/2605.05163)
