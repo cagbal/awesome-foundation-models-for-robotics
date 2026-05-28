@@ -22,6 +22,18 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Agentic-VLA**
+*I, L → A (Image, Language → Actions)*
+
+Paper: [Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Models](https://arxiv.org/abs/2605.22896)
+
+**Notes:**
+* Released May 2026.
+* An agentic training framework that enables VLAs to efficiently adapt online through three key innovations.
+* Introduces Adaptive Reward Synthesis to dynamically generate reward functions, decomposing complex tasks into learnable sub-goals.
+* Employs Language-Guided Exploration via a critic model for structured systematic exploration and an Experience Memory for warm-starting adaptation to similar tasks.
+* Achieves substantial improvements on LIBERO benchmark, with +12.3% on long-horizon tasks, +28.5% in 1-shot learning, and 2.4x faster convergence than existing methods.
+
 #### **Realtime-VLA FLASH**
 * **Website**: [dexmal.github.io/realtime-vla-flash](https://dexmal.github.io/realtime-vla-flash)
 * **Paper**: [Realtime-VLA FLASH: Speculative Inference Framework for Diffusion-based VLAs](https://arxiv.org/abs/2605.13778)
