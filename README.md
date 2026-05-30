@@ -22,6 +22,18 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Qwen-VLA**
+*I, L → A (Image, Language → Actions)*
+
+Paper: [Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments](https://arxiv.org/abs/2605.30280)
+
+**Notes:**
+* Released May 2026.
+* Unified embodied foundation model extending Qwen's vision-language modeling stack to continuous action and trajectory generation using a DiT-based action decoder.
+* Trained on diverse data including manipulation, navigation, and auxiliary vision-language data, supporting multiple robot platforms via embodiment-aware prompt conditioning.
+* Unifies manipulation, navigation, and trajectory prediction, achieving strong multi-task performance and out-of-distribution generalization.
+
+
 #### **Gamma-World**
 *A → I (Actions → Image)*
 
