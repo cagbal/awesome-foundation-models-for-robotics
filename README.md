@@ -22,6 +22,19 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Gamma-World**
+*A → I (Actions → Image)*
+
+Website: [research.nvidia.com/labs/sil/projects/gamma-world](https://research.nvidia.com/labs/sil/projects/gamma-world/)
+Code: [github.com/nv-tlabs/Gamma-World](https://github.com/nv-tlabs/Gamma-World)
+Paper: [Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players](https://arxiv.org/abs/2605.28816)
+
+**Notes:**
+* Released May 2026.
+* Generative multi-agent world model that simulates environments for multiple independently controllable agents.
+* Introduces Simplex Rotary Agent Encoding for permutation-symmetric agent representation and Sparse Hub Attention for efficient communication.
+* Scales from virtual multiplayer games to real-world multi-robot coordination while maintaining shared-world consistency.
+
 #### **Agentic-VLA**
 *I, L → A (Image, Language → Actions)*
 
