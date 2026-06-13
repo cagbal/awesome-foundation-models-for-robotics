@@ -22,6 +22,18 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Improving Robotic Generalist Policies via Flow Reversal Steering**
+*I, L -> A (Image, Language -> Actions)*
+
+Paper: [Improving Robotic Generalist Policies via Flow Reversal Steering](https://arxiv.org/abs/2606.13675)
+
+**Notes:**
+* Released Jun 2026.
+* Proposes Flow Reversal Steering (FRS) to infer and invoke appropriate actions from a flow matching generalist policy's rich behavioral prior when direct commands fail.
+* FRS maps suboptimal but "reasonable" actions to nearby generalist action modes by passing them through the flow policy in reverse.
+* Improves zero-shot control by turning coarse semantic guidance from humans or VLMs into corresponding good robot actions, and allows distillation via behavioral cloning to achieve up to 95% absolute task success rate boosts in under a minute of training.
+* Enables policy improvement by bootstrapping reinforcement learning with semantic knowledge, succeeding on tasks where standard RL fails.
+
 #### **Gamma-World**
 *A → I (Actions → Image)*
 
