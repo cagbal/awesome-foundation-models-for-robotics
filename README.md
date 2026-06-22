@@ -22,6 +22,75 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Improving Robotic Generalist Policies via Flow Reversal Steering**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Improving Robotic Generalist Policies via Flow Reversal Steering](https://arxiv.org/abs/2606.13675)
+* **Notes**:
+    *   Released Jun 2026.
+    *   Proposes Flow Reversal Steering (FRS) for improving flow-matching robotic generalist policies.
+    *   Maps suboptimal but reasonable actions through the policy in reverse to find nearby action modes from the learned behavioral prior.
+    *   Turns coarse semantic guidance from humans or VLMs into stronger robot actions for zero-shot control.
+    *   Supports quick distillation with behavioral cloning and can bootstrap reinforcement learning on tasks where standard RL fails.
+
+#### **$\mu$VLA**
+*I, L, M → A (Image, Language, Memory → Actions)*
+
+* **Website**: [avanturist322.github.io/mu-vla](https://avanturist322.github.io/mu-vla/)
+* **Paper**: [$\mu$VLA: On Recurrent Memory for Partially Observable Manipulation in VLA Models](https://arxiv.org/abs/2606.12497)
+* **Notes**:
+    *   Released Jun 2026.
+    *   Studies minimal recurrent memory for partially observable manipulation in VLA models.
+    *   Adds learnable memory tokens to an OpenVLA-OFT backbone and carries them across timesteps.
+    *   Uses truncated backpropagation through time without auxiliary losses or large architectural changes.
+    *   Improves MIKASA-Robo training-task success from 0.42 to 0.84 in the strongest setting while maintaining strong LIBERO performance.
+
+#### **Qwen-VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments](https://arxiv.org/abs/2605.30280)
+* **Notes**:
+    *   Released May 2026.
+    *   Extends Qwen's vision-language stack to continuous action and trajectory generation with a DiT-based action decoder.
+    *   Trains on a heterogeneous embodied pretraining mixture spanning manipulation, navigation, simulation, egocentric data, and auxiliary vision-language data.
+    *   Uses embodiment-aware prompt conditioning to support different robot platforms and control conventions.
+    *   Unifies manipulation, navigation, and trajectory prediction with strong multi-task and out-of-distribution performance.
+
+#### **ZPRL**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [manutdmoon.github.io/ZPRL](https://manutdmoon.github.io/ZPRL/)
+* **Paper**: [Beyond Action Residuals: Real-World Robot Policy Steering via Bottleneck Latent Reinforcement Learning](https://arxiv.org/abs/2605.19919)
+* **Notes**:
+    *   Released May 2026.
+    *   Steers pretrained robot policies through a compact bottleneck latent instead of directly perturbing actions or policy weights.
+    *   Adds a plug-and-play variational information bottleneck during offline training to expose a task-relevant latent interface.
+    *   Freezes the base policy during online fine-tuning and learns residual perturbations in latent space.
+    *   Improves sample efficiency and real-world success rates on manipulation tasks compared with action-residual baselines.
+
+#### **ContactPrompt**
+*I, L → Contact (Image, Language → Dense Contact)*
+
+* **Website**: [contactprompt-release.github.io](https://contactprompt-release.github.io/)
+* **Paper**: [Training-Free Dense Hand Contact Estimation with Multi-Modal Large Language Models](https://arxiv.org/abs/2605.05886)
+* **Notes**:
+    *   Released May 2026.
+    *   Training-free and zero-shot method for dense hand contact estimation using multi-modal large language models.
+    *   Encodes 3D hand geometry through detailed hand-part segmentation and part-wise vertex-grid representations.
+    *   Uses multi-stage structured contact reasoning to bridge global visual semantics and fine-grained vertex-level contact.
+    *   Outperforms previous supervised dense-contact methods without task-specific training.
+
+#### **ExpertGen**
+*I, S → A (Image/State → Actions)*
+
+* **Paper**: [ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect Behavior Priors](https://arxiv.org/abs/2603.15956)
+* **Notes**:
+    *   Released Mar 2026.
+    *   Automates expert policy learning in simulation from imperfect behavior priors.
+    *   Uses prior policies as initialization or guidance, then improves them into stronger simulated experts.
+    *   Targets scalable sim-to-real transfer by reducing manual reward engineering and expert-demonstration requirements.
+    *   Produces expert policies suitable for downstream robot learning pipelines.
+
 #### **Gamma-World**
 *A → I (Actions → Image)*
 
@@ -680,6 +749,18 @@ Paper: [Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Mode
 ---
 
 ### 📆 2025 Models
+
+#### **Multimodal Diffusion Forcing**
+*I, L, F → A (Image, Language, Force → Actions)*
+
+* **Website**: [unified-df.github.io](https://unified-df.github.io/)
+* **Paper**: [Multimodal Diffusion Forcing for Forceful Manipulation](https://arxiv.org/abs/2511.04812)
+* **Notes**:
+    *   Submitted Nov 2025; revised Apr 2026.
+    *   Unified framework for learning from multimodal robot trajectories beyond direct observation-to-action imitation.
+    *   Applies random partial masking and trains a diffusion model to reconstruct trajectory content across sensory inputs, actions, and rewards.
+    *   Learns temporal and cross-modal dependencies, such as predicting force-signal effects from actions or inferring states from partial observations.
+    *   Evaluated on simulated and real-world contact-rich, forceful manipulation tasks with strong robustness under noisy observations.
 
 #### **Dream-VLA**
 *I, L → A (Image, Language → Actions)*
