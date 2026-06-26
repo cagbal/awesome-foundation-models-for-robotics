@@ -22,6 +22,29 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **ABC: Scalable Behavior Cloning with Open Data, Training, and Evaluation**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [abc.bot](https://abc.bot/)
+* **Code**: [amazon-far/abc](https://github.com/amazon-far/abc)
+* **Notes**:
+    *   Introduces ABC, a fully open-source stack for manipulation with behavior cloning.
+    *   Releases ABC-130K, a teleoperation dataset with 3,500 hours of data and 130K episodes across 195 tasks.
+    *   Open-sources hardware setup, training infrastructure, simulation pipeline, and 400 hours of sim-teleop data.
+    *   Provides a co-training recipe correlating simulation and real-world evaluation to ablate model-design before costly real-world tests.
+
+#### **FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [finevla.xlang.ai](https://finevla.xlang.ai/)
+* **Paper**: [FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies](https://arxiv.org/abs/2605.27284)
+* **Code**: [xlang-ai/FineVLA](https://github.com/xlang-ai/FineVLA)
+* **Notes**:
+    *   Released May 2026.
+    *   Introduces FineVLA, a framework for action-aligned fine-grained VLA supervision to guide execution details like active arm and approach direction.
+    *   Includes a data construction tool, FineVLA-Data (47K fine-grained trajectories), a held-out benchmark, a VLM annotator, and a steerable VLA policy.
+    *   Shows fine-grained supervision improves goal-level success, complements raw instructions, and significantly boosts steerable control (e.g., pose, approach direction).
+
 #### **Improving Robotic Generalist Policies via Flow Reversal Steering**
 *I, L → A (Image, Language → Actions)*
 
