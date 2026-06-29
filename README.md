@@ -22,6 +22,18 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Cloak**
+*I, L → A (Image, Language → Actions)*
+
+Website: [tml.stanford.edu/cloak/](https://tml.stanford.edu/cloak/)
+Paper: [Cloak: Zero-Shot Cross-Embodiment Manipulation by Masking the End-Effector from the VLA](https://arxiv.org/abs/2606.22836)
+Notes:
+Released Jun 2026.
+Training recipe for zero-shot cross-embodiment transfer by cloaking the end-effector from the wrist camera.
+Renders a mask in simulation from robot geometry, requiring no generative models or segmentation.
+Demonstrates zero-shot transfer to unseen embodiments, including a five-fingered hand, while preserving source embodiment performance.
+
+
 #### **Improving Robotic Generalist Policies via Flow Reversal Steering**
 *I, L → A (Image, Language → Actions)*
 
@@ -1482,6 +1494,17 @@ Paper: [Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Mode
 ---
 
 ### 🏛️ 2024 & Older
+
+#### **HG-DAgger**
+*S, A' → A (State, Future Actions → Actions)*
+
+Paper: [HG-DAgger: Interactive Imitation Learning with Human Experts](https://arxiv.org/abs/1810.02890)
+Notes:
+Released Oct 2018.
+Proposes HG-DAgger, a variant of DAgger more suitable for interactive imitation learning from human experts in real-world systems.
+Learns a safety threshold for a model-uncertainty-based risk metric to predict novice performance.
+Demonstrates improved performance over DAgger and behavioral cloning on autonomous driving tasks.
+
 
 #### **$\pi_0$ (Pi 0)**
 *I, P, L → A (Image, Proprioception, Language → Actions)*
