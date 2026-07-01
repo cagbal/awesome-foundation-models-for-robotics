@@ -22,6 +22,29 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **LingBot-Depth**
+*I, D → D, P (Image, Depth → Depth, Points)*
+
+* **Website**: [technology.robbyant.com/lingbot-depth](https://technology.robbyant.com/lingbot-depth)
+* **Code**: [robbyant/lingbot-depth](https://github.com/robbyant/lingbot-depth)
+* **Paper**: [Masked Depth Modeling for Spatial Perception](https://arxiv.org/abs/2601.17895)
+* **Notes**:
+    *   Released Jan 2026.
+    *   Transforms incomplete and noisy depth sensor data into high-quality, metric-accurate 3D measurements.
+    *   Jointly aligns RGB appearance and depth geometry in a unified latent space via cross-modal attention.
+    *   Serves as a powerful spatial perception foundation for robot learning and 3D vision applications, like 4D point tracking and dexterous manipulation.
+
+#### **ASPIRE**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [research.nvidia.com/labs/gear/aspire/](https://research.nvidia.com/labs/gear/aspire/)
+* **Paper**: [ASPIRE: Agentic Skills Discovery for Robotics](https://research.nvidia.com/labs/gear/aspire/assets/Aspire.pdf)
+* **Notes**:
+    *   Released 2026.
+    *   A self-improving continual learning system for robotics that autonomously writes and refines code-as-policy robot control programs from execution feedback.
+    *   Operates in an open-ended learning loop with a closed-loop robot execution engine, a continually expanding skill library, and an evolutionary search procedure.
+    *   Demonstrates strong zero-shot transfer to unseen long-horizon tasks and real-robot cross-embodiment skill transfer.
+
 #### **Improving Robotic Generalist Policies via Flow Reversal Steering**
 *I, L → A (Image, Language → Actions)*
 
