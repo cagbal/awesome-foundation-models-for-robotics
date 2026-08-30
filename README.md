@@ -22,6 +22,17 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Revisiting Open-Loop Execution in Robotics: Toward Reactive, Higher-Performing Policies**
+
+* **Code**: [Michaelszeng/Revisiting-Open-Loop-Execution-in-Robotics](https://github.com/Michaelszeng/Revisiting-Open-Loop-Execution-in-Robotics)
+* **Paper**: [Revisiting Open-Loop Execution in Robotics: Toward Reactive, Higher-Performing Policies](https://arxiv.org/abs/2608.15938)
+* **Notes**:
+    *   Released Aug 2026.
+    *   Argues that long open-loop execution primarily helps short-context imitation learning policies imitate non-Markovian demonstrations.
+    *   Shows expert non-Markovianity strongly shapes the relationship between task success and open-loop execution horizon across four simulation and two real-world tasks.
+    *   Finds compounding errors matter but have a much weaker impact than expert non-Markovianity.
+    *   Shows that with sufficiently long observation context, open-loop execution is no longer beneficial and reactive closed-loop policies perform best.
+
 #### **Combined Constrained Sampling and Reinforcement Learning for Robotic Manipulation**
 *S, G → A (State, Goal → Actions)*
 
@@ -819,6 +830,19 @@ Paper: [Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Mode
 ---
 
 ### 📆 2025 Models
+
+#### **Is Diversity All You Need for Scalable Robotic Manipulation? (GO-1-Pro)**
+*I, L, P → A (Image, Language, Proprioception → Actions)*
+
+* **Website**: [opendrivelab.com/EmbodiedAI](https://opendrivelab.com/EmbodiedAI)
+* **Code**: [OpenDriveLab/AgiBot-World](https://github.com/OpenDriveLab/AgiBot-World)
+* **Paper**: [Is Diversity All You Need for Scalable Robotic Manipulation?](https://arxiv.org/abs/2507.06219)
+* **Notes**:
+    *   Released Jul 2025.
+    *   Studies data scaling for robotic manipulation along task, embodiment, and expert diversity dimensions, challenging the "more diverse is better" intuition.
+    *   Shows task diversity matters more than per-task demonstration quantity, while multi-embodiment pre-training is optional for cross-embodiment transfer.
+    *   Shows expert diversity can confound policy learning, with velocity multimodality as a key contributing factor.
+    *   Proposes a distribution debiasing method; the resulting GO-1-Pro gains 15% performance, equivalent to using 2.5x more pre-training data.
 
 #### **Multimodal Diffusion Forcing**
 *I, L, F → A (Image, Language, Force → Actions)*
