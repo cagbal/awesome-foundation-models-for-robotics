@@ -22,6 +22,18 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Combined Constrained Sampling and Reinforcement Learning for Robotic Manipulation**
+*S, G → A (State, Goal → Actions)*
+
+* **Website**: [user.tu-berlin.de/mtoussai/26-CSRL](https://www.user.tu-berlin.de/mtoussai/26-CSRL/)
+* **Paper**: [Combined Constrained Sampling and Reinforcement Learning for Robotic Manipulation](https://arxiv.org/abs/2602.08557)
+* **Notes**:
+    *   Released Feb 2026.
+    *   Combines reset-strategy design with model-based sampling of states on constrained manifolds to boost exploration for contact-rich non-prehensile manipulation.
+    *   State sampler explicitly accounts for the structure of contact to provide a rich covering of diverse contact modes.
+    *   Combines constrained sampling resets with projected interpolation and curriculum learning, outperforming RL without constrained sampling and alternative reset methods.
+    *   Effectively trains universal, non-prehensile, and dynamic manipulation policies in contact-rich settings.
+
 #### **LingBot-Depth**
 *I, D → D (Image, Depth → Depth)*
 
