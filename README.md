@@ -808,6 +808,19 @@ Paper: [Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Mode
 
 ### 📆 2025 Models
 
+#### **Is Diversity All You Need for Scalable Robotic Manipulation? (GO-1-Pro)**
+*I, L, P → A (Image, Language, Proprioception → Actions)*
+
+* **Website**: [opendrivelab.com/EmbodiedAI](https://opendrivelab.com/EmbodiedAI)
+* **Code**: [OpenDriveLab/AgiBot-World](https://github.com/OpenDriveLab/AgiBot-World)
+* **Paper**: [Is Diversity All You Need for Scalable Robotic Manipulation?](https://arxiv.org/abs/2507.06219)
+* **Notes**:
+    *   Released Jul 2025.
+    *   Studies data scaling for robotic manipulation along task, embodiment, and expert diversity dimensions, challenging the "more diverse is better" intuition.
+    *   Shows task diversity matters more than per-task demonstration quantity, while multi-embodiment pre-training is optional for cross-embodiment transfer.
+    *   Shows expert diversity can confound policy learning, with velocity multimodality as a key contributing factor.
+    *   Proposes a distribution debiasing method; the resulting GO-1-Pro gains 15% performance, equivalent to using 2.5x more pre-training data.
+
 #### **Multimodal Diffusion Forcing**
 *I, L, F → A (Image, Language, Force → Actions)*
 
