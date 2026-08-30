@@ -22,6 +22,17 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Revisiting Open-Loop Execution in Robotics: Toward Reactive, Higher-Performing Policies**
+
+* **Code**: [Michaelszeng/Revisiting-Open-Loop-Execution-in-Robotics](https://github.com/Michaelszeng/Revisiting-Open-Loop-Execution-in-Robotics)
+* **Paper**: [Revisiting Open-Loop Execution in Robotics: Toward Reactive, Higher-Performing Policies](https://arxiv.org/abs/2608.15938)
+* **Notes**:
+    *   Released Aug 2026.
+    *   Argues that long open-loop execution primarily helps short-context imitation learning policies imitate non-Markovian demonstrations.
+    *   Shows expert non-Markovianity strongly shapes the relationship between task success and open-loop execution horizon across four simulation and two real-world tasks.
+    *   Finds compounding errors matter but have a much weaker impact than expert non-Markovianity.
+    *   Shows that with sufficiently long observation context, open-loop execution is no longer beneficial and reactive closed-loop policies perform best.
+
 #### **LingBot-Depth**
 *I, D → D (Image, Depth → Depth)*
 
