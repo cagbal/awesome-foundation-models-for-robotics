@@ -19,6 +19,20 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **GEN-1.5**
+*Vid, L, P, S, M → A (Video, Language, Proprioception, Sensors, Memory → Actions)*
+
+* **Website**: [generalistai.com/blog/gen-1.5](https://generalistai.com/blog/gen-1.5)
+* **Notes**:
+    *   Released Aug 19, 2026.
+    *   Large multimodal robot foundation model that processes video with a 30-second memory alongside language, proprioception, and other sensor inputs, then produces action trajectories at 100 Hz.
+    *   Introduces “physical prompting”: 3–12 seconds of one sensorimotor demonstration can specify a new task in context with no gradient update; multiple prompts can also be composed into a longer behavior.
+    *   Demonstrates zero-shot simulation-to-real prompting, occasional human-hand-to-robot transfer, and improvised strategies such as unseen tool use and ambidextrous execution.
+    *   Reports 59% ±10% average success across 10 short-horizon tasks from one in-context demonstration; 10 gradient steps on five minutes of data raise average success to 83% ±9%.
+    *   Its pretraining ran continuously for more than eight months across three phases because held-out next-action error kept improving as the model absorbed more physical-interaction data and algorithmic updates.
+    *   Can adapt in 1–10 gradient steps on 1–5 minutes of task data; one step on one minute of data reaches 66.5% on a held-out task.
+    *   The authors emphasize that current one-shot tasks remain simple, short-horizon, and more brittle than fine-tuned policies despite the emerging generalization.
+
 #### **LeVJEPA**
 *Vid → S (Video → Representations)*
 
