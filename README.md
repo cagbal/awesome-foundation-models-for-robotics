@@ -19,6 +19,20 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **S1**
+*Vid → A (Video Demonstration → Actions)*
+
+* **Website**: [skild.ai/blogs/s1](https://www.skild.ai/blogs/s1)
+* **Notes**:
+    *   Released Aug 2026.
+    *   Skild AI's manipulation foundation model is trained as an in-context learner: one video demonstration specifies the task and the same model weights execute it without fine-tuning or post-training.
+    *   Episodic pretraining forces the policy to infer intent, functional correspondences, and task progress when the prompt differs from deployment in scene, viewpoint, or embodiment.
+    *   Combines robot teleoperation, UMI, egocentric video, and simulation data to balance hardware proximity, behavioral diversity, and collection scale.
+    *   Executes unseen tasks lasting up to 10 minutes—including pancake cooking, pour-over coffee, kit assembly, and plant potting—by composing skills, tracking progress, and recovering from mistakes.
+    *   In a controlled 1K-to-100K-hour scaling study, one-video prompting reaches 66% success on unseen long-horizon tasks versus 9% for a language-prompted VLA at the same 100K-hour data scale; seen-task performance reaches about 96%.
+    *   One in-context demonstration reaches 66% on the long-horizon comparison, roughly matching a post-trained policy given 380 demonstrations that required 50–100 hours of teleoperation.
+    *   Reported behaviors include robustness to scene perturbations, affordance-matched object substitution, retrying after errors, and correcting mistakes in the demonstration itself.
+
 #### **GEN-1.5**
 *Vid, L, P, S, M → A (Video, Language, Proprioception, Sensors, Memory → Actions)*
 
