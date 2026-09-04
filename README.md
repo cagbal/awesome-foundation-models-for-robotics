@@ -19,6 +19,22 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Can Video World Models Track Unobserved World States?**
+*Vid, A → I' (Video, Actions → Future Images)*
+
+* **Website**: [joonghyuk.com/stateful-vwm-web](https://joonghyuk.com/stateful-vwm-web/)
+* **Paper**: [Can Video World Models Track Unobserved World States?](https://arxiv.org/abs/2608.30692)
+* **Code**: [alex4727/stateful-vwm](https://github.com/alex4727/stateful-vwm)
+* **Notes**:
+    *   Released Aug 31, 2026.
+    *   Introduces an action-conditioned visual Shell Game based on the non-commutative S₅ permutation problem: models train on 30K five-swap videos and are tested on chains of up to 30 swaps.
+    *   Bidirectional and autoregressive Transformers, Mamba2, and standard nonnegative-eigenvalue linear attention fit the training horizon but fall near chance on longer chains while still rendering plausible video; extra denoising steps do not recover state accuracy.
+    *   Explains the failure through supervision and architecture: pixel diffusion does not expose the hidden ball state, while a Transformer's append-only KV cache preserves history but cannot revise a compact running state in place.
+    *   Finds that reliable extrapolation needs both a state carried across chunks and an expressive in-place update rule.
+    *   Negative-eigenvalue linear attention can implement the reflections required by swaps and reaches 0.95 accuracy at 30 swaps; nonlinear test-time-training fast weights also extrapolate by rewriting the feature map used to store and retrieve state.
+    *   In harder Memory Maze and Dynamic Block World tests, nonlinear fast weights remain the strongest mechanism for tracking state that must react to collisions or evolve off-screen.
+    *   Directly relevant to partially observable robotic world models: visual fidelity alone can hide a failure to remember and update occluded objects. The public repository currently says code and models are coming soon.
+
 #### **Dyna-2**
 *Vid, L, P → A, I' (Video, Language, Proprioception → Actions, Future Images)*
 
