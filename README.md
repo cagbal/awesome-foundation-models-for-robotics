@@ -19,6 +19,28 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **OmniGuide**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [omniguide.github.io](https://omniguide.github.io/)
+* **Paper**: [OmniGuide: Universal Guidance Fields for Enhancing Generalist Robot Policies](https://arxiv.org/abs/2603.10052)
+* **Notes**:
+    *   Released Mar 2026.
+    *   Flexible framework that improves VLA performance on complex tasks (e.g. spatial understanding, manipulation in clutter) by leveraging arbitrary sources of guidance (3D foundation models, semantic-reasoning VLMs, human pose models).
+    *   Guidance sources are expressed as differentiable energy functions with task-specific attractors and repellers in 3D space, influencing the sampling of VLA actions.
+    *   Enhances the performance of state-of-the-art generalist policies (e.g., $\pi_{0.5}$, GR00T N1.6) across success and safety rates.
+
+#### **Déjà View**
+*I → 3D (Image → 3D)*
+
+* **Website**: [research.nvidia.com/labs/dvl/projects/dvlt](https://research.nvidia.com/labs/dvl/projects/dvlt)
+* **Paper**: [Déjà View: Looping Transformers for Multi-View 3D Reconstruction](https://arxiv.org/abs/2605.30215)
+* **Notes**:
+    *   Released May 2026.
+    *   Applies a single looped transformer block recurrently to per-view features for K refinement steps.
+    *   Trained once, exposes K as an inference-time compute knob, outperforming substantially larger feed-forward baselines across five reconstruction benchmarks.
+    *   Uses a fraction of the parameters of larger models and comparable or lower compute, providing a stronger inductive bias for multi-view 3D reconstruction.
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
