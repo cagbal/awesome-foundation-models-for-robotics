@@ -19,6 +19,19 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Flow Reasoning Models (FRMs)**
+*L → L (Structured Inputs → Iteratively Refined Solutions)*
+
+* **Paper**: [Flow Reasoning Models: Turning Flows Into Efficient Recurrent Reasoners](https://arxiv.org/abs/2606.29150)
+* **Code**: [helblazer811/Flow-Reasoning-Models](https://github.com/helblazer811/Flow-Reasoning-Models)
+* **Notes**:
+    *   First released Jun 28, 2026; updated to v3 on Sep 1, 2026.
+    *   Adapts continuous flows over discrete structured outputs into a recurrent reasoner that repeatedly revises all interdependent decisions in parallel.
+    *   Feeds each prediction back as the next refinement state, creating an interpretable fixed-point iteration instead of committing once in an autoregressive order.
+    *   Introduces Fixed-Point Forcing, which trains on states produced by the model's own inference rollouts to correct exposure bias and avoid confidently wrong fixed points while retaining the standard flow-matching objective.
+    *   Reports 99.5% on Sudoku-Extreme, 100.0% on Zebra, and 99.9% on Maze-Unique; on Sudoku-Extreme it matches the next-best method's 98.7% peak solve rate with 44× fewer inference FLOPs.
+    *   Robotics relevance is architectural rather than demonstrated: iterative revision and stable-state verification may inform constrained planning, but the paper evaluates symbolic puzzles rather than embodied control.
+
 #### **Geometric Action Model (GAM)**
 *I, L, P, A → A, D (Image, Language, Proprioception, Action History → Actions, Future Depth)*
 
