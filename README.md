@@ -19,6 +19,20 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Dyna-2**
+*Vid, L, P → A, I' (Video, Language, Proprioception → Actions, Future Images)*
+
+* **Website**: [dyna.co/dyna-2](https://www.dyna.co/dyna-2)
+* **Notes**:
+    *   Released Aug 2026.
+    *   World-action model built on a video-diffusion backbone that can denoise future video and future actions jointly or separately.
+    *   Uses modality-specific transformer streams: causal video tokens cross-attend to text, bidirectional action tokens attend to observed video, and proprioception feeds the action stream; a shallow early-layer connection keeps action inference reactive and low-latency.
+    *   Pretrains on more than one million hours of egocentric human manipulation video—about 170 years of continuous waking experience—with 3D hand tracks converted into wrist trajectories and grasp pseudo-actions.
+    *   Across a 1K-to-1M-hour training ladder, all held-out human prediction metrics improve monotonically and follow power laws; tight-threshold action accuracy rises 51% while MSE improves 12%.
+    *   Shows monotonic zero-shot improvement on 39 held-out robot tasks as human-only pretraining scales, despite no robot pretraining or human-robot alignment; the largest transfer inflection appears between 10K and 100K hours.
+    *   The scaling trend carries into post-training on 14 tasks across parallel-jaw, semi-humanoid, and dexterous-hand platforms, each using at most 10 hours of robot data; one bottle-cap task uses only 10 minutes.
+    *   An earlier Dyna-2 WAM achieves 1.55× the on-robot success rate of the Dyna-1 VLA baseline across seven tasks and wins 65% of matched task/checkpoint comparisons.
+
 #### **S1**
 *Vid → A (Video Demonstration → Actions)*
 
