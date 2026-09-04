@@ -19,6 +19,21 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Geometric Action Model (GAM)**
+*I, L, P, A → A, D (Image, Language, Proprioception, Action History → Actions, Future Depth)*
+
+* **Website**: [cvlab-kaist.github.io/Geometric-Action-Model](https://cvlab-kaist.github.io/Geometric-Action-Model/)
+* **Paper**: [Geometric Action Model for Robot Policy Learning](https://arxiv.org/abs/2606.17046)
+* **Code**: [cvlab-kaist/Geometric-Action-Model](https://github.com/cvlab-kaist/Geometric-Action-Model)
+* **Notes**:
+    *   Released Jun 15, 2026.
+    *   Repurposes a pretrained geometric foundation model as one shared backbone for 3D perception, temporal prediction, and robot action decoding.
+    *   Splits the geometric backbone at an intermediate layer: shallow blocks encode the observed scene, a causal predictor forecasts future latent geometry, and the remaining blocks propagate and decode those predictions.
+    *   Conditions the predictor on language, proprioception, and action history; one autoregressive token sequence and one backbone pass jointly produce action chunks and future depth.
+    *   Pretrains on 784K trajectories from Open X-Embodiment, MimicGen, and RoboCasa365, with real-data pseudo-depth and simulator depth supervision.
+    *   The 1.4B model reaches 97.6% success on LIBERO and 85.5% on LIBERO-Plus, including 83.1% under camera perturbations, while reporting up to 55× faster inference than foundation-model-scale baselines.
+    *   Its spatial robustness comes from explicit geometric priors, while language reasoning remains limited by the frozen text encoder.
+
 #### **Revisiting Open-Loop Execution in Robotics: Toward Reactive, Higher-Performing Policies**
 
 * **Code**: [Michaelszeng/Revisiting-Open-Loop-Execution-in-Robotics](https://github.com/Michaelszeng/Revisiting-Open-Loop-Execution-in-Robotics)
