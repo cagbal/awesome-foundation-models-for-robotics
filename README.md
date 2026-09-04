@@ -19,6 +19,22 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **LeVJEPA**
+*Vid → S (Video → Representations)*
+
+* **Website**: [levjepa.github.io](https://levjepa.github.io/)
+* **Paper**: [LeVJEPA: Efficient & Scalable Video Pretraining without the Heuristics](https://arxiv.org/abs/2608.27395)
+* **Code**: [MLO-lab/LeVJEPA](https://github.com/MLO-lab/LeVJEPA)
+* **Weights**: [Hugging Face](https://huggingface.co/galilai-group/LeVJEPA-VideoMix-Large)
+* **Notes**:
+    *   Released Aug 27, 2026.
+    *   First video encoder trained with LeJEPA's collapse-free objective, replacing EMA target encoders, stop-gradients, capacity-limited predictors, and pixel reconstruction with one encoder, a small projector, and SIGReg regularization.
+    *   Uses global/local clip-view invariance and a provably collapse-avoiding embedding regularizer, reducing the learning objective to a single main hyperparameter.
+    *   Treats uniform random token dropping as augmentation: observing as little as 5% of patch tokens lowers training cost while improving downstream accuracy.
+    *   Matches or surpasses V-JEPA 2 across ViT-S/B/L at 5.6–20.8× less pretraining compute; at equal FLOPs, its ViT-B leads the strongest video baseline by 7.6 ImageNet-1K points.
+    *   Supports block-causal attention without measurable accuracy loss and nearly doubles a compute-matched DINOv2's motion-centric accuracy (30.4% vs. 16.9% on Something-Something-v2).
+    *   It is an efficient temporal representation backbone rather than a robot policy; its robotics value is in streaming, motion-sensitive perception and world-model pretraining.
+
 #### **Flow Reasoning Models (FRMs)**
 *L → L (Structured Inputs → Iteratively Refined Solutions)*
 
