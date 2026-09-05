@@ -19,6 +19,17 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **TAM**
+*P, A → A (Proprioception, Action → Action)*
+
+Website: [dongwon-son.github.io/tam-project-page/](https://dongwon-son.github.io/tam-project-page/)
+Paper: [TAM: Torque Adaptation Module for Robust Motion Transfer in Manipulation](https://arxiv.org/abs/2606.06218)
+Notes:
+Released Jun 2026.
+Introduces the Torque Adaptation Module (TAM), a learned module that adapts torque commands sent to the robot to match ideal behavior for robust motion transfer.
+TAM operates between the low-level controller and torque interface, embedding proprioceptive history into a latent state to compute residual torque corrections.
+Improves zero-shot real-robot execution compared to baselines and enables robust dynamic manipulation performance.
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
