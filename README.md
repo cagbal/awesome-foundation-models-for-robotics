@@ -19,6 +19,53 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [transformer-transformer.github.io](https://transformer-transformer.github.io/)
+* **Paper**: [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design](https://arxiv.org/abs/2607.25798)
+* **Notes**:
+    *   Released Jul 2026.
+    *   Studies motion-conditioned robot co-design to generate complete robot designs tracking target end-effector trajectories while optimizing rewards.
+    *   Introduces Transformer Transformer, a diffusion transformer trained on RoboTokens, a unified tokenization of robot embodiments, states, and actions.
+    *   Uses Dynamics Self-Guidance, converting reward-agnostic state and action predictions into reward-specific value predictions to steer embodiment diffusion.
+    *   Demonstrates zero-shot optimization of unseen rewards and fabricated an optimized ALOHA design that reduced tracking error by over 70%.
+
+#### **WAM-TTT: Steering World-Action Models by Watching Human Play at Test Time**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [WAM-TTT: Steering World-Action Models by Watching Human Play at Test Time](https://arxiv.org/abs/2607.06988)
+* **Notes**:
+    *   Released Jul 2026.
+    *   Presents a test-time training framework for steering world action models from raw human videos.
+    *   Absorbs human videos into a lightweight adaptive memory inside a frozen WAM through self-supervised video prediction.
+    *   Introduces a meta-training stage that aligns human demonstrations with robot behaviors using paired human-robot data and a key-value memory reconstruction objective.
+    *   Enables efficient and reusable steering without robot actions, human-side annotations, or task-specific fine-tuning.
+
+#### **Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections](https://arxiv.org/abs/2609.03591)
+* **Website**: [bimanual-robot-learning.github.io/challenge](https://bimanual-robot-learning.github.io/challenge/)
+* **Notes**:
+    *   Released Sep 2026.
+    *   Releases 1,500 hours of diverse bimanual manipulation demonstrations covering everyday household tasks.
+    *   Trains XR-2, a powerful vision-language-action (VLA) model using a high throughput data pipeline and multi-stage training.
+    *   Studies scaling axes: varying expert demonstration data amount and post-training on DAgger correction data from real-time human interventions.
+    *   Shows task success rate improves steadily over data ranges, exhibiting clear consistent scaling trends.
+
+#### **MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO?**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO?](https://arxiv.org/abs/2609.03715)
+* **Code**: [k1000dai/MINERVA](https://github.com/k1000dai/MINERVA)
+* **Notes**:
+    *   Released Sep 2026.
+    *   Introduces MINERVA, a family of deliberately compact visuomotor policies to measure LIBERO's task-specific capacity floor.
+    *   Shows a 0.54M-parameter policy achieves 95.1% average success over 2,000 rollouts on LIBERO, only 2.4 points below LeRobot $\pi_{0.5}$ but using 7,700x fewer parameters.
+    *   Finds that flow matching provides no detectable advantage over direct L1 regression across three seeds, while regression is up to 3.8x faster on GPU.
+    *   Demonstrates replanning every control step in 5-9 ms per chunk on a laptop CPU, 113x faster than SmolVLA and 1,400x faster than $\pi_{0.5}$, without a GPU.
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
