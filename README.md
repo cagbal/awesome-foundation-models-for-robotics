@@ -19,6 +19,30 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Reasoning Without Inference Cost: Latent Semantic Scaffolding for Robot VLA Policies**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Reasoning Without Inference Cost: Latent Semantic Scaffolding for Robot VLA Policies](https://arxiv.org/abs/2609.04893)
+* **Notes**:
+    *   Released Sep 2026.
+    *   Introduces Latent Semantic Scaffolding (LSS), an auxiliary loss applied during human-demonstration pretraining that aligns a VLA's action-token representations to text embeddings of physical-reasoning rationales.
+    *   The projection head is dropped at inference time, adding zero cost to the unmodified base policy while retaining the reasoning benefits.
+    *   Shows that aligning each action token to the rationale of its own manipulation phase (Dense LSS) yields representations that transfer markedly better to held-out tasks compared to pooled episode-level alignment.
+    *   Attains both the best in-distribution success and the best transfer to unseen tasks.
+
+#### **FTP-1: A Generalist Foundation Tactile Policy Across Tactile Sensors for Contact-Rich Manipulation**
+*I, L, T → A (Image, Language, Tactile → Actions)*
+
+* **Website**: [ftp1-policy.github.io](https://ftp1-policy.github.io/)
+* **Paper**: [FTP-1: A Generalist Foundation Tactile Policy Across Tactile Sensors for Contact-Rich Manipulation](https://arxiv.org/abs/2606.13102)
+* **Code**: [michaelyuancb/ftp1-policy](https://github.com/michaelyuancb/ftp1-policy)
+* **Notes**:
+    *   Released Jun 2026.
+    *   A generalist foundation tactile policy pretrained to acquire transferable tactile manipulation abilities across diverse sensors and embodiments.
+    *   Supports varied tactile inputs (image-, array-, and state-based signals) using heterogeneous encoders to project them into unified morphology-aware latent tokens jointly modeled by a shared tactile Transformer expert.
+    *   Pretrained on around 3,000 hours of tactile manipulation data from 26 data sources across 21 sensors.
+    *   Improves contact-rich manipulation on seen sensor setups by +17.2% and transfers to two previously unseen tactile-sensor setups achieving a +31% gain in success rate.
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
