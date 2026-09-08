@@ -19,6 +19,16 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **MotionVLA**
+*I, L → A (Image, Language → Actions)*
+
+Paper: [MotionVLA: Injecting Geometric Motion into Vision-Language-Action Model](https://arxiv.org/abs/2606.08288)
+
+**Notes**:
+- **Problem**: Long-horizon manipulation tasks often resolve ambiguity by conditioning on history, depth, or 4D features, but this can introduce geometric drift, fragmented temporal cues, and unstable action generation if the evidence is not motion-consistent.
+- **Contribution**: Introduces MotionVLA, a motion-history interface that represents short past-only video windows as compact, time-continuous trajectory-field tokens, instead of treating history as independent frames.
+- **Key Results**: Current visual tokens retrieve task-relevant motion information from this physically coherent motion evidence, recoupling it into the VLA stream. Experiments in simulation and real-robot rollouts show improved long-horizon manipulation with smoother and more direct executions.
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
