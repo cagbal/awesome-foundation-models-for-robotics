@@ -19,6 +19,19 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Q2RL**
+*I, L → A (Image, Language → Actions)*
+
+Website: [q2rl.rai-inst.com](http://q2rl.rai-inst.com/)
+Paper: [When Life Gives You BC, Make Q-functions: Extracting Q-values from Behavior Cloning for On-Robot Reinforcement Learning](https://arxiv.org/abs/2605.05172)
+Code: [github.com/rai-opensource/q2rl](https://github.com/rai-opensource/q2rl)
+Notes:
+Released May 2026.
+Proposes Q2RL, an algorithm for efficient offline-to-online reinforcement learning starting from Behavior Cloning (BC) policies.
+Extracts a Q-function from a BC policy (Q-Estimation) and uses Q-Gating to switch between BC and RL policy actions during online RL to collect robust samples.
+Solves the distribution mismatch problem in offline-to-online learning and prevents catastrophic forgetting of good actions.
+Achieves high success rates for contact-rich manipulation tasks on real robots in 1-2 hours of online interaction.
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
