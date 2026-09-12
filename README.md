@@ -19,6 +19,19 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Recurrent-Depth VLA**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [rd-vla.github.io](https://rd-vla.github.io/)
+* **Paper**: [Recurrent-Depth VLA: Implicit Test-Time Compute Scaling of Vision-Language-Action Models via Latent Iterative Reasoning](https://arxiv.org/abs/2602.07845)
+* **Notes**:
+    *   Released Feb 2026.
+    *   Introduces RD-VLA, an architecture achieving computational adaptivity via latent iterative refinement rather than explicit token generation.
+    *   Solves the limitation of Chain-of-Thought (CoT) prompting in continuous action spaces by bypassing token generation overhead.
+    *   Employs a recurrent, weight-tied action head that supports arbitrary inference depth with a constant memory footprint.
+    *   Significantly improves performance on complex manipulation tasks by dynamically allocating compute per sample using an adaptive stopping criterion.
+
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
@@ -1727,6 +1740,36 @@ Paper: [Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Mode
 ---
 
 ## 🤖 Noteworthy Benchmarks / Auxiliary Frameworks
+
+### **Artificial Foveated Perception (AFP)**
+* **Website**: [apollo-lab-yale.github.io](https://apollo-lab-yale.github.io/26-CoRL-AFP-website/)
+* **Paper**: [Artificial Foveated Perception for Mitigating Shortcut Learning in Robotic Foundation Models](https://arxiv.org/abs/2607.10655)
+* **Notes**:
+    *   Released Jul 2026.
+    *   Proposes Artificial Foveated Perception (AFP), a lightweight, task-conditioned mask predictor that grounds a robot policy's attention during fine-tuning.
+    *   Solves the shortcut learning problem in robotic foundation models where policies rely on spurious correlations instead of task-relevant features.
+    *   The masks act as an auxiliary grounding signal and are not needed at inference, aiding out-of-distribution (OOD) generalization.
+    *   Provides an open annotation tool for collecting grounding masks.
+
+---
+
+### **RoboMIND**
+* **Dataset**: [x-humanoid-robomind/RoboMIND](https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND)
+* **Notes**:
+    *   A robotics dataset on Hugging Face providing comprehensive robotic data for embodied AI research.
+
+---
+
+### **RH20T**
+* **Website**: [rh20t.github.io](https://rh20t.github.io)
+* **Paper**: [RH20T: A Comprehensive Robotic Dataset for Learning Diverse Skills in One-Shot](https://arxiv.org/abs/2307.00595)
+* **Notes**:
+    *   Released Jul 2023.
+    *   A comprehensive contact-rich robotic dataset comprising over 110,000 manipulation sequences across diverse skills, contexts, robots, and camera viewpoints.
+    *   Each sequence includes visual, force, audio, and action information, along with human demonstration video and language description, to support multi-modal learning.
+    *   Addresses the limitation of existing datasets focusing on simple tasks without tactile perception by providing high-quality, sensor-calibrated demonstrations for complex, contact-rich real-world skills.
+
+---
 
 ### **KinDER**
 * **Website**: [kinder-site](https://prpl-group.com/kinder-site/)
