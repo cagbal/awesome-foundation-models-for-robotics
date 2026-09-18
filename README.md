@@ -43,6 +43,19 @@ Curated database of foundation models for robotics
     *   The weight-tied version also outperforms a matched variant with independent parameters at each step, suggesting a benefit from iteration beyond parameter savings.
     *   Relevant to a robot that can spend extra time refining its scene estimate; the paper evaluates reconstruction, not downstream robot control.
 
+#### **TAM**
+*P, A → A (Proprioceptive History, Nominal Torque Commands → Corrected Torques)*
+
+* **Website**: [dongwon-son.github.io/tam-project-page](https://dongwon-son.github.io/tam-project-page/)
+* **Paper**: [TAM: Torque Adaptation Module for Robust Motion Transfer in Manipulation](https://arxiv.org/abs/2606.06218)
+* **Notes**:
+    *   Released Jun 2026; updated Sep 2026 and accepted at CoRL 2026.
+    *   Adds a learned torque correction between a motion-tracking controller and the robot's torque interface to compensate for dynamics mismatch.
+    *   A history encoder summarizes proprioception; the adaptor uses that state to make the physical robot follow the behavior of an ideal reference robot.
+    *   The same adaptor can serve policies that output joint targets, end-effector targets, or torques because it operates below the policy's action interface.
+    *   Uses multi-robot pretraining and robot-specific fine-tuning entirely in randomized simulation, with no real-robot training data.
+    *   Demonstrates zero-shot transfer on a Franka Panda for RL box pushing, BC flipping, and MPC ball balancing, outperforming the evaluated system-identification and RMA baselines.
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
