@@ -19,6 +19,137 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **OmniGuide**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [omniguide.github.io](https://omniguide.github.io/)
+* **Paper**: [OmniGuide: Universal Guidance Fields for Enhancing Generalist Robot Policies](https://arxiv.org/abs/2603.10052)
+* **Notes**:
+    *   Released Mar 2026.
+    *   Steers generalist policies with external guidance from 3D models, semantic-reasoning VLMs, or human-pose estimators.
+    *   Converts the guidance into differentiable energy fields with task-specific attractors and repellers in 3D space, then uses those fields when sampling actions.
+    *   Evaluates spatial reasoning, precise manipulation, and cluttered scenes in simulation and on real robots; reports improvements in success and safety for policies including $\pi_{0.5}$ and GR00T N1.6.
+    *   A useful interface for combining a policy's learned behavior with geometric or semantic constraints without designing a separate steering method for each guidance source.
+
+#### **Déjà View**
+*I → 3D (Multi-View Images → 3D Reconstruction)*
+
+* **Website**: [research.nvidia.com/labs/dvl/projects/dvlt](https://research.nvidia.com/labs/dvl/projects/dvlt)
+* **Paper**: [Déjà View: Looping Transformers for Multi-View 3D Reconstruction](https://arxiv.org/abs/2605.30215)
+* **Notes**:
+    *   Released May 2026.
+    *   Reuses one transformer block to iteratively refine per-view features, exposing the number of refinement steps as an inference-time compute control.
+    *   Matches or exceeds larger feed-forward models across five reconstruction benchmarks with fewer parameters and comparable or lower compute.
+    *   The weight-tied version also outperforms a matched variant with independent parameters at each step, suggesting a benefit from iteration beyond parameter savings.
+    *   Relevant to a robot that can spend extra time refining its scene estimate; the paper evaluates reconstruction, not downstream robot control.
+
+#### **TAM**
+*P, A → A (Proprioceptive History, Nominal Torque Commands → Corrected Torques)*
+
+* **Website**: [dongwon-son.github.io/tam-project-page](https://dongwon-son.github.io/tam-project-page/)
+* **Paper**: [TAM: Torque Adaptation Module for Robust Motion Transfer in Manipulation](https://arxiv.org/abs/2606.06218)
+* **Notes**:
+    *   Released Jun 2026; updated Sep 2026 and accepted at CoRL 2026.
+    *   Adds a learned torque correction between a motion-tracking controller and the robot's torque interface to compensate for dynamics mismatch.
+    *   A history encoder summarizes proprioception; the adaptor uses that state to make the physical robot follow the behavior of an ideal reference robot.
+    *   The same adaptor can serve policies that output joint targets, end-effector targets, or torques because it operates below the policy's action interface.
+    *   Uses multi-robot pretraining and robot-specific fine-tuning entirely in randomized simulation, with no real-robot training data.
+    *   Demonstrates zero-shot transfer on a Franka Panda for RL box pushing, BC flipping, and MPC ball balancing, outperforming the evaluated system-identification and RMA baselines.
+
+#### **Transformer Transformer**
+*G, S → Embodiment, S, A (Target Motion, State → Robot Design, States, Actions)*
+
+* **Website**: [transformer-transformer.github.io](https://transformer-transformer.github.io/)
+* **Paper**: [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design](https://arxiv.org/abs/2607.25798)
+* **Notes**:
+    *   Released Jul 2026.
+    *   Generates robot designs for target end-effector motion and user-defined rewards, with a shared token representation for embodiment, state, and action.
+    *   Uses a diffusion transformer as a dynamics model across design spaces including wheeled bimanual robots, quadrupeds, and humanoids.
+    *   Dynamics Self-Guidance converts predicted states and actions into reward estimates that steer sampling toward better embodiments.
+    *   Optimizes unseen reward functions and trajectories without retraining; a fabricated ALOHA variant reduces tracking error by more than 70% relative to the original design.
+    *   This is motion-conditioned robot co-design and control, rather than a conventional image-language-to-action policy.
+
+#### **WAM-TTT**
+*Vid, I, L → A, I' (Human Video, Robot Observation, Language → Actions, Future Images)*
+
+* **Paper**: [WAM-TTT: Steering World-Action Models by Watching Human Play at Test Time](https://arxiv.org/abs/2607.06988)
+* **Notes**:
+    *   Released Jul 2026.
+    *   Adds adaptive fast-weight memory to the video expert of LDA, a pretrained world-action model, so human play videos can steer robot behavior at deployment.
+    *   Meta-training uses paired human and robot demonstrations to learn a useful interface between human-video keys/values and robot queries, with a memory-reconstruction objective.
+    *   At test time, unlabeled human video updates the lightweight memory through self-supervised prediction; the pretrained WAM weights remain frozen.
+    *   The memory is reusable across execution steps, avoiding repeated conditioning on the full demonstration and avoiding full-policy fine-tuning.
+    *   Reports 46.2% average task progress across nine tasks in unseen home environments, versus 7.1% for the tested in-context video baseline and 32.5% for LDA. These are progress scores, not binary success rates.
+    *   The interesting part is learning from new evidence at deployment while preserving the base policy. Paired human-robot data is still needed during meta-training, and the transfer is not uniformly better on every task.
+
+#### **XR-2**
+*I, L, P → A (Image, Language, Proprioception → Actions)*
+
+* **Paper**: [Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections](https://arxiv.org/abs/2609.03591)
+* **Website**: [bimanual-robot-learning.github.io/challenge](https://bimanual-robot-learning.github.io/challenge/)
+* **Notes**:
+    *   Released Sep 2026.
+    *   A 5B VLA combines Qwen3-VL-4B-Instruct with a flow-matching action expert for bimanual household manipulation.
+    *   Releases about 1,500 hours of data: 531.7 hours of robot teleoperation across 32,518 trajectories, plus roughly 1,000 hours of bimanual UMI demonstrations.
+    *   On clothes folding, increasing expert data from 30 to 120 hours raises success from 34% to 84%; performance then plateaus, with 82% at 160 hours.
+    *   A separate DAgger experiment starts from a 58% checkpoint and reaches 74%, 82%, and 93% over three rounds of corrective training.
+    *   Mixes corrective and expert trajectories 1:1 and assigns more correction data to weak subtasks while retaining a minimum allocation for stronger ones.
+    *   The useful result is where scaling demonstrations stops helping: on-policy corrections supply recovery states absent from successful demonstrations. The 84% and 58% baselines belong to different experiments and should not be treated as one continuous curve.
+
+#### **MINERVA**
+*I, P, Task ID → A (Image, Proprioception, Task Identity → Actions)*
+
+* **Paper**: [MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO?](https://arxiv.org/abs/2609.03715)
+* **Code**: [k1000dai/MINERVA](https://github.com/k1000dai/MINERVA)
+* **Notes**:
+    *   Released Sep 2026.
+    *   Studies the capacity needed to solve standard LIBERO tasks with compact visuomotor policies.
+    *   A 0.54M-parameter model achieves 95.1% average success over 2,000 rollouts; performance saturates near 1M parameters and deteriorates below 0.25M.
+    *   Direct L1 action regression matches flow matching within the reported training-seed variation and runs up to 3.8× faster on GPU.
+    *   Runs in 5–9 ms per chunk on a laptop CPU, supporting replanning at every control step.
+    *   Task-ID permutation drives performance toward chance, suggesting that standard LIBERO conditioning can select memorized tasks rather than demonstrate language understanding.
+    *   LIBERO-Plus perturbations reduce success to 46–56%, with near-zero robustness to photometric shifts. Small models can solve the benchmark without matching the broader generalization of foundation models.
+
+#### **Latent Semantic Scaffolding (LSS)**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Reasoning Without Inference Cost: Latent Semantic Scaffolding for Robot VLA Policies](https://arxiv.org/abs/2609.04893)
+* **Notes**:
+    *   Released Sep 2026.
+    *   Uses reasoning supervision during human-demonstration pretraining to shape action-token representations through an auxiliary projection head.
+    *   Dense LSS aligns each token with the rationale for its manipulation phase; episode-level pooled alignment is more prone to over-specializing to the alignment task.
+    *   Removes the projection head and reasoning encoder before deployment, leaving the base policy's parameter count and inference latency unchanged.
+    *   Dense alignment gives the best in-distribution and held-out-task performance among the paper's tested variants.
+    *   The alignment study uses one tabletop bottle-manipulation task, relies on VLM-generated phase annotations, and leaves real-robot validation to future work.
+    *   This trades explicit test-time reasoning for a training-time prior; it does not provide test-time replanning.
+
+#### **FTP-1**
+*I, L, T → A (Image, Language, Tactile → Actions)*
+
+* **Website**: [ftp1-policy.github.io](https://ftp1-policy.github.io/)
+* **Paper**: [FTP-1: A Generalist Foundation Tactile Policy Across Tactile Sensors for Contact-Rich Manipulation](https://arxiv.org/abs/2606.13102)
+* **Code**: [michaelyuancb/ftp1-policy](https://github.com/michaelyuancb/ftp1-policy)
+* **Weights**: [Hugging Face](https://huggingface.co/MJJJJ1064/ftp1_v0426_50kstep)
+* **Notes**:
+    *   Released Jun 2026.
+    *   Pretrains one tactile policy across image-, array-, and state-based sensors using sensor-specific encoders and shared morphology-aware tactile tokens.
+    *   A shared tactile transformer expert learns from roughly 3,000 hours of human and robot manipulation data drawn from 26 sources and 21 sensors.
+    *   Evaluates downstream fine-tuning across five hardware configurations, including two tactile sensor setups absent from pretraining.
+    *   Reports success-rate gains of 17.2% on seen sensor setups and 31% on unseen setups in those fine-tuning experiments.
+    *   The transfer result concerns a pretrained starting point that adapts to new sensors; it should not be read as zero-shot deployment on arbitrary tactile hardware.
+
+#### **MotionVLA**
+*Vid, L → A (Recent Video History, Language → Actions)*
+
+* **Paper**: [MotionVLA: Injecting Geometric Motion into Vision-Language-Action Model](https://arxiv.org/abs/2606.08288)
+* **Notes**:
+    *   Released Jun 2026.
+    *   Represents a short, past-only video window as continuous trajectory-field tokens, giving the policy motion-consistent history.
+    *   Current visual tokens query that history for useful motion cues, which are fused into the VLA under trajectory-grounded supervision.
+    *   The motivation is that independently lifted past frames can introduce geometric drift and inconsistent temporal evidence even when more context is available.
+    *   Reports improved long-horizon manipulation and smoother execution in simulation, with preliminary real-robot rollouts.
+    *   The main idea is a better memory interface: retain the motion connecting observations instead of only storing additional frames.
+
 #### **Q2RL**
 *I / S → A (Image or State Observations → Actions)*
 
