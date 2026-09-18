@@ -177,6 +177,46 @@ Curated database of foundation models for robotics
     *   In the reported hard-task examples, success rises from 0% with one iteration to over 90% with four; easier tasks saturate sooner.
     *   Reports up to 80× faster inference than the compared reasoning-based VLAs. The practical idea is to spend compute on difficult decisions without growing a token history.
 
+#### **ModAR**
+*I, D, P, Task ID → A, Future Representations (Visual Modalities, Proprioception, Task Identity → Actions, Predicted Motion/Semantics/Depth)*
+
+* **Website**: [adamhung60.github.io/ModAR](https://adamhung60.github.io/ModAR/)
+* **Paper**: [Modality-Autoregressive World-Action Models](https://arxiv.org/abs/2609.17524)
+* **Notes**:
+    *   Released Sep 2026.
+    *   Predicts future point tracks, DINO features, and depth in sequence, then generates actions conditioned on the predicted modalities.
+    *   Uses a shared diffusion transformer with modality-specific experts; robot configuration and a learned task embedding condition the model.
+    *   Combines robot trajectories with actionless data, supervising only the available future modalities when actions are missing.
+    *   Finds additive gains from motion, semantic, and depth prediction, while adding future RGB gives no consistent improvement.
+    *   The 30.1M model reaches 75% average success versus 72% for the evaluated Flex-$\pi$ baseline, with about 20× fewer training FLOPs and no video-model pretraining.
+    *   Also evaluates three real-world bimanual tasks, where human video improves performance. The project page lists code as coming soon.
+
+#### **OM-1 (Omnibody Model 1)**
+*I, T, P, S → A (Images, Tactile, Hand-Pose History, Proximity → Actions)*
+
+* **Website**: [www.rewardai.com/blog/OM-1](https://www.rewardai.com/blog/OM-1/)
+* **Notes**:
+    *   Announced Sep 2026 by Reward AI.
+    *   The company reports a single policy trained from human manipulation captured with the wearable seven-DoF Omnibody Hand, without teleoperation or on-robot training data.
+    *   Combines images, tactile signals, inter-finger proximity, and hand-pose trajectories, preserving each sensor's native sampling rate and temporal history.
+    *   Uses a common action interface for movement, speed, force, and event timing across robot arms and humanoids.
+    *   The release demonstrates contact-rich manipulation and reports learning new tasks from under 30 minutes of human data.
+    *   The interesting direction is reusable human data across embodiments. These are company-reported demonstrations; the linked announcement does not provide a benchmark protocol or downloadable model weights.
+
+#### **GE-Act 2.0**
+*I, L, P → A, I' (Image, Language, Proprioception → Actions, Future Images)*
+
+* **Website**: [ge-act-v2.github.io](https://ge-act-v2.github.io/)
+* **Paper**: [GE-Act 2.0: Pretraining and Scaling a World-Action Model for Robotic Manipulation](https://arxiv.org/abs/2609.05588)
+* **Notes**:
+    *   Released Sep 2026.
+    *   Pretrains the trainable generative and action components from scratch on manipulation data, combining a control-oriented autoencoder, single-step visual planner, and inverse dynamics model.
+    *   The visual planner learns from action-free video; inverse dynamics learns from transitions with actions, including instruction-free data.
+    *   Knowledge-aligned selective optimization (KASO) joins the components by selecting predicted futures compatible with the recorded actions, reducing contradictory supervision.
+    *   Evaluates pretrained checkpoints without per-task fine-tuning on 100 tasks across 20 skill groups with held-out scenes and object instances.
+    *   Scaling co-training data from 300 to 30,000 hours raises zero-shot OOD success from 17.1% to 44.1% on G1-OP and from 13.4% to 31.1% on G2-90D.
+    *   G2-90D contributes under 2% of the co-training data, making its improvement relevant to cross-embodiment transfer. The project page lists code as coming soon.
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
@@ -363,6 +403,7 @@ Curated database of foundation models for robotics
 #### **Improving Robotic Generalist Policies via Flow Reversal Steering**
 *I, L → A (Image, Language → Actions)*
 
+* **Website**: [flow-reversal-steering.github.io](https://flow-reversal-steering.github.io/)
 * **Paper**: [Improving Robotic Generalist Policies via Flow Reversal Steering](https://arxiv.org/abs/2606.13675)
 * **Notes**:
     *   Released Jun 2026.
