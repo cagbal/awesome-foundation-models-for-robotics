@@ -19,6 +19,32 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **Fast-WAM**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [yuantianyuan01.github.io/FastWAM](https://yuantianyuan01.github.io/FastWAM/)
+* **Paper**: [Fast-WAM: Do World Action Models Need Test-time Future Imagination?](https://arxiv.org/abs/2603.16666)
+* **Code**: [github.com/yuantianyuan01/FastWAM](https://github.com/yuantianyuan01/FastWAM)
+* **Notes**:
+    *   Released Mar 2026.
+    *   Asks whether explicit future imagination is necessary for World Action Models at test time, proposing Fast-WAM, which retains video co-training during training but skips future prediction at test time.
+    *   Demonstrates that the main value of video prediction in WAMs lies in improving world representations during training rather than generating future observations at inference.
+    *   Achieves competitive results with state-of-the-art methods on simulation and real-world tasks.
+    *   Runs in real time with low latency, significantly faster than existing imagine-then-execute WAMs.
+
+#### **Beyond Imitation**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [q-planning.github.io](https://q-planning.github.io/)
+* **Paper**: [Beyond Imitation: Self-Improving Robot Policies via Off-Policy Q-Planning](https://arxiv.org/abs/2608.21204)
+* **Code**: [github.com/varungiridhar/qplanning-code](https://github.com/varungiridhar/qplanning-code)
+* **Notes**:
+    *   Released Aug 2026.
+    *   Proposes Q-Planning to enable self-improvement in robotic policies by equipping a large visuomotor Behaviour Cloning (BC) policy with a small off-policy Q-function.
+    *   Exploits the asymmetry that a Q-function can learn from both successful and failed deployment rollouts, unlike BC which only learns from successes.
+    *   Enables value-guided action selection at inference via a single-step Q-weighted average over BC draws.
+    *   Achieves online self-improvement by fine-tuning only the Q-function while leaving the BC weights untouched, improving success rates across simulation and real-robot tasks.
+
 #### **OmniGuide**
 *I, L → A (Image, Language → Actions)*
 
