@@ -20,14 +20,16 @@ Curated database of foundation models for robotics
 ### 🚀 2026 Models
 
 #### **MotionVLA**
-*I, L → A (Image, Language → Actions)*
+*Vid, L → A (Recent Video History, Language → Actions)*
 
-Paper: [MotionVLA: Injecting Geometric Motion into Vision-Language-Action Model](https://arxiv.org/abs/2606.08288)
-
-**Notes**:
-- **Problem**: Long-horizon manipulation tasks often resolve ambiguity by conditioning on history, depth, or 4D features, but this can introduce geometric drift, fragmented temporal cues, and unstable action generation if the evidence is not motion-consistent.
-- **Contribution**: Introduces MotionVLA, a motion-history interface that represents short past-only video windows as compact, time-continuous trajectory-field tokens, instead of treating history as independent frames.
-- **Key Results**: Current visual tokens retrieve task-relevant motion information from this physically coherent motion evidence, recoupling it into the VLA stream. Experiments in simulation and real-robot rollouts show improved long-horizon manipulation with smoother and more direct executions.
+* **Paper**: [MotionVLA: Injecting Geometric Motion into Vision-Language-Action Model](https://arxiv.org/abs/2606.08288)
+* **Notes**:
+    *   Released Jun 2026.
+    *   Represents a short, past-only video window as continuous trajectory-field tokens, giving the policy motion-consistent history.
+    *   Current visual tokens query that history for useful motion cues, which are fused into the VLA under trajectory-grounded supervision.
+    *   The motivation is that independently lifted past frames can introduce geometric drift and inconsistent temporal evidence even when more context is available.
+    *   Reports improved long-horizon manipulation and smoother execution in simulation, with preliminary real-robot rollouts.
+    *   The main idea is a better memory interface: retain the motion connecting observations instead of only storing additional frames.
 
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
