@@ -19,6 +19,30 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **OmniGuide**
+*I, L → A (Image, Language → Actions)*
+
+* **Website**: [omniguide.github.io](https://omniguide.github.io/)
+* **Paper**: [OmniGuide: Universal Guidance Fields for Enhancing Generalist Robot Policies](https://arxiv.org/abs/2603.10052)
+* **Notes**:
+    *   Released Mar 2026.
+    *   Steers generalist policies with external guidance from 3D models, semantic-reasoning VLMs, or human-pose estimators.
+    *   Converts the guidance into differentiable energy fields with task-specific attractors and repellers in 3D space, then uses those fields when sampling actions.
+    *   Evaluates spatial reasoning, precise manipulation, and cluttered scenes in simulation and on real robots; reports improvements in success and safety for policies including $\pi_{0.5}$ and GR00T N1.6.
+    *   A useful interface for combining a policy's learned behavior with geometric or semantic constraints without designing a separate steering method for each guidance source.
+
+#### **Déjà View**
+*I → 3D (Multi-View Images → 3D Reconstruction)*
+
+* **Website**: [research.nvidia.com/labs/dvl/projects/dvlt](https://research.nvidia.com/labs/dvl/projects/dvlt)
+* **Paper**: [Déjà View: Looping Transformers for Multi-View 3D Reconstruction](https://arxiv.org/abs/2605.30215)
+* **Notes**:
+    *   Released May 2026.
+    *   Reuses one transformer block to iteratively refine per-view features, exposing the number of refinement steps as an inference-time compute control.
+    *   Matches or exceeds larger feed-forward models across five reconstruction benchmarks with fewer parameters and comparable or lower compute.
+    *   The weight-tied version also outperforms a matched variant with independent parameters at each step, suggesting a benefit from iteration beyond parameter savings.
+    *   Relevant to a robot that can spend extra time refining its scene estimate; the paper evaluates reconstruction, not downstream robot control.
+
 #### **TAM**
 *P, A → A (Proprioceptive History, Nominal Torque Commands → Corrected Torques)*
 
