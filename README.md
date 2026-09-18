@@ -110,6 +110,34 @@ Curated database of foundation models for robotics
     *   Task-ID permutation drives performance toward chance, suggesting that standard LIBERO conditioning can select memorized tasks rather than demonstrate language understanding.
     *   LIBERO-Plus perturbations reduce success to 46–56%, with near-zero robustness to photometric shifts. Small models can solve the benchmark without matching the broader generalization of foundation models.
 
+#### **Latent Semantic Scaffolding (LSS)**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Reasoning Without Inference Cost: Latent Semantic Scaffolding for Robot VLA Policies](https://arxiv.org/abs/2609.04893)
+* **Notes**:
+    *   Released Sep 2026.
+    *   Uses reasoning supervision during human-demonstration pretraining to shape action-token representations through an auxiliary projection head.
+    *   Dense LSS aligns each token with the rationale for its manipulation phase; episode-level pooled alignment is more prone to over-specializing to the alignment task.
+    *   Removes the projection head and reasoning encoder before deployment, leaving the base policy's parameter count and inference latency unchanged.
+    *   Dense alignment gives the best in-distribution and held-out-task performance among the paper's tested variants.
+    *   The alignment study uses one tabletop bottle-manipulation task, relies on VLM-generated phase annotations, and leaves real-robot validation to future work.
+    *   This trades explicit test-time reasoning for a training-time prior; it does not provide test-time replanning.
+
+#### **FTP-1**
+*I, L, T → A (Image, Language, Tactile → Actions)*
+
+* **Website**: [ftp1-policy.github.io](https://ftp1-policy.github.io/)
+* **Paper**: [FTP-1: A Generalist Foundation Tactile Policy Across Tactile Sensors for Contact-Rich Manipulation](https://arxiv.org/abs/2606.13102)
+* **Code**: [michaelyuancb/ftp1-policy](https://github.com/michaelyuancb/ftp1-policy)
+* **Weights**: [Hugging Face](https://huggingface.co/MJJJJ1064/ftp1_v0426_50kstep)
+* **Notes**:
+    *   Released Jun 2026.
+    *   Pretrains one tactile policy across image-, array-, and state-based sensors using sensor-specific encoders and shared morphology-aware tactile tokens.
+    *   A shared tactile transformer expert learns from roughly 3,000 hours of human and robot manipulation data drawn from 26 sources and 21 sensors.
+    *   Evaluates downstream fine-tuning across five hardware configurations, including two tactile sensor setups absent from pretraining.
+    *   Reports success-rate gains of 17.2% on seen sensor setups and 31% on unseen setups in those fine-tuning experiments.
+    *   The transfer result concerns a pretrained starting point that adapts to new sensors; it should not be read as zero-shot deployment on arbitrary tactile hardware.
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
