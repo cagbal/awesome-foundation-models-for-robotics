@@ -138,6 +138,18 @@ Curated database of foundation models for robotics
     *   Reports success-rate gains of 17.2% on seen sensor setups and 31% on unseen setups in those fine-tuning experiments.
     *   The transfer result concerns a pretrained starting point that adapts to new sensors; it should not be read as zero-shot deployment on arbitrary tactile hardware.
 
+#### **MotionVLA**
+*Vid, L → A (Recent Video History, Language → Actions)*
+
+* **Paper**: [MotionVLA: Injecting Geometric Motion into Vision-Language-Action Model](https://arxiv.org/abs/2606.08288)
+* **Notes**:
+    *   Released Jun 2026.
+    *   Represents a short, past-only video window as continuous trajectory-field tokens, giving the policy motion-consistent history.
+    *   Current visual tokens query that history for useful motion cues, which are fused into the VLA under trajectory-grounded supervision.
+    *   The motivation is that independently lifted past frames can introduce geometric drift and inconsistent temporal evidence even when more context is available.
+    *   Reports improved long-horizon manipulation and smoother execution in simulation, with preliminary real-robot rollouts.
+    *   The main idea is a better memory interface: retain the motion connecting observations instead of only storing additional frames.
+
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
 
