@@ -19,18 +19,18 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
-#### **Recurrent-Depth VLA**
+#### **Recurrent-Depth VLA (RD-VLA)**
 *I, L → A (Image, Language → Actions)*
 
 * **Website**: [rd-vla.github.io](https://rd-vla.github.io/)
 * **Paper**: [Recurrent-Depth VLA: Implicit Test-Time Compute Scaling of Vision-Language-Action Models via Latent Iterative Reasoning](https://arxiv.org/abs/2602.07845)
 * **Notes**:
     *   Released Feb 2026.
-    *   Introduces RD-VLA, an architecture achieving computational adaptivity via latent iterative refinement rather than explicit token generation.
-    *   Solves the limitation of Chain-of-Thought (CoT) prompting in continuous action spaces by bypassing token generation overhead.
-    *   Employs a recurrent, weight-tied action head that supports arbitrary inference depth with a constant memory footprint.
-    *   Significantly improves performance on complex manipulation tasks by dynamically allocating compute per sample using an adaptive stopping criterion.
-
+    *   Allocates extra computation through repeated latent refinement in a weight-tied action head, instead of generating a longer reasoning-token sequence.
+    *   Trains with truncated backpropagation through time and stops refinement adaptively when the latent state converges.
+    *   Reuses parameters and maintains a constant inference memory footprint as recurrent depth increases.
+    *   In the reported hard-task examples, success rises from 0% with one iteration to over 90% with four; easier tasks saturate sooner.
+    *   Reports up to 80× faster inference than the compared reasoning-based VLAs. The practical idea is to spend compute on difficult decisions without growing a token history.
 
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
@@ -1742,32 +1742,42 @@ Paper: [Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Mode
 ## 🤖 Noteworthy Benchmarks / Auxiliary Frameworks
 
 ### **Artificial Foveated Perception (AFP)**
-* **Website**: [apollo-lab-yale.github.io](https://apollo-lab-yale.github.io/26-CoRL-AFP-website/)
+
+* **Website**: [apollo-lab-yale.github.io/26-CoRL-AFP-website](https://apollo-lab-yale.github.io/26-CoRL-AFP-website/)
 * **Paper**: [Artificial Foveated Perception for Mitigating Shortcut Learning in Robotic Foundation Models](https://arxiv.org/abs/2607.10655)
+* **Annotation Tool**: [Apollo-Lab-Yale/afp-annotation-tool](https://github.com/Apollo-Lab-Yale/afp-annotation-tool)
 * **Notes**:
-    *   Released Jul 2026.
-    *   Proposes Artificial Foveated Perception (AFP), a lightweight, task-conditioned mask predictor that grounds a robot policy's attention during fine-tuning.
-    *   Solves the shortcut learning problem in robotic foundation models where policies rely on spurious correlations instead of task-relevant features.
-    *   The masks act as an auxiliary grounding signal and are not needed at inference, aiding out-of-distribution (OOD) generalization.
-    *   Provides an open annotation tool for collecting grounding masks.
+    *   Released Jul 2026; updated Sep 2026.
+    *   Predicts a soft task-relevance mask from the policy's image and language inputs, then uses it to supervise visual attention during fine-tuning.
+    *   Projects away grounding-gradient components that conflict with the action objective, while leaving the underlying policy architecture unchanged.
+    *   AFP is absent from the inference control loop; the fine-tuned policy uses the original observation stream.
+    *   The open annotation tool combines point prompts, SAM 2 key-frame segmentation, and MatAnyone video propagation to generate continuous masks over trajectories.
+    *   Targets shortcut learning under distractors and scene changes. Its OOD value comes from better visual grounding, with remaining dependence on annotation quality and coverage.
 
 ---
 
 ### **RoboMIND**
+
+* **Paper**: [RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation](https://arxiv.org/abs/2412.13877)
 * **Dataset**: [x-humanoid-robomind/RoboMIND](https://huggingface.co/datasets/x-humanoid-robomind/RoboMIND)
 * **Notes**:
-    *   A robotics dataset on Hugging Face providing comprehensive robotic data for embodied AI research.
+    *   Introduced in 2024; presented at RSS 2025.
+    *   The linked dataset card describes 107K real-world demonstration trajectories, 479 tasks, and 96 object classes for versions 1.1/1.2.
+    *   Covers Franka Panda and UR-5e single-arm robots, AgileX dual-arm hardware, and the Tien Kung humanoid.
+    *   Provides HDF5 trajectories and language annotations across tasks involving articulation, coordination, multiple objects, and precise manipulation.
+    *   Version 1.0 contains 55K trajectories and 279 tasks; the card separately links a newer V2.0 release on ModelScope, so the version matters when quoting dataset size.
 
 ---
 
 ### **RH20T**
-* **Website**: [rh20t.github.io](https://rh20t.github.io)
+
+* **Website**: [rh20t.github.io](https://rh20t.github.io/)
 * **Paper**: [RH20T: A Comprehensive Robotic Dataset for Learning Diverse Skills in One-Shot](https://arxiv.org/abs/2307.00595)
 * **Notes**:
     *   Released Jul 2023.
-    *   A comprehensive contact-rich robotic dataset comprising over 110,000 manipulation sequences across diverse skills, contexts, robots, and camera viewpoints.
-    *   Each sequence includes visual, force, audio, and action information, along with human demonstration video and language description, to support multi-modal learning.
-    *   Addresses the limitation of existing datasets focusing on simple tasks without tactile perception by providing high-quality, sensor-calibrated demonstrations for complex, contact-rich real-world skills.
+    *   Contains more than 110,000 real-world contact-rich manipulation sequences spanning skills, robots, contexts, and camera viewpoints.
+    *   Pairs robot visual, force, audio, and action streams with corresponding human demonstration video.
+    *   Provides calibrated multimodal data for learning from contact-rich interactions and studying one-shot imitation across diverse skills.
 
 ---
 
