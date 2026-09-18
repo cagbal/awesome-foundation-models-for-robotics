@@ -19,52 +19,59 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
-#### **Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design**
-*I, L → A (Image, Language → Actions)*
+#### **Transformer Transformer**
+*G, S → Embodiment, S, A (Target Motion, State → Robot Design, States, Actions)*
 
 * **Website**: [transformer-transformer.github.io](https://transformer-transformer.github.io/)
 * **Paper**: [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design](https://arxiv.org/abs/2607.25798)
 * **Notes**:
     *   Released Jul 2026.
-    *   Studies motion-conditioned robot co-design to generate complete robot designs tracking target end-effector trajectories while optimizing rewards.
-    *   Introduces Transformer Transformer, a diffusion transformer trained on RoboTokens, a unified tokenization of robot embodiments, states, and actions.
-    *   Uses Dynamics Self-Guidance, converting reward-agnostic state and action predictions into reward-specific value predictions to steer embodiment diffusion.
-    *   Demonstrates zero-shot optimization of unseen rewards and fabricated an optimized ALOHA design that reduced tracking error by over 70%.
+    *   Generates robot designs for target end-effector motion and user-defined rewards, with a shared token representation for embodiment, state, and action.
+    *   Uses a diffusion transformer as a dynamics model across design spaces including wheeled bimanual robots, quadrupeds, and humanoids.
+    *   Dynamics Self-Guidance converts predicted states and actions into reward estimates that steer sampling toward better embodiments.
+    *   Optimizes unseen reward functions and trajectories without retraining; a fabricated ALOHA variant reduces tracking error by more than 70% relative to the original design.
+    *   This is motion-conditioned robot co-design and control, rather than a conventional image-language-to-action policy.
 
-#### **WAM-TTT: Steering World-Action Models by Watching Human Play at Test Time**
-*I, L → A (Image, Language → Actions)*
+#### **WAM-TTT**
+*Vid, I, L → A, I' (Human Video, Robot Observation, Language → Actions, Future Images)*
 
 * **Paper**: [WAM-TTT: Steering World-Action Models by Watching Human Play at Test Time](https://arxiv.org/abs/2607.06988)
 * **Notes**:
     *   Released Jul 2026.
-    *   Presents a test-time training framework for steering world action models from raw human videos.
-    *   Absorbs human videos into a lightweight adaptive memory inside a frozen WAM through self-supervised video prediction.
-    *   Introduces a meta-training stage that aligns human demonstrations with robot behaviors using paired human-robot data and a key-value memory reconstruction objective.
-    *   Enables efficient and reusable steering without robot actions, human-side annotations, or task-specific fine-tuning.
+    *   Adds adaptive fast-weight memory to the video expert of LDA, a pretrained world-action model, so human play videos can steer robot behavior at deployment.
+    *   Meta-training uses paired human and robot demonstrations to learn a useful interface between human-video keys/values and robot queries, with a memory-reconstruction objective.
+    *   At test time, unlabeled human video updates the lightweight memory through self-supervised prediction; the pretrained WAM weights remain frozen.
+    *   The memory is reusable across execution steps, avoiding repeated conditioning on the full demonstration and avoiding full-policy fine-tuning.
+    *   Reports 46.2% average task progress across nine tasks in unseen home environments, versus 7.1% for the tested in-context video baseline and 32.5% for LDA. These are progress scores, not binary success rates.
+    *   The interesting part is learning from new evidence at deployment while preserving the base policy. Paired human-robot data is still needed during meta-training, and the transfer is not uniformly better on every task.
 
-#### **Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections**
-*I, L → A (Image, Language → Actions)*
+#### **XR-2**
+*I, L, P → A (Image, Language, Proprioception → Actions)*
 
 * **Paper**: [Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections](https://arxiv.org/abs/2609.03591)
 * **Website**: [bimanual-robot-learning.github.io/challenge](https://bimanual-robot-learning.github.io/challenge/)
 * **Notes**:
     *   Released Sep 2026.
-    *   Releases 1,500 hours of diverse bimanual manipulation demonstrations covering everyday household tasks.
-    *   Trains XR-2, a powerful vision-language-action (VLA) model using a high throughput data pipeline and multi-stage training.
-    *   Studies scaling axes: varying expert demonstration data amount and post-training on DAgger correction data from real-time human interventions.
-    *   Shows task success rate improves steadily over data ranges, exhibiting clear consistent scaling trends.
+    *   A 5B VLA combines Qwen3-VL-4B-Instruct with a flow-matching action expert for bimanual household manipulation.
+    *   Releases about 1,500 hours of data: 531.7 hours of robot teleoperation across 32,518 trajectories, plus roughly 1,000 hours of bimanual UMI demonstrations.
+    *   On clothes folding, increasing expert data from 30 to 120 hours raises success from 34% to 84%; performance then plateaus, with 82% at 160 hours.
+    *   A separate DAgger experiment starts from a 58% checkpoint and reaches 74%, 82%, and 93% over three rounds of corrective training.
+    *   Mixes corrective and expert trajectories 1:1 and assigns more correction data to weak subtasks while retaining a minimum allocation for stronger ones.
+    *   The useful result is where scaling demonstrations stops helping: on-policy corrections supply recovery states absent from successful demonstrations. The 84% and 58% baselines belong to different experiments and should not be treated as one continuous curve.
 
-#### **MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO?**
-*I, L → A (Image, Language → Actions)*
+#### **MINERVA**
+*I, P, Task ID → A (Image, Proprioception, Task Identity → Actions)*
 
 * **Paper**: [MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO?](https://arxiv.org/abs/2609.03715)
 * **Code**: [k1000dai/MINERVA](https://github.com/k1000dai/MINERVA)
 * **Notes**:
     *   Released Sep 2026.
-    *   Introduces MINERVA, a family of deliberately compact visuomotor policies to measure LIBERO's task-specific capacity floor.
-    *   Shows a 0.54M-parameter policy achieves 95.1% average success over 2,000 rollouts on LIBERO, only 2.4 points below LeRobot $\pi_{0.5}$ but using 7,700x fewer parameters.
-    *   Finds that flow matching provides no detectable advantage over direct L1 regression across three seeds, while regression is up to 3.8x faster on GPU.
-    *   Demonstrates replanning every control step in 5-9 ms per chunk on a laptop CPU, 113x faster than SmolVLA and 1,400x faster than $\pi_{0.5}$, without a GPU.
+    *   Studies the capacity needed to solve standard LIBERO tasks with compact visuomotor policies.
+    *   A 0.54M-parameter model achieves 95.1% average success over 2,000 rollouts; performance saturates near 1M parameters and deteriorates below 0.25M.
+    *   Direct L1 action regression matches flow matching within the reported training-seed variation and runs up to 3.8× faster on GPU.
+    *   Runs in 5–9 ms per chunk on a laptop CPU, supporting replanning at every control step.
+    *   Task-ID permutation drives performance toward chance, suggesting that standard LIBERO conditioning can select memorized tasks rather than demonstrate language understanding.
+    *   LIBERO-Plus perturbations reduce success to 46–56%, with near-zero robustness to photometric shifts. Small models can solve the benchmark without matching the broader generalization of foundation models.
 
 #### **Can Video World Models Track Unobserved World States?**
 *Vid, A → I' (Video, Actions → Future Images)*
