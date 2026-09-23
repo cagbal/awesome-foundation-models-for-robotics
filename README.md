@@ -19,6 +19,18 @@ Curated database of foundation models for robotics
 
 ### 🚀 2026 Models
 
+#### **RoboDawn**
+*I, L → A (Image, Language → Actions)*
+
+* **Paper**: [Transferring the Intelligence of VLMs to Robotic Control](http://arxiv.org/abs/2609.22966)
+* **Notes**:
+    * Released Sep 2026.
+    * Investigates whether VLM intelligence can generalize from the digital world to the physical world for robotic control.
+    * Introduces RoboDawn, a human-intuitive interface that exposes robotic control to an agentic VLM through a compact set of discrete translation, rotation, and gripper commands.
+    * In a closed loop, the VLM observes the visual state, reasons, executes actions, and adapts.
+    * Also introduces an in-context learning (ICL) scheme that grounds the VLM in interface usage and task-solving strategies.
+    * Achieves strong performance without task-specific robot training and establishes SOTA with one-shot demonstration.
+
 #### **OmniGuide**
 *I, L → A (Image, Language → Actions)*
 
@@ -1926,6 +1938,27 @@ Paper: [Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Mode
 ---
 
 ## 🤖 Noteworthy Benchmarks / Auxiliary Frameworks
+
+#### **MotionJEPA**
+*I → L (Image → Latent)*
+
+* **Website**: [mkarmann.github.io/motion-jepa-project-page](https://mkarmann.github.io/motion-jepa-project-page/)
+* **Paper**: [MotionJEPA: Preventing Temporal Feature Collapse by Capturing Visual Changes in Latent Space](https://arxiv.org/abs/2609.23881)
+* **Notes**:
+    * Released Sep 2026.
+    * Addresses the problem of feature suppression and latent representation collapse in Joint Embedding Predictive Architectures (JEPAs) due to their inductive bias towards slow features.
+    * Introduces Difference Image and Single image embedding Regularization (DISReg) to predict temporal difference image embeddings without pixel reconstruction loss.
+    * Encourages balanced static and dynamic feature learning.
+    * Produces more complete representations, maintains geometrically simple latent embeddings with low curvature, and improves downstream planning success under static-background distractors.
+
+#### **Towards Universal Post-Training for Robotics**
+*RL Finetuning / Post-Training Frameworks*
+
+* **Blog**: [pd-perry.github.io/posts/post-training.html](https://pd-perry.github.io/posts/post-training.html)
+* **Notes**:
+    * Released Sep 2026.
+    * Discusses why robotics RL is a different problem than LLM RL, what EXPO-FT gets right and wrong, and what a universal post-training recipe for robotics needs.
+    * Analyzes EXPO, EXPO-FT, and Real-Time EXPO-FT.
 
 ### **Artificial Foveated Perception (AFP)**
 
