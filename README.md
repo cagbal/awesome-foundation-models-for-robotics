@@ -1927,6 +1927,17 @@ Paper: [Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Mode
 
 ## 🤖 Noteworthy Benchmarks / Auxiliary Frameworks
 
+### **NextLat**
+*World Model*
+
+* **Code**: [JaydenTeoh/NextLat](https://github.com/JaydenTeoh/NextLat)
+* **Paper**: [Next-Latent Prediction Transformers Learn Compact World Models](https://arxiv.org/abs/2511.05963)
+* **Notes**:
+    *   Released Nov 2025.
+    *   Introduces Next-Latent Prediction (NextLat) to encourage transformers to learn compact world models with coherent belief states.
+    *   Extends standard next-token training with self-supervised predictions in the latent space.
+    *   Demonstrates gains in world modeling, reasoning, planning, and language modeling over standard next-token prediction.
+
 ### **Artificial Foveated Perception (AFP)**
 
 * **Website**: [apollo-lab-yale.github.io/26-CoRL-AFP-website](https://apollo-lab-yale.github.io/26-CoRL-AFP-website/)
